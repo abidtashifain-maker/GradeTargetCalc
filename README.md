@@ -2,7 +2,7 @@
 A dependency-free static educational website, designed for GitHub Pages.
 
 ## Current status
-Built and locally checked; **deployment in progress**. Public repository: https://github.com/abidtashifain-maker/GradeTargetCalc. GitHub connection verified for abidtashifain-maker. Owner-approved contact: Info@gradetargetcalc.com. Registrar: IONOS. Public repository creation, publishing and domain connection are owner-approved. GitHub browser sign-in completed and repository created. IONOS account access, Search Console and AdSense access remain pending. Repository name: GradeTargetCalc. SEO metric validation is incomplete without an authorized dataset. See docs/SEO-STRATEGY.md.
+Built and locally checked; **GitHub Pages deployment succeeded; custom-domain verification pending**. Public repository: https://github.com/abidtashifain-maker/GradeTargetCalc. GitHub connection verified for abidtashifain-maker. Owner-approved contact: Info@gradetargetcalc.com. Registrar: IONOS. Public repository creation, publishing and domain connection are owner-approved. GitHub browser sign-in completed and repository created. IONOS sign-in completed and DNS configured. Registrar contact-email confirmation, public domain/HTTPS verification, Search Console and AdSense remain pending. See docs/DEPLOYMENT.md. Repository name: GradeTargetCalc. SEO metric validation is incomplete without an authorized dataset. See docs/SEO-STRATEGY.md.
 
 ## Agent maintenance
 - Build: `python3 scripts/build.py` (draft/noindex by default).
