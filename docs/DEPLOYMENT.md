@@ -7,6 +7,7 @@
 - IONOS DNS: apex A records 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 (TTL 300); www CNAME abidtashifain-maker.github.io (TTL 300).
 - Default Site parking records replaced. Existing mail MX/SPF/DKIM/DMARC/autodiscover and Domain Connect records preserved.
 - Registration contact-email confirmation completed by owner and confirmed in IONOS: verification warning removed; domain shows user-defined DNS targets.
+- Latest GitHub DNS validation still reports NotServedByPagesError. Correct values are saved in IONOS, but successful public resolution/routing is not established; propagation may still be pending.
 - GitHub certificate requested after DNS Check again. Current status: TLS provisioning, stage 1 of 3, Certificate Requested. HTTPS enforcement is disabled until issuance completes. Do not reset/remove the domain merely while issuance is pending.
 - Google Search Console domain property sc-domain:gradetargetcalc.com created and ownership VERIFIED using the exact TXT record supplied by Google, saved at the apex in IONOS. Keep that DNS record. No third-party account permissions or automated DNS delegation were added.
 - https://gradetargetcalc.com/sitemap.xml submitted; Google accepted the submission but its fetch status is Couldn't fetch. Do not describe this as successful sitemap processing or indexing.
