@@ -1,0 +1,1397 @@
+[
+  {
+    "key": "remaining",
+    "slug": "remaining-grade-calculator",
+    "title": "Remaining Grade Calculator",
+    "category": "grades",
+    "description": "Find the average needed across all ungraded work from your earned course contribution.",
+    "fields": [
+      {
+        "name": "earned_contribution",
+        "label": "Course percentage points already earned",
+        "value": 45,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "completed_weight",
+        "label": "Completed course weight (%)",
+        "value": 60,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "target",
+        "label": "Target course grade (%)",
+        "value": 80,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      }
+    ],
+    "intro": "Find the average needed across all ungraded work from your earned course contribution.",
+    "formula": "Required remaining average = (Target − Earned course contribution) ÷ (1 − Completed weight / 100)",
+    "example": "Completed work covers 60% of the course and has contributed 45 percentage points. To finish at 80%, the remaining 40% must supply 35 points: 35 ÷ 0.40 = 87.50%.",
+    "detail": "Enter the contribution to the full course, not your normalized current average. For example, 75% on completed work worth 60% contributes 45 points. The completed contribution cannot exceed the completed weight. All remaining work is modeled as one combined average; category-specific pass rules are not applied.",
+    "note": "Enter the contribution to the full course, not your normalized current average. For example, 75% on completed work worth 60% contributes 45 points. The completed contribution cannot exceed the completed weight. All remaining work is modeled as one combined average; category-specific pass rules are not applied.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "What is an earned course contribution?",
+        "Multiply each completed score by its course weight, then add the results. A score of 80% worth 25% contributes 20 percentage points."
+      ],
+      [
+        "Can the remaining work contain several assessments?",
+        "Yes. The answer is the combined weighted average required across that work, not a required score for every individual assessment."
+      ]
+    ]
+  },
+  {
+    "key": "points-target",
+    "slug": "points-needed-calculator",
+    "title": "Points Needed Calculator",
+    "category": "grades",
+    "description": "Work out how many remaining marks you need in a points-based course.",
+    "fields": [
+      {
+        "name": "earned",
+        "label": "Points earned so far",
+        "value": 120,
+        "min": 0,
+        "max": 10000000.0,
+        "step": "any"
+      },
+      {
+        "name": "completed_possible",
+        "label": "Points possible so far",
+        "value": 160,
+        "min": 0,
+        "max": 10000000.0,
+        "step": "any"
+      },
+      {
+        "name": "remaining_points",
+        "label": "Points still available",
+        "value": 40,
+        "min": 1e-06,
+        "max": 10000000.0,
+        "step": "any"
+      },
+      {
+        "name": "target",
+        "label": "Target final percentage",
+        "value": 75,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      }
+    ],
+    "intro": "Work out how many remaining marks you need in a points-based course.",
+    "formula": "Required points = Target / 100 × (Completed possible + Remaining possible) − Earned points",
+    "example": "You have earned 120 of 160 points, with 40 points left. A 75% target means 150 points out of 200 overall, so 30 more points are required. This is 75% of the remaining 40.",
+    "detail": "Use only for a course that pools points. An instructor who weights categories separately may produce a different result. Decimal marks are supported. The displayed minimum rounds upward to two decimals; if marks are awarded in whole points, round upward again to a whole point.",
+    "note": "Use only for a course that pools points. An instructor who weights categories separately may produce a different result. Decimal marks are supported. The displayed minimum rounds upward to two decimals; if marks are awarded in whole points, round upward again to a whole point.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Can I use category-weighted grades?",
+        "No. Use this tool only when the final percentage equals total earned points divided by total possible points."
+      ],
+      [
+        "What does Not reachable mean?",
+        "The required points exceed all remaining marks available. Check your inputs, course rules or target."
+      ]
+    ]
+  },
+  {
+    "key": "assignment-target",
+    "slug": "assignment-average-target-calculator",
+    "title": "Assignment Average Target Calculator",
+    "category": "grades",
+    "description": "Find the average required on future assignments when every assignment counts equally.",
+    "fields": [
+      {
+        "name": "current_average",
+        "label": "Current assignment average (%)",
+        "value": 70,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "completed_count",
+        "label": "Completed assignments",
+        "value": 3,
+        "min": 1,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "remaining_count",
+        "label": "Remaining assignments",
+        "value": 2,
+        "min": 1,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "target",
+        "label": "Target final average (%)",
+        "value": 80,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      }
+    ],
+    "intro": "Find the average required on future assignments when every assignment counts equally.",
+    "formula": "Future average = [Target × (Completed count + Remaining count) − Current average × Completed count] ÷ Remaining count",
+    "example": "Three assignments average 70%. With two left, an 80% final average requires 80 × 5 − 70 × 3 = 190 percentage-score units across the last two: 190 ÷ 2 = 95%.",
+    "detail": "All assignments must carry equal weight, regardless of their raw point totals. Include awarded zeroes in the current average. This model does not drop scores or add extra credit. If assignment weights differ, use the remaining-grade or weighted-grade calculator.",
+    "note": "All assignments must carry equal weight, regardless of their raw point totals. Include awarded zeroes in the current average. This model does not drop scores or add extra credit. If assignment weights differ, use the remaining-grade or weighted-grade calculator.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Do assignments need the same point total?",
+        "They need the same final weighting. Equal point totals alone are not enough if your instructor assigns different weights."
+      ],
+      [
+        "Does 95% mean both future assignments must score 95%?",
+        "No. Their combined equally weighted average must be at least 95%; individual scores can differ."
+      ]
+    ]
+  },
+  {
+    "key": "improvement",
+    "slug": "grade-improvement-calculator",
+    "title": "Grade Improvement Calculator",
+    "category": "grades",
+    "description": "Estimate your revised course grade when one assessment mark is replaced.",
+    "fields": [
+      {
+        "name": "current_grade",
+        "label": "Current course grade (%)",
+        "value": 75,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "old_score",
+        "label": "Existing assessment score (%)",
+        "value": 60,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "new_score",
+        "label": "Replacement score (%)",
+        "value": 90,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "weight",
+        "label": "Assessment course weight (%)",
+        "value": 20,
+        "min": 1e-06,
+        "max": 100,
+        "step": "any"
+      }
+    ],
+    "intro": "Estimate your revised course grade when one assessment mark is replaced.",
+    "formula": "New course grade = Current grade + (Replacement score − Existing score) × Weight / 100",
+    "example": "A course grade of 75% includes an assessment worth 20%, originally scored at 60%. Replacing that mark with 90% adds (90 − 60) × 0.20 = 6 points, giving 81%.",
+    "detail": "Your current course grade must already include the old assessment at the stated full-course weight. The tool replaces that mark; it does not add another assessment. It rejects combinations where the implied contribution from other work is outside 0–100%. Permission to replace a mark depends on your instructor.",
+    "note": "Your current course grade must already include the old assessment at the stated full-course weight. The tool replaces that mark; it does not add another assessment. It rejects combinations where the implied contribution from other work is outside 0–100%. Permission to replace a mark depends on your instructor.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Will a 10-point assessment improvement raise my course grade by 10?",
+        "Only if the assessment is the whole course. At 20% weight, a 10-point improvement raises the course grade by 2 percentage points."
+      ],
+      [
+        "Does this apply an actual regrade?",
+        "No. It models a possible replacement. Your instructor decides whether a revised mark is awarded."
+      ]
+    ]
+  },
+  {
+    "key": "drop-lowest",
+    "slug": "drop-lowest-grade-calculator",
+    "title": "Drop Lowest Grade Calculator",
+    "category": "grades",
+    "description": "See your equal-weight average after dropping a chosen number of lowest scores.",
+    "fields": [
+      {
+        "name": "grades",
+        "label": "Percentage grades",
+        "value": "60, 80, 90, 100",
+        "type": "textarea",
+        "help": "Separate percentage grades with commas, spaces or new lines; up to 1,000 values, each from 0 to 100."
+      },
+      {
+        "name": "drop_count",
+        "label": "Number of lowest scores to drop",
+        "value": 1,
+        "min": 0,
+        "max": 999,
+        "step": "1"
+      }
+    ],
+    "intro": "See your equal-weight average after dropping a chosen number of lowest scores.",
+    "formula": "Adjusted average = Sum of retained grades ÷ Number of retained grades",
+    "example": "For grades 60%, 80%, 90% and 100%, dropping the lowest one leaves 80%, 90% and 100%. The revised average is 270 ÷ 3 = 90%, compared with 82.5% before the drop.",
+    "detail": "Use within one category where all scores are equally weighted. At least one score must remain. Equal lowest scores can be removed in any order because the retained average is identical. A point-based category or a rule protecting certain assessments needs a different calculation.",
+    "note": "Use within one category where all scores are equally weighted. At least one score must remain. Equal lowest scores can be removed in any order because the retained average is identical. A point-based category or a rule protecting certain assessments needs a different calculation.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Can I drop every score?",
+        "No. An average needs at least one retained score."
+      ],
+      [
+        "What if assignments have different possible points?",
+        "This tool averages percentages equally. It does not select which point-based assignment would maximize your grade."
+      ]
+    ]
+  },
+  {
+    "key": "must-pass",
+    "slug": "must-pass-final-calculator",
+    "title": "Must-Pass Final Calculator",
+    "category": "grades",
+    "description": "Combine your course passing target with a separate minimum final-exam requirement.",
+    "fields": [
+      {
+        "name": "current_grade",
+        "label": "Current grade excluding final (%)",
+        "value": 80,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "course_pass",
+        "label": "Required course grade (%)",
+        "value": 50,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "final_weight",
+        "label": "Final exam weight (%)",
+        "value": 40,
+        "min": 0.01,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "exam_pass",
+        "label": "Minimum permitted final score (%)",
+        "value": 40,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      }
+    ],
+    "intro": "Combine your course passing target with a separate minimum final-exam requirement.",
+    "formula": "Minimum final score = max[(Course pass − Current × (1 − Weight / 100)) ÷ (Weight / 100), Exam minimum]",
+    "example": "With an 80% current grade, a 50% course threshold and a 40%-weight final, the weighted-average target alone needs 5% on the exam. If the exam must separately be passed at 40%, the actual minimum is 40%.",
+    "detail": "Use the actual thresholds in your syllabus. The current grade excludes the final. This calculator combines two mathematical conditions only; it does not model attendance, minimum component scores or compulsory submissions. A result over 100% is unattainable on a standard capped exam.",
+    "note": "Use the actual thresholds in your syllabus. The current grade excludes the final. This calculator combines two mathematical conditions only; it does not model attendance, minimum component scores or compulsory submissions. A result over 100% is unattainable on a standard capped exam.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Why is this different from the ordinary final calculator?",
+        "Some courses require a minimum final-exam score even when the overall weighted course average is already high enough."
+      ],
+      [
+        "Can a course still be failed after meeting this result?",
+        "Yes, if there are other requirements. Check the complete syllabus rather than relying on these two thresholds alone."
+      ]
+    ]
+  },
+  {
+    "key": "two-part",
+    "slug": "two-part-final-calculator",
+    "title": "Two-Part Final Calculator",
+    "category": "grades",
+    "description": "Calculate the score needed on the unfinished part of a final exam.",
+    "fields": [
+      {
+        "name": "current_grade",
+        "label": "Course grade excluding entire final (%)",
+        "value": 80,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "target",
+        "label": "Target course grade (%)",
+        "value": 85,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "final_weight",
+        "label": "Entire final weight in course (%)",
+        "value": 40,
+        "min": 0.01,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "part_one_weight",
+        "label": "Part 1 share of final (%)",
+        "value": 50,
+        "min": 0,
+        "max": 99.999999,
+        "step": "any"
+      },
+      {
+        "name": "part_one_score",
+        "label": "Part 1 score (%)",
+        "value": 90,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      }
+    ],
+    "intro": "Calculate the score needed on the unfinished part of a final exam.",
+    "formula": "Part 2 score = (Required entire-final score − Part 1 score × Part 1 share) ÷ (1 − Part 1 share)",
+    "example": "An 80% current grade and 85% course target, with the final worth 40%, require a 92.5% final average. If Part 1 is half of the final and scores 90%, Part 2 must score (92.5 − 45) ÷ 0.50 = 95%.",
+    "detail": "The two parts must cover the entire final. Enter Part 1 weight as its share of the final, not of the course. Your current course grade must exclude both parts, including Part 1. If Part 1 covers 100% there is no unfinished part to solve for, so that input is rejected.",
+    "note": "The two parts must cover the entire final. Enter Part 1 weight as its share of the final, not of the course. Your current course grade must exclude both parts, including Part 1. If Part 1 covers 100% there is no unfinished part to solve for, so that input is rejected.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Is the Part 1 weight a course weight?",
+        "No. A 50% share of a final worth 40% of the course represents 20% of the full course."
+      ],
+      [
+        "What if the final has three unfinished sections?",
+        "You can treat all unfinished sections as one combined Part 2 average if their relative weights are known."
+      ]
+    ]
+  },
+  {
+    "key": "test-category",
+    "slug": "final-counts-as-test-calculator",
+    "title": "Final Counts as a Test Calculator",
+    "category": "grades",
+    "description": "Plan a final that changes your existing test-category average rather than adding a separate category.",
+    "fields": [
+      {
+        "name": "current_grade",
+        "label": "Current overall course grade (%)",
+        "value": 80,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "target",
+        "label": "Target course grade (%)",
+        "value": 82,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "test_weight",
+        "label": "Test category weight (%)",
+        "value": 50,
+        "min": 1e-06,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "test_average",
+        "label": "Current test-category average (%)",
+        "value": 70,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      },
+      {
+        "name": "test_count",
+        "label": "Existing equally weighted tests",
+        "value": 3,
+        "min": 1,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "final_equivalent",
+        "label": "Final counts as this many tests",
+        "value": 1,
+        "min": 1e-06,
+        "max": 100,
+        "step": "any"
+      }
+    ],
+    "intro": "Plan a final that changes your existing test-category average rather than adding a separate category.",
+    "formula": "Final score = {[(Target − Current + w × Test average) ÷ w] × (n + k) − n × Test average} ÷ k",
+    "example": "The current course grade is 80%, tests count 50%, and three existing tests average 70%. A final counting as one test must score 86% to reach 82% overall: the test average becomes (210 + 86) ÷ 4 = 74%, raising the course by 2 points.",
+    "detail": "All existing tests must have equal weight. The final can count as several equivalent tests, while other category contributions stay fixed. The current grade must already include the test category at its full syllabus weight. Dropped tests, a separate final category or ungraded non-test work are not included.",
+    "note": "All existing tests must have equal weight. The final can count as several equivalent tests, while other category contributions stay fixed. The current grade must already include the test category at its full syllabus weight. Dropped tests, a separate final category or ungraded non-test work are not included.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "What does equivalent tests mean?",
+        "If the final counts twice as much as one ordinary test, enter 2. This describes relative weighting inside the test category."
+      ],
+      [
+        "Can this handle dropping the lowest test?",
+        "No. A drop changes which scores enter the category average and must be modeled separately."
+      ]
+    ]
+  },
+  {
+    "key": "negative-marking",
+    "slug": "negative-marking-calculator",
+    "title": "Negative Marking Calculator",
+    "category": "scores",
+    "description": "Calculate raw exam marks with a configurable penalty for incorrect answers.",
+    "fields": [
+      {
+        "name": "total_questions",
+        "label": "Total questions",
+        "value": 20,
+        "min": 1,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "correct",
+        "label": "Correct answers",
+        "value": 12,
+        "min": 0,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "incorrect",
+        "label": "Incorrect answers",
+        "value": 5,
+        "min": 0,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "marks_per_correct",
+        "label": "Marks for a correct answer",
+        "value": 4,
+        "min": 1e-06,
+        "max": 1000,
+        "step": "any"
+      },
+      {
+        "name": "penalty",
+        "label": "Marks deducted per incorrect answer",
+        "value": 1,
+        "min": 0,
+        "max": 1000,
+        "step": "any"
+      }
+    ],
+    "intro": "Calculate raw exam marks with a configurable penalty for incorrect answers.",
+    "formula": "Raw marks = Correct × Marks per correct − Incorrect × Penalty",
+    "example": "In a 20-question exam, 12 correct answers at 4 marks each earn 48 marks. Five wrong answers lose 5 marks at a penalty of 1 each. The result is 43/80 = 53.75%, with three unanswered questions.",
+    "detail": "Question counts must be whole numbers and correct plus incorrect cannot exceed the total. Unanswered questions earn zero and have no penalty. Negative totals are displayed without a zero floor. This is a configurable raw-score calculation, not an official prediction for a named examination.",
+    "note": "Question counts must be whole numbers and correct plus incorrect cannot exceed the total. Unanswered questions earn zero and have no penalty. Negative totals are displayed without a zero floor. This is a configurable raw-score calculation, not an official prediction for a named examination.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Can the result be negative?",
+        "Yes. If penalties exceed marks earned, the raw score is negative. An exam provider may apply a zero floor or another policy afterward."
+      ],
+      [
+        "Does this account for section-specific penalties?",
+        "No. Use separate calculations for sections with different rules, then combine the awarded marks correctly."
+      ]
+    ]
+  },
+  {
+    "key": "minimum-correct",
+    "slug": "minimum-correct-answers-calculator",
+    "title": "Minimum Correct Answers Calculator",
+    "category": "scores",
+    "description": "Convert a target test percentage into the minimum whole number of correct answers.",
+    "fields": [
+      {
+        "name": "total_questions",
+        "label": "Total equal-value questions",
+        "value": 33,
+        "min": 1,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "target",
+        "label": "Target percentage",
+        "value": 80,
+        "min": 0,
+        "max": 100,
+        "step": "any"
+      }
+    ],
+    "intro": "Convert a target test percentage into the minimum whole number of correct answers.",
+    "formula": "Minimum correct = ceiling(Total questions × Target / 100)",
+    "example": "For 33 questions and an 80% target, 33 × 0.80 = 26.4. Round up to 27 correct answers. That allows at most six incorrect or blank answers and produces 81.82%.",
+    "detail": "Assumes equal-value questions, no partial credit and no negative marking. The minimum is rounded upward to a whole answer. A target of 0% requires zero correct and 100% requires every answer correct. Raw question counts cannot predict a scaled score.",
+    "note": "Assumes equal-value questions, no partial credit and no negative marking. The minimum is rounded upward to a whole answer. A target of 0% requires zero correct and 100% requires every answer correct. Raw question counts cannot predict a scaled score.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Why does the resulting percentage exceed my target?",
+        "Whole correct-answer counts cause score steps. When the target falls between steps, the next higher count is required."
+      ],
+      [
+        "Can I use this for questions worth different marks?",
+        "No. Use awarded points and the points-needed calculator instead."
+      ]
+    ]
+  },
+  {
+    "key": "rubric",
+    "slug": "rubric-grade-calculator",
+    "title": "Rubric Grade Calculator",
+    "category": "scores",
+    "description": "Combine rubric criteria that use different mark totals and percentage weights.",
+    "fields": [
+      {
+        "name": "rows",
+        "label": "Rubric rows: earned, possible, weight (%)",
+        "value": "8, 10, 40\n18, 20, 60",
+        "type": "textarea",
+        "help": "One criterion per line. Enter earned marks, possible marks and percentage weight, separated by commas. Weights must total 100%."
+      }
+    ],
+    "intro": "Combine rubric criteria that use different mark totals and percentage weights.",
+    "formula": "Rubric percentage = Σ[(Earned ÷ Possible × 100) × Weight / 100]",
+    "example": "A criterion scored 8/10 at 40% weight contributes 32 percentage points. Another scored 18/20 at 60% contributes 54 points. The completed rubric grade is 86%.",
+    "detail": "Include every criterion and use positive possible marks and weights. Earned marks cannot exceed possible marks. Weights must total 100%; incomplete rubrics are rejected so they are not mistaken for a final assessment result. A categorical rubric must first be converted into marks using the actual rubric rules.",
+    "note": "Include every criterion and use positive possible marks and weights. Earned marks cannot exceed possible marks. Weights must total 100%; incomplete rubrics are rejected so they are not mistaken for a final assessment result. A categorical rubric must first be converted into marks using the actual rubric rules.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Why not average earned marks directly?",
+        "Different criteria can have different maximum marks and importance. Each must first be converted to a percentage."
+      ],
+      [
+        "Can I enter an ungraded criterion as zero?",
+        "Only enter zero if it has actually been awarded. This calculator expects a completed rubric."
+      ]
+    ]
+  },
+  {
+    "key": "statistics",
+    "slug": "grade-statistics-calculator",
+    "title": "Grade Statistics Calculator",
+    "category": "scores",
+    "description": "Summarize a group of percentage grades with median, mean, spread and population standard deviation.",
+    "fields": [
+      {
+        "name": "grades",
+        "label": "Percentage grades",
+        "value": "60, 70, 80, 90, 100",
+        "type": "textarea",
+        "help": "Separate percentage grades with commas, spaces or new lines; up to 1,000 values, each from 0 to 100."
+      }
+    ],
+    "intro": "Summarize a group of percentage grades with median, mean, spread and population standard deviation.",
+    "formula": "Median = middle sorted score; population SD = √[Σ(score − mean)² ÷ n]",
+    "example": "The grades 60, 70, 80, 90 and 100 have a median and mean of 80%. Their range is 40 percentage points and their population standard deviation is approximately 14.14 points.",
+    "detail": "This summary treats all entered scores as the full population and weights them equally. It does not calculate sample standard deviation, decide a curve or assign passing grades. Population standard deviation uses n in the denominator; a sample estimate typically uses n − 1. Up to 1,000 scores are accepted.",
+    "note": "This summary treats all entered scores as the full population and weights them equally. It does not calculate sample standard deviation, decide a curve or assign passing grades. Population standard deviation uses n in the denominator; a sample estimate typically uses n − 1. Up to 1,000 scores are accepted.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "What happens with an even number of grades?",
+        "The median is the mean of the two middle sorted values."
+      ],
+      [
+        "Does standard deviation show whether my class did well?",
+        "It measures spread, not academic quality or fairness. Interpret it with assessment context and the actual grading policy."
+      ]
+    ]
+  },
+  {
+    "key": "percentile",
+    "slug": "class-percentile-rank-calculator",
+    "title": "Class Percentile Rank Calculator",
+    "category": "scores",
+    "description": "Estimate your relative position in a class using a tie-aware midrank percentile.",
+    "fields": [
+      {
+        "name": "below",
+        "label": "Students scoring below your score",
+        "value": 18,
+        "min": 0,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "equal",
+        "label": "Students tied, including you",
+        "value": 3,
+        "min": 1,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "above",
+        "label": "Students scoring above your score",
+        "value": 9,
+        "min": 0,
+        "max": 1000000.0,
+        "step": "1"
+      }
+    ],
+    "intro": "Estimate your relative position in a class using a tie-aware midrank percentile.",
+    "formula": "Midrank percentile = (Below + 0.5 × Equal) ÷ (Below + Equal + Above) × 100",
+    "example": "If 18 students score below you, three including you share your score, and nine score above, the class size is 30. Your midrank percentile is (18 + 1.5) ÷ 30 × 100 = 65.",
+    "detail": "Counts refer to the same assessment and class group. Include yourself among tied students. This tool uses the midrank convention, not an official standardized-test percentile. Other conventions handle ties differently. A percentile rank is distinct from the percentage of exam marks earned.",
+    "note": "Counts refer to the same assessment and class group. Include yourself among tied students. This tool uses the midrank convention, not an official standardized-test percentile. Other conventions handle ties differently. A percentile rank is distinct from the percentage of exam marks earned.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Is the 65th percentile the same as a 65% grade?",
+        "No. A grade describes your marks. A percentile describes where your score sits relative to a particular comparison group."
+      ],
+      [
+        "Why can the top score have a percentile below 100?",
+        "Midrank gives half-weight to tied scores, including your own. With a finite group this can place the highest score below 100."
+      ]
+    ]
+  },
+  {
+    "key": "attendance",
+    "slug": "attendance-percentage-calculator",
+    "title": "Attendance Percentage Calculator",
+    "category": "study",
+    "description": "Calculate the percentage of held classes you attended.",
+    "fields": [
+      {
+        "name": "attended",
+        "label": "Classes attended",
+        "value": 22,
+        "min": 0,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "classes_held",
+        "label": "Classes held",
+        "value": 30,
+        "min": 1,
+        "max": 1000000.0,
+        "step": "1"
+      }
+    ],
+    "intro": "Calculate the percentage of held classes you attended.",
+    "formula": "Attendance percentage = Classes attended ÷ Classes held × 100",
+    "example": "Attending 22 out of 30 classes gives 22 ÷ 30 × 100 = 73.33%. Eight classes were missed. Future scheduled classes are not part of this current percentage.",
+    "detail": "Count only classes that have taken place. Attended classes cannot exceed classes held. Every class is weighted equally; canceled classes should be excluded if your institution excludes them. Excused absences, partial attendance and hour-based requirements require your institution’s own treatment.",
+    "note": "Count only classes that have taken place. Attended classes cannot exceed classes held. Every class is weighted equally; canceled classes should be excluded if your institution excludes them. Excused absences, partial attendance and hour-based requirements require your institution’s own treatment.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Should I include classes scheduled next month?",
+        "No. Current attendance compares attended classes with classes already held."
+      ],
+      [
+        "Does this determine eligibility to sit an exam?",
+        "No. Your institution decides eligibility and may apply additional rules beyond a simple attendance percentage."
+      ]
+    ]
+  },
+  {
+    "key": "attendance-target",
+    "slug": "attendance-target-calculator",
+    "title": "Attendance Target Calculator",
+    "category": "study",
+    "description": "Find how many consecutive future classes you need to attend to reach an attendance target.",
+    "fields": [
+      {
+        "name": "attended",
+        "label": "Classes attended",
+        "value": 22,
+        "min": 0,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "classes_held",
+        "label": "Classes held",
+        "value": 30,
+        "min": 1,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "target",
+        "label": "Target attendance (%)",
+        "value": 75,
+        "min": 1e-06,
+        "max": 100,
+        "step": "any"
+      }
+    ],
+    "intro": "Find how many consecutive future classes you need to attend to reach an attendance target.",
+    "formula": "Additional classes = ceiling[(Target fraction × Classes held − Attended) ÷ (1 − Target fraction)]",
+    "example": "You attended 22 of 30 classes and want 75%. Solve (22 + x) ÷ (30 + x) ≥ 0.75 to get x ≥ 2. After two consecutive attended classes, attendance is 24/32 = 75%.",
+    "detail": "Assumes every future class counts equally and you attend all of the required consecutive classes. It does not know how many classes remain in your course. If the result exceeds the actual remaining schedule, the target is not achievable that term. After an absence, exactly 100% lifetime attendance cannot be restored.",
+    "note": "Assumes every future class counts equally and you attend all of the required consecutive classes. It does not know how many classes remain in your course. If the result exceeds the actual remaining schedule, the target is not achievable that term. After an absence, exactly 100% lifetime attendance cannot be restored.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "What if I already meet the target?",
+        "The result is zero additional classes needed to reach it now. Future absences can still lower your attendance."
+      ],
+      [
+        "Does this guarantee enough classes remain?",
+        "No. Compare the answer with the published course schedule."
+      ]
+    ]
+  },
+  {
+    "key": "target-gpa",
+    "slug": "target-gpa-calculator",
+    "title": "Target GPA Calculator",
+    "category": "gpa",
+    "description": "Calculate the next-term GPA needed to reach a cumulative GPA target.",
+    "fields": [
+      {
+        "name": "scale",
+        "label": "Maximum GPA scale",
+        "type": "select",
+        "options": [
+          [
+            "4",
+            "4.0"
+          ],
+          [
+            "4.33",
+            "4.33"
+          ],
+          [
+            "4.5",
+            "4.5"
+          ],
+          [
+            "5",
+            "5.0"
+          ],
+          [
+            "9",
+            "9.0"
+          ],
+          [
+            "10",
+            "10.0"
+          ]
+        ]
+      },
+      {
+        "name": "current_gpa",
+        "label": "Current cumulative GPA",
+        "value": 3.2,
+        "min": 0,
+        "max": 10,
+        "step": "any"
+      },
+      {
+        "name": "current_credits",
+        "label": "Current GPA-bearing credits",
+        "value": 45,
+        "min": 0,
+        "max": 100000.0,
+        "step": "any"
+      },
+      {
+        "name": "target_gpa",
+        "label": "Target cumulative GPA",
+        "value": 3.3,
+        "min": 0,
+        "max": 10,
+        "step": "any"
+      },
+      {
+        "name": "next_credits",
+        "label": "Next-term GPA-bearing credits",
+        "value": 15,
+        "min": 1e-06,
+        "max": 100000.0,
+        "step": "any"
+      }
+    ],
+    "intro": "Calculate the next-term GPA needed to reach a cumulative GPA target.",
+    "formula": "Required next GPA = [Target × (Current credits + Next credits) − Current GPA × Current credits] ÷ Next credits",
+    "example": "A current 3.20 GPA across 45 credits, a 3.30 cumulative target and a 15-credit next term require (3.30 × 60 − 3.20 × 45) ÷ 15 = 3.60 next term.",
+    "detail": "Both records must use the same grade-point scale and credit system. Enter only GPA-bearing credits. The selected maximum determines whether the required next GPA is possible. Rounded current GPAs introduce estimation error, and retake replacement is not applied.",
+    "note": "Both records must use the same grade-point scale and credit system. Enter only GPA-bearing credits. The selected maximum determines whether the required next GPA is possible. Rounded current GPAs introduce estimation error, and retake replacement is not applied.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "What if the required GPA is above my scale?",
+        "The target is not reachable in that number of credits under the selected maximum. A longer timeline or lower target may be needed."
+      ],
+      [
+        "Can I use this across different GPA scales?",
+        "No. Current, future and target GPA must all use the same scale."
+      ]
+    ]
+  },
+  {
+    "key": "gpa-credits",
+    "slug": "credits-to-raise-gpa-calculator",
+    "title": "Credits to Raise GPA Calculator",
+    "category": "gpa",
+    "description": "Estimate the additional credits needed to reach a cumulative target at a planned future GPA.",
+    "fields": [
+      {
+        "name": "scale",
+        "label": "Maximum GPA scale",
+        "type": "select",
+        "options": [
+          [
+            "4",
+            "4.0"
+          ],
+          [
+            "4.33",
+            "4.33"
+          ],
+          [
+            "4.5",
+            "4.5"
+          ],
+          [
+            "5",
+            "5.0"
+          ],
+          [
+            "9",
+            "9.0"
+          ],
+          [
+            "10",
+            "10.0"
+          ]
+        ]
+      },
+      {
+        "name": "current_gpa",
+        "label": "Current cumulative GPA",
+        "value": 3,
+        "min": 0,
+        "max": 10,
+        "step": "any"
+      },
+      {
+        "name": "current_credits",
+        "label": "Current GPA-bearing credits",
+        "value": 60,
+        "min": 1e-06,
+        "max": 100000.0,
+        "step": "any"
+      },
+      {
+        "name": "target_gpa",
+        "label": "Target cumulative GPA",
+        "value": 3.5,
+        "min": 0,
+        "max": 10,
+        "step": "any"
+      },
+      {
+        "name": "future_gpa",
+        "label": "Planned GPA across new credits",
+        "value": 4,
+        "min": 0,
+        "max": 10,
+        "step": "any"
+      },
+      {
+        "name": "credit_increment",
+        "label": "Allowed credit increment",
+        "value": 1,
+        "min": 1e-06,
+        "max": 100,
+        "step": "any"
+      }
+    ],
+    "intro": "Estimate the additional credits needed to reach a cumulative target at a planned future GPA.",
+    "formula": "New credits = Current credits × (Target GPA − Current GPA) ÷ (Future GPA − Target GPA)",
+    "example": "A 3.00 GPA over 60 credits needs 60 additional credits averaging 4.00 to reach 3.50: 60 × 0.50 ÷ 0.50 = 60. The result assumes the future 4.00 average is maintained across all those credits.",
+    "detail": "A higher target requires a future GPA strictly above that target to be reached in finite credits. The answer rounds upward to your allowed credit increment, not to whole courses. It does not establish that enough courses remain or that the planned future GPA is realistic.",
+    "note": "A higher target requires a future GPA strictly above that target to be reached in finite credits. The answer rounds upward to your allowed credit increment, not to whole courses. It does not establish that enough courses remain or that the planned future GPA is realistic.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Why can I not reach 4.0 from below on a 4.0 scale?",
+        "A lower existing GPA plus a finite number of 4.0 grades still averages below 4.0 if the previous grades remain counted."
+      ],
+      [
+        "What should I enter for credit increment?",
+        "Use the smallest credit unit you can actually add, such as 1 or 0.5. Course scheduling may impose larger practical steps."
+      ]
+    ]
+  },
+  {
+    "key": "retake-gpa",
+    "slug": "retake-gpa-calculator",
+    "title": "Retake GPA Calculator",
+    "category": "gpa",
+    "description": "Compare the effect of a repeated course under replacement or both-attempts GPA rules.",
+    "fields": [
+      {
+        "name": "scale",
+        "label": "Maximum GPA scale",
+        "type": "select",
+        "options": [
+          [
+            "4",
+            "4.0"
+          ],
+          [
+            "4.33",
+            "4.33"
+          ],
+          [
+            "4.5",
+            "4.5"
+          ],
+          [
+            "5",
+            "5.0"
+          ],
+          [
+            "9",
+            "9.0"
+          ],
+          [
+            "10",
+            "10.0"
+          ]
+        ]
+      },
+      {
+        "name": "current_gpa",
+        "label": "Current GPA including original course",
+        "value": 3,
+        "min": 0,
+        "max": 10,
+        "step": "any"
+      },
+      {
+        "name": "current_credits",
+        "label": "Current GPA-bearing credits",
+        "value": 30,
+        "min": 1e-06,
+        "max": 100000.0,
+        "step": "any"
+      },
+      {
+        "name": "course_credits",
+        "label": "Repeated course credits",
+        "value": 3,
+        "min": 1e-06,
+        "max": 100000.0,
+        "step": "any"
+      },
+      {
+        "name": "old_points",
+        "label": "Original course grade points",
+        "value": 2,
+        "min": 0,
+        "max": 10,
+        "step": "any"
+      },
+      {
+        "name": "new_points",
+        "label": "Retake course grade points",
+        "value": 4,
+        "min": 0,
+        "max": 10,
+        "step": "any"
+      },
+      {
+        "name": "policy",
+        "label": "Retake calculation policy",
+        "type": "select",
+        "options": [
+          [
+            "replace",
+            "Replace original attempt"
+          ],
+          [
+            "both",
+            "Count both attempts"
+          ]
+        ]
+      }
+    ],
+    "intro": "Compare the effect of a repeated course under replacement or both-attempts GPA rules.",
+    "formula": "Replacement: (Current GPA × Credits + (New − Old) × Course credits) ÷ Credits",
+    "example": "A 3.00 GPA over 30 credits includes a 3-credit course scored at 2.00 points. Replacing it with 4.00 adds six quality points, giving 96/30 = 3.20. Counting both attempts instead gives (90 + 12) ÷ 33 = 3.09.",
+    "detail": "The current GPA must already include the original course. Both attempts must have the same credit value and scale. This tool applies your selected policy as a scenario; it does not determine your school’s actual retake eligibility, limits or transcript rules. Rounded GPA inputs can make the estimate differ slightly from official totals.",
+    "note": "The current GPA must already include the original course. Both attempts must have the same credit value and scale. This tool applies your selected policy as a scenario; it does not determine your school’s actual retake eligibility, limits or transcript rules. Rounded GPA inputs can make the estimate differ slightly from official totals.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Which policy should I choose?",
+        "Check your registrar’s rules. Do not assume that a repeated course removes the original grade."
+      ],
+      [
+        "Does earned degree credit double when both attempts count?",
+        "Not necessarily. GPA-bearing attempted credits and credits earned toward graduation can be different totals."
+      ]
+    ]
+  },
+  {
+    "key": "weighted-gpa",
+    "slug": "custom-weighted-gpa-calculator",
+    "title": "Custom Weighted GPA Calculator",
+    "category": "gpa",
+    "description": "Calculate a credit-weighted GPA using your own eligible course bonuses.",
+    "fields": [
+      {
+        "name": "rows",
+        "label": "Course rows: base points, credits, bonus",
+        "value": "4, 3, 1\n3, 3, 0.5",
+        "type": "textarea",
+        "help": "One course per line. Enter base grade points (0–4), credits (above 0), and your school-approved bonus (0–2), separated by commas."
+      }
+    ],
+    "intro": "Calculate a credit-weighted GPA using your own eligible course bonuses.",
+    "formula": "Custom weighted GPA = Σ[(Base grade points + Bonus) × Credits] ÷ Σ(Credits)",
+    "example": "Two 3-credit courses have base points 4.0 and 3.0, with approved bonuses of 1.0 and 0.5. Their boosted points are 5.0 and 3.5, so the equally credited weighted GPA is 4.25.",
+    "detail": "This is a configurable model, not a universal high-school weighted GPA scale. Supply only bonuses your school allows for the actual grade and course level; enter zero where no bonus applies. Base points are limited to 0–4 and a bonus to 0–2. No automatic AP, honors, failed-course or admissions recalculation rule is assumed.",
+    "note": "This is a configurable model, not a universal high-school weighted GPA scale. Supply only bonuses your school allows for the actual grade and course level; enter zero where no bonus applies. Base points are limited to 0–4 and a bonus to 0–2. No automatic AP, honors, failed-course or admissions recalculation rule is assumed.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Should every AP course receive a 1.0 bonus?",
+        "Only if your school’s policy allows that bonus for that course and grade. Policies differ."
+      ],
+      [
+        "Can the result exceed 4.0?",
+        "Yes. Course bonuses can produce a weighted average above the base 4.0 scale."
+      ]
+    ]
+  },
+  {
+    "key": "study-time",
+    "slug": "study-time-planner",
+    "title": "Study Time Planner",
+    "category": "study",
+    "description": "Turn a topic list and review allowance into a daily study-time budget.",
+    "fields": [
+      {
+        "name": "topics",
+        "label": "Topics to study",
+        "value": 12,
+        "min": 1,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "minutes_per_topic",
+        "label": "Estimated minutes per topic",
+        "value": 30,
+        "min": 1e-06,
+        "max": 10000,
+        "step": "any"
+      },
+      {
+        "name": "days",
+        "label": "Study days available",
+        "value": 5,
+        "min": 1,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "review_percent",
+        "label": "Additional review allowance (%)",
+        "value": 25,
+        "min": 0,
+        "max": 200,
+        "step": "any"
+      }
+    ],
+    "intro": "Turn a topic list and review allowance into a daily study-time budget.",
+    "formula": "Minutes per day = Topics × Minutes per topic × (1 + Review allowance / 100) ÷ Study days",
+    "example": "Twelve topics at 30 minutes each need 360 minutes. Adding a 25% review allowance gives 450 minutes, or 7.5 hours. Spread over five study days, that is 90 minutes each day.",
+    "detail": "The estimate spreads time evenly across available study days. It assumes each topic needs the same time and adds review as a percentage of first-pass work. This is a planning budget, not a promise of mastery. Include only days you can use, then adjust for topic difficulty, breaks and practice exams.",
+    "note": "The estimate spreads time evenly across available study days. It assumes each topic needs the same time and adds review as a percentage of first-pass work. This is a planning budget, not a promise of mastery. Include only days you can use, then adjust for topic difficulty, breaks and practice exams.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Does the review allowance include breaks?",
+        "Only if you choose to include them in that allowance. Otherwise add break time separately."
+      ],
+      [
+        "What if some topics take much longer?",
+        "Run separate plans for groups of similar difficulty, then combine their daily budgets."
+      ]
+    ]
+  },
+  {
+    "key": "reading-time",
+    "slug": "reading-time-calculator",
+    "title": "Reading Time Calculator",
+    "category": "study",
+    "description": "Estimate reading time from page count, typical words per page and your measured speed.",
+    "fields": [
+      {
+        "name": "pages",
+        "label": "Pages to read",
+        "value": 20,
+        "min": 1e-06,
+        "max": 1000000.0,
+        "step": "any"
+      },
+      {
+        "name": "words_per_page",
+        "label": "Estimated words per page",
+        "value": 300,
+        "min": 1e-06,
+        "max": 10000,
+        "step": "any"
+      },
+      {
+        "name": "words_per_minute",
+        "label": "Reading speed (words per minute)",
+        "value": 200,
+        "min": 1e-06,
+        "max": 10000,
+        "step": "any"
+      }
+    ],
+    "intro": "Estimate reading time from page count, typical words per page and your measured speed.",
+    "formula": "Reading minutes = Pages × Words per page ÷ Words per minute",
+    "example": "Twenty pages at about 300 words each contain approximately 6,000 words. At 200 words per minute, the first-pass reading estimate is 30 minutes, or half an hour.",
+    "detail": "Words per page varies widely with formatting and subject matter. Use a sample from the actual text rather than treating the default as a measured average. This estimate excludes note-taking, problem solving, pauses and rereading. Technical material may need a different measured speed from ordinary prose.",
+    "note": "Words per page varies widely with formatting and subject matter. Use a sample from the actual text rather than treating the default as a measured average. This estimate excludes note-taking, problem solving, pauses and rereading. Technical material may need a different measured speed from ordinary prose.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "How can I estimate words per page?",
+        "Count words on a few representative pages and average those counts. Avoid pages dominated by figures or blank space."
+      ],
+      [
+        "Is the default speed a recommendation?",
+        "No. It is an editable example value. Use a speed measured on similar material."
+      ]
+    ]
+  },
+  {
+    "key": "reading-speed",
+    "slug": "reading-speed-calculator",
+    "title": "Reading Speed Calculator",
+    "category": "study",
+    "description": "Measure words per minute from a completed passage and elapsed reading time.",
+    "fields": [
+      {
+        "name": "word_count",
+        "label": "Words actually read",
+        "value": 600,
+        "min": 1,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "minutes",
+        "label": "Elapsed whole minutes",
+        "value": 2,
+        "min": 0,
+        "max": 1000000.0,
+        "step": "1"
+      },
+      {
+        "name": "seconds",
+        "label": "Additional elapsed seconds",
+        "value": 30,
+        "min": 0,
+        "max": 59.999999,
+        "step": "any"
+      }
+    ],
+    "intro": "Measure words per minute from a completed passage and elapsed reading time.",
+    "formula": "Words per minute = Words read ÷ (Minutes + Seconds / 60)",
+    "example": "Reading 600 words in two minutes and 30 seconds takes 2.5 minutes. Your measured speed is 600 ÷ 2.5 = 240 words per minute. Count only the words you actually finished.",
+    "detail": "Use a timed passage with a known word count and enter seconds below 60. Elapsed time must be positive. The result measures pace, not comprehension or retention. For a practical study estimate, repeat on similar texts and account separately for notes and exercises.",
+    "note": "Use a timed passage with a known word count and enter seconds below 60. Elapsed time must be positive. The result measures pace, not comprehension or retention. For a practical study estimate, repeat on similar texts and account separately for notes and exercises.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Should I include time spent taking notes?",
+        "Include it only if you want to measure the combined reading-and-note-taking pace. Keep the same method when comparing sessions."
+      ],
+      [
+        "Does faster reading always mean better learning?",
+        "No. Understanding, recall and the task itself matter. This calculator reports pace only."
+      ]
+    ]
+  },
+  {
+    "key": "exam-time",
+    "slug": "exam-time-allocation-calculator",
+    "title": "Exam Time Allocation Calculator",
+    "category": "study",
+    "description": "Budget exam minutes by mark value while reserving time for checking.",
+    "fields": [
+      {
+        "name": "exam_minutes",
+        "label": "Total exam minutes",
+        "value": 120,
+        "min": 1e-06,
+        "max": 1440,
+        "step": "any"
+      },
+      {
+        "name": "review_minutes",
+        "label": "Minutes reserved for checking",
+        "value": 15,
+        "min": 0,
+        "max": 1440,
+        "step": "any"
+      },
+      {
+        "name": "total_marks",
+        "label": "Total marks available",
+        "value": 100,
+        "min": 1e-06,
+        "max": 1000000.0,
+        "step": "any"
+      },
+      {
+        "name": "question_marks",
+        "label": "Marks for this question",
+        "value": 12,
+        "min": 1e-06,
+        "max": 1000000.0,
+        "step": "any"
+      }
+    ],
+    "intro": "Budget exam minutes by mark value while reserving time for checking.",
+    "formula": "Question minutes = (Exam minutes − Review minutes) ÷ Total marks × Question marks",
+    "example": "A 120-minute exam with 15 minutes reserved leaves 105 working minutes. With 100 marks available, that is 1.05 minutes per mark. A 12-mark question receives 12.6 minutes in this proportional plan.",
+    "detail": "This is a time budget based on marks, not a rule that every mark takes the same effort. Question marks cannot exceed the exam total and the checking reserve must leave positive working time. Use the marks for the questions you must answer, accounting for optional sections and the actual exam instructions.",
+    "note": "This is a time budget based on marks, not a rule that every mark takes the same effort. Question marks cannot exceed the exam total and the checking reserve must leave positive working time. Use the marks for the questions you must answer, accounting for optional sections and the actual exam instructions.",
+    "steps": [
+      "Enter the values from your syllabus, marks or personal study plan.",
+      "Check the units and assumptions shown below the inputs.",
+      "Select Calculate, then compare the result with the worked example and your actual course rules."
+    ],
+    "faq": [
+      [
+        "Should I include marks for optional questions I will not attempt?",
+        "No. Use the total marks for the set of questions required to complete your paper."
+      ],
+      [
+        "What if essay and short-answer questions need different pacing?",
+        "Use this as an initial budget, then adapt it to the demands of each section and your practice-paper experience."
+      ]
+    ]
+  }
+]

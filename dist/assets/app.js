@@ -1,3 +1,4 @@
+import {calculateExtra} from './extra-math.js';
 import * as math from './math.js';
 const theme=document.querySelector('.theme');
 let preference;
@@ -45,5 +46,10 @@ for(const form of document.querySelectorAll('[data-calculator]')){
   }else if(kind==='percentage'){const r=math.percentage(v.earned,v.possible);show('GRADE PERCENTAGE',fmt(r)+'%',`${v.earned} ÷ ${v.possible} × 100 = ${fmt(r)}%. Use your institution’s table for a letter grade.`);
   }else if(kind==='test'){const r=math.testScore(v.total,v.wrong);show('TEST SCORE',fmt(r.percent)+'%',`${r.correct} correct out of ${v.total} equally weighted questions. ${v.wrong} incorrect or unanswered.`);
   }else if(kind==='average'){const values=v.grades.trim()?v.grades.trim().split(/[,\s]+/):[];const r=math.average(values);show('EQUALLY WEIGHTED AVERAGE',fmt(r.value)+'%',`${r.count} grades. Lowest: ${fmt(r.min)}%. Highest: ${fmt(r.max)}%. All entered grades count equally.`);}
+  else {const r=calculateExtra(kind,v);show(r.label,r.value,r.description);}
  }catch(err){show('CHECK YOUR INPUTS','Please check these values.',err.message);result.classList.add('error');}});
 }
+
+const search=document.querySelector('#tool-search'),category=document.querySelector('#tool-category');
+function filterTools(){const query=search.value.trim().toLowerCase();let count=0;for(const card of document.querySelectorAll('[data-tool-card]')){const visible=(!query||card.textContent.toLowerCase().includes(query))&&(category.value==='all'||card.dataset.category===category.value);card.hidden=!visible;if(visible)count++;}document.querySelector('#tool-count').textContent=count?`${count} tool${count===1?'':'s'} available`:'No tools match. Try another search or category.';}
+search?.addEventListener('input',filterTools);category?.addEventListener('change',filterTools);

@@ -2,3 +2,5 @@
 body.dark .result.error strong{color:#ffb0ab}
 @media(max-width:620px){.hero-actions .btn{padding:12px 15px;font-size:14px;white-space:nowrap}.hero-actions a:last-child{font-size:12px}.hero-actions{gap:14px}}
 @media(max-width:620px){.field:has(select){grid-column:1/-1}}
+
+.tool-filters{display:grid;grid-template-columns:2fr 1fr;gap:20px;margin:24px 0 12px}[hidden]{display:none!important}.field textarea{min-height:110px}#tool-count{color:var(--muted);font-size:.9rem}@media(max-width:600px){.tool-filters{grid-template-columns:1fr}}
