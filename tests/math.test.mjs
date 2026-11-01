@@ -1,0 +1,14 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import * as m from '../dist/assets/math.js';
+const close=(a,b)=>assert.ok(Math.abs(a-b)<1e-8,`${a} differs from ${b}`);
+test('final target, overall, impossible and already-secured targets',()=>{close(m.finalNeeded(80,85,20),105);close(m.finalNeeded(62,60,40),57);close(m.finalOverall(85,90,30),86.5);close(m.finalNeeded(80,50,20),-70);close(m.finalNeeded(80,90,100),90);assert.equal(m.minimumDisplayed(101.666666666),101.67);assert.equal(m.minimumDisplayed(57),57);});
+test('final inverse property across 1000 valid combinations',()=>{for(let i=1;i<=1000;i++){const c=i%101,w=i%100+1,e=(i*13)%101,t=m.finalOverall(c,e,w);close(m.finalNeeded(c,t,w),e);}});
+test('weighted full, partial and module credits',()=>{close(m.weighted([[80,40],[70,60]]).average,74);const r=m.weighted([[80,40]]);close(r.average,80);close(r.contribution,32);close(r.remaining,60);close(m.weighted([[65,20],[75,40]],'credits').average,71.6666666667);});
+test('relative weights are invariant under scaling',()=>{for(let i=1;i<=50;i++){close(m.weighted([[25,2*i],[75,6*i]],'credits').average,62.5);}});
+test('GPA uses credits, supports zero grade, excludes no credits implicitly',()=>{const r=m.gpa([[4,3],[3,4],[2,2]]);close(r.value,28/9);assert.equal(r.points,28);assert.equal(r.credits,9);close(m.gpa([[0,3],[4,3]]).value,2);close(m.gpa([[4.33,3]],4.33).value,4.33);close(m.gpa([[9,3]],9).value,9);});
+test('cumulative does not equally average different credit counts',()=>{close(m.cumulative(3.2,45,3.8,15).value,3.35);});
+test('percentages accept partial marks and endpoints',()=>{close(m.percentage(42,50),84);close(m.percentage(17.5,20),87.5);close(m.percentage(0,20),0);close(m.percentage(20,20),100);});
+test('test question scoring and endpoints',()=>{assert.deepEqual(m.testScore(40,6),{correct:34,percent:85});assert.equal(m.testScore(10,10).percent,0);assert.equal(m.testScore(10,0).percent,100);});
+test('simple averages include awarded zero',()=>{close(m.average([80,90,85]).value,85);close(m.average([0,100]).value,50);assert.equal(m.average([50]).count,1);});
+test('invalid inputs reject blanks, nonfinite values, impossible counts and zero denominators',()=>{for(const fn of [()=>m.number('','Grade'),()=>m.number(' ','Grade'),()=>m.number(Infinity,'Grade'),()=>m.number('abc','Grade'),()=>m.finalNeeded(80,90,0),()=>m.finalNeeded(101,90,20),()=>m.weighted([]),()=>m.weighted([[80,60],[90,50]]),()=>m.weighted([[80,0]]),()=>m.gpa([[4.2,3]]),()=>m.gpa([[4,0]]),()=>m.cumulative(3,0,4,15),()=>m.percentage(5,0),()=>m.percentage(21,20),()=>m.testScore(40,41),()=>m.testScore(4.5,1),()=>m.testScore(4,1.5),()=>m.average([]),()=>m.average([101]),()=>m.average(['x'])])assert.throws(fn);});
