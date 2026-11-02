@@ -1,0 +1,770 @@
+[
+  {
+    "slug": "attendance-target-with-classes-remaining",
+    "title": "Can You Reach Your Attendance Target Before Term Ends?",
+    "description": "Check an attendance target against the actual classes remaining, with worked examples for recovery, future absences and an unreachable target.",
+    "excerpt": "Combine your attendance record with the remaining timetable before deciding whether a target is mathematically reachable.",
+    "category": "Study planning",
+    "primary_keyword": "attendance target with classes remaining",
+    "secondary_keywords": [
+      "attendance recovery",
+      "minimum classes to attend",
+      "attendance percentage target",
+      "remaining classes attendance"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "heading": "A recovery target needs a timetable",
+        "paragraphs": [
+          "An attendance calculator can tell you how many consecutive classes would raise your percentage. That answer is incomplete if the course finishes before those classes can occur. A useful attendance recovery plan checks both the required attendance count and the number of counted sessions actually remaining.",
+          "This guide uses equally weighted classes and a hypothetical percentage threshold. It does not establish an attendance requirement or exam eligibility. Your programme may monitor practical sessions, placements or engagement separately. Begin with the official register and the rules for the exact component you are checking."
+        ]
+      },
+      {
+        "id": "record",
+        "heading": "Write down four confirmed numbers",
+        "paragraphs": [
+          "Collect classes attended, classes held, the target percentage and future sessions remaining in the same reporting period. Exclude canceled sessions only according to the actual counting policy. Do not combine an attended lecture count with a denominator containing both lectures and practicals.",
+          "For the examples below, assume 30 classes have been held, 22 were attended and the target is 80%. There are ten scheduled sessions remaining. The threshold and timetable are invented to demonstrate the method, so replace them with your own confirmed figures."
+        ]
+      },
+      {
+        "id": "ceiling",
+        "heading": "Calculate the best possible final attendance",
+        "paragraphs": [
+          "If every remaining class is attended, the best possible final attendance is (Attended + Remaining) ÷ (Held + Remaining) × 100. Both numerator and denominator increase because the future classes become held classes as well as attended classes.",
+          "Our example gives (22 + 10) ÷ (30 + 10) × 100 = 80%. Therefore the target is just reachable, but only by attending all ten remaining counted sessions. Adding ten only to the numerator would incorrectly calculate 32 ÷ 30, which is not a possible attendance record."
+        ]
+      },
+      {
+        "id": "minimum",
+        "heading": "Find the minimum required future attendance",
+        "paragraphs": [
+          "When the number of remaining classes is fixed, required future attendances = ceiling[Target fraction × (Held + Remaining) − Attended]. The ceiling means round upward to a whole session. In the example, ceiling[0.80 × 40 − 22] = 10.",
+          "Compare that count with the remaining schedule. A requirement above the number of sessions means the target cannot be reached by attendance alone within this period. A nonpositive requirement means the final target is already protected mathematically even if no further sessions are attended; it does not grant permission to miss compulsory teaching."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "Compare a shorter or longer remaining schedule",
+        "paragraphs": [
+          "If only eight sessions remained, perfect future attendance would produce 30 ÷ 38 × 100 = 78.95%, below 80%. The attendance target calculator would still identify ten consecutive sessions as the recovery requirement, but the timetable supplies only eight. That is a schedule constraint, not a contradiction between the formulas.",
+          "If twelve sessions remained, the final denominator would be 42. You would need ceiling[0.80 × 42 − 22] = 12 future attendances. Eleven would produce 33 out of 42, or 78.57%. A larger remaining schedule does not always create an immediate spare absence because the required percentage also applies to the larger final total."
+        ]
+      },
+      {
+        "id": "setback",
+        "heading": "Recalculate after a new absence",
+        "paragraphs": [
+          "With the original ten sessions remaining, missing the next session leaves 22 attended out of 31 held and nine future sessions. Even attending all nine gives 31 out of 40, or 77.5%. The original 80% final target is then unreachable under the unchanged counting assumptions.",
+          "Keep the register updated after each session rather than repeatedly using the original starting values. If an entry is disputed, request a correction through the institution’s process with accurate supporting information. A mathematical plan cannot establish attendance, approve leave or change how an absence is officially classified."
+        ]
+      },
+      {
+        "id": "policy",
+        "heading": "Check units and separate attendance conditions",
+        "paragraphs": [
+          "Equal-session calculations are unsuitable when the policy counts hours and sessions differ in length. Two one-hour lectures and a four-hour practical are three events but six hours. An event percentage and an hour percentage answer different questions.",
+          "University of Leeds guidance illustrates that attendance expectations include several types of teaching and can differ by study mode. That is a reminder to read your own programme rules, not a source for the example’s 80% threshold. Confirm whether each compulsory component has a separate requirement before pooling totals."
+        ]
+      },
+      {
+        "id": "plan",
+        "heading": "Make a practical recovery checklist",
+        "paragraphs": [
+          "Check the remaining dates against the timetable, record the counting unit and write the mathematical minimum beside the target. Then identify what action is appropriate if the schedule cannot supply enough sessions: an adviser can explain actual course procedures, while the calculator can only show the arithmetic.",
+          "Use the Attendance Percentage Calculator for the current snapshot and the Attendance Target Calculator for consecutive-class recovery. Keep this fixed-schedule check alongside their results. Revisit the plan whenever a class is canceled, a register entry changes or your remaining timetable is revised."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: the schedule is exactly long enough",
+      "caption": "Hypothetical 80% target with equally weighted classes; this is not an institutional attendance rule.",
+      "steps": [
+        {
+          "label": "Current record",
+          "value": "22 of 30",
+          "detail": "Eight held classes have been missed."
+        },
+        {
+          "label": "Future schedule",
+          "value": "10 sessions",
+          "detail": "All ten must be counted and attended."
+        },
+        {
+          "label": "Best final record",
+          "value": "32 of 40 = 80%",
+          "detail": "One further absence would reduce the final percentage."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can the calculator tell me whether I may sit an exam?",
+        "No. It checks numerical attendance assumptions, while exam eligibility can involve separate components, documentation and institutional decisions."
+      ],
+      [
+        "Should I include future classes in my current percentage?",
+        "No. Current attendance uses classes already held. Include future sessions only when modeling the final record or a recovery scenario."
+      ],
+      [
+        "What if my required count exceeds classes remaining?",
+        "The target is unreachable through the remaining schedule under the stated model. Confirm the record and discuss the actual course procedures with your institution."
+      ]
+    ],
+    "tool_slugs": [
+      "attendance-percentage-calculator",
+      "attendance-target-calculator"
+    ],
+    "sources": [
+      {
+        "label": "University of Leeds: attendance expectations",
+        "url": "https://students.leeds.ac.uk/attendance-absences/doc/attendance-expectations"
+      }
+    ]
+  },
+  {
+    "slug": "measure-reading-speed-with-comprehension",
+    "title": "How to Measure Reading Speed Without Ignoring Comprehension",
+    "description": "Measure words per minute using a repeatable reading sample, check comprehension separately and turn the result into a realistic reading-time estimate.",
+    "excerpt": "A timed passage is useful only when its difficulty, reading purpose and understanding are recorded alongside the speed.",
+    "category": "Study planning",
+    "primary_keyword": "how to measure reading speed",
+    "secondary_keywords": [
+      "reading speed with comprehension",
+      "words per minute test",
+      "academic reading pace",
+      "reading time estimate"
+    ],
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Measure a task, not a personal label",
+        "paragraphs": [
+          "A reading-speed measurement describes what you did with a particular passage under particular conditions. It is not a permanent score for your ability. Reading a familiar story, interpreting a research method and checking a mathematical proof can require different amounts of time.",
+          "Before timing, decide what success means. You might need to identify the main argument, explain a process or collect evidence for an essay. Cornell’s reading guidance emphasizes choosing an approach that suits the assignment’s purpose. Keep that purpose constant when comparing your own timed samples."
+        ]
+      },
+      {
+        "id": "sample",
+        "heading": "Choose a representative passage",
+        "paragraphs": [
+          "Use a passage similar to the material you need to read next. Record its subject, approximate difficulty, format and word count. Include words you actually read rather than the full chapter if you stop partway through. Avoid selecting an unusually easy paragraph simply to produce a higher rate.",
+          "Prepare a separate, brief comprehension check before the timed attempt where practical. This might contain three questions about the central claim, supporting evidence and an important qualification. If you write the questions after seeing your answers, it becomes easier to unconsciously choose only details you remember."
+        ]
+      },
+      {
+        "id": "timing",
+        "heading": "Use one clear timing method",
+        "paragraphs": [
+          "Start when you begin reading and stop when you finish the counted passage. Decide in advance whether note-taking and rereading belong inside the measurement. Either choice can be useful, but switching methods between attempts makes their rates difficult to compare.",
+          "Record minutes and seconds exactly. A stopwatch showing 3:20 means three minutes and twenty seconds, or 3 + 20 ÷ 60 = 3.333… minutes. It does not mean 3.20 minutes. Keep interruptions in a separate note rather than silently removing time in a way you cannot reproduce later."
+        ]
+      },
+      {
+        "id": "calculation",
+        "heading": "Calculate a correctly timed example",
+        "paragraphs": [
+          "Suppose you read 800 words in three minutes and twenty seconds. Reading speed = Words completed ÷ Elapsed minutes. Here, 800 ÷ 3.333… = 240 words per minute. Enter 800 words, three minutes and twenty seconds in the Reading Speed Calculator.",
+          "Now suppose you read only 650 of those 800 words before stopping. The correct rate for the same elapsed time is 195 words per minute. Counting the entire passage would include 150 unread words and overstate the measurement. The denominator and numerator must describe the same completed reading interval."
+        ]
+      },
+      {
+        "id": "comprehension",
+        "heading": "Check understanding without the passage open",
+        "paragraphs": [
+          "After the timed reading, close or cover the passage and write a short explanation in your own words. Answer the questions you prepared, then return to the text and check for errors. Notice omissions as well as incorrect statements: remembering the topic is different from accurately explaining the argument.",
+          "For example, two attempts might produce 240 and 280 words per minute, but the second explanation may miss the author’s main limitation. The faster rate is not automatically the better academic reading outcome. Keep your comprehension notes alongside the timing instead of combining both into an invented universal score."
+        ]
+      },
+      {
+        "id": "repeat",
+        "heading": "Repeat with comparable material",
+        "paragraphs": [
+          "Try several passages on different occasions before using one result to plan a large assignment. Record what changed, such as unfamiliar vocabulary, tables, fatigue or the need to take notes. A small collection of comparable measurements is more useful than repeatedly reading the same passage until its content becomes memorized.",
+          "Use a conservative pace drawn from tasks that resemble the upcoming assignment. If your recent comparable readings took longer when notes were required, use that slower task-specific rate for scheduling. There is no need to label it as a low ability or to chase a benchmark that does not match your reading purpose."
+        ]
+      },
+      {
+        "id": "estimate",
+        "heading": "Translate the measurement into a reading budget",
+        "paragraphs": [
+          "At 240 words per minute, an estimated 7,200-word reading takes thirty minutes at that measured pace. If the assignment also requires a fifteen-minute written response, budget that separately unless response writing was included in the pace measurement. The combined example would require forty-five minutes.",
+          "Pages are only an indirect measure of text amount. Twenty-four pages at an estimated 300 words per page also gives 7,200 words, but diagrams, references and different layouts can change the estimate. Sample the actual document rather than assuming every academic page contains the same number of words."
+        ]
+      },
+      {
+        "id": "adjust",
+        "heading": "Use the result to improve the reading process",
+        "paragraphs": [
+          "When understanding is weak, identify the cause before trying to accelerate. You may need to clarify terminology, read a section again, connect a diagram to the text or ask a course question. When understanding is strong but time is tight, preview headings and select the depth appropriate to the task rather than skipping essential evidence.",
+          "The Reading Time Calculator can turn your chosen pace into a first estimate, and the Study Time Planner can help place reading within a wider workload. Neither tool assesses comprehension. Keep the passage check as an explicit part of your process and revise the estimate when the actual task proves different."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: timing and understanding stay separate",
+      "caption": "The comprehension check adds context; it is not converted into an invented standardized reading score.",
+      "steps": [
+        {
+          "label": "Counted text",
+          "value": "800 words",
+          "detail": "Only the passage actually completed."
+        },
+        {
+          "label": "Elapsed time",
+          "value": "3 min 20 sec",
+          "detail": "Equivalent to 3.333… minutes."
+        },
+        {
+          "label": "Reading rate",
+          "value": "240 WPM",
+          "detail": "800 divided by elapsed minutes."
+        },
+        {
+          "label": "Understanding",
+          "value": "Explain and check",
+          "detail": "Verify the central argument and key qualifications."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Should I time note-taking too?",
+        "Include it when you want a pace for reading with notes. Exclude it when measuring reading alone. Label the method and keep it consistent."
+      ],
+      [
+        "Is a higher words-per-minute result always better?",
+        "No. A faster attempt that misses essential meaning may be less useful for the assignment. Review understanding separately from speed."
+      ],
+      [
+        "Can one sample predict a whole textbook?",
+        "Only roughly. Different sections, vocabulary and tasks can change the pace. Use several comparable samples and update the estimate as you work."
+      ]
+    ],
+    "tool_slugs": [
+      "reading-speed-calculator",
+      "reading-time-calculator",
+      "study-time-planner"
+    ],
+    "sources": [
+      {
+        "label": "Cornell Learning Strategies Center: purpose, preview and a reading plan",
+        "url": "https://lsc.cornell.edu/how-to-study/reading-strategies/3-ps-for-effective-reading/"
+      }
+    ]
+  },
+  {
+    "slug": "seven-day-final-exam-study-plan",
+    "title": "A Seven-Day Final Exam Study Plan With a Real Time Budget",
+    "description": "Build a practical seven-day revision plan using topic priorities, focused practice, review blocks and a worked 630-minute schedule you can adapt.",
+    "excerpt": "Allocate a realistic week of preparation, then adjust the plan using practice evidence instead of filling every hour with vague revision.",
+    "category": "Study planning",
+    "primary_keyword": "seven day final exam study plan",
+    "secondary_keywords": [
+      "one week revision timetable",
+      "final exam preparation schedule",
+      "study time budget",
+      "exam review plan"
+    ],
+    "sections": [
+      {
+        "id": "start",
+        "heading": "Start with the week you actually have",
+        "paragraphs": [
+          "A seven-day final exam study plan should fit around classes, work, other deadlines and rest. A timetable is less useful when it assumes every spare hour will become focused study. Begin by listing genuinely available preparation sessions, then decide what can be completed inside them.",
+          "This guide offers an original worked schedule, not a promise about examination results. Cornell’s study-planning guidance supports preparing material in advance and reviewing it across several days. The numerical seven-day budget below is our example; it is not Cornell’s prescribed timetable or an institution’s required study duration."
+        ]
+      },
+      {
+        "id": "scope",
+        "heading": "Turn the syllabus into specific tasks",
+        "paragraphs": [
+          "List the examinable areas and the question types you need to handle. Replace a broad entry such as “revise chemistry” with a task that produces evidence: solve five equilibrium problems without notes, explain a reaction mechanism or compare two definitions from memory.",
+          "For the worked example, assume ten comparable topic blocks, each needing forty minutes of first-pass preparation. That gives 400 minutes. Reserve another 230 minutes for retrieval practice, mixed questions, marking and final review. The total is 630 focused minutes across the seven days; breaks and ordinary daily commitments are outside this budget."
+        ]
+      },
+      {
+        "id": "priorities",
+        "heading": "Choose priorities before distributing minutes",
+        "paragraphs": [
+          "Use the exam specification, previous feedback and a short diagnostic attempt to identify weaknesses. Consider both the importance of a topic and the work needed to improve it. A familiar low-value topic should not consume the entire week just because revising it feels comfortable.",
+          "The equal forty-minute topic blocks are a planning simplification. If one topic needs substantially more work, split it into smaller tasks or transfer time from a stronger area. Record the change so that a revised timetable still adds up to the available budget. Adding tasks without moving time elsewhere creates an unacknowledged overload."
+        ]
+      },
+      {
+        "id": "days",
+        "heading": "A worked seven-day schedule",
+        "paragraphs": [
+          "Use 100 minutes on each of Days 1–4: eighty minutes for two topic blocks and twenty minutes for practice or review. Those four days complete eight topics and use 400 minutes overall. Revisit earlier material in the review portion rather than reviewing only the topics just completed.",
+          "On Day 5, use eighty minutes for the remaining two topics and twenty minutes for review, making another 100 minutes. On Day 6, spend eighty minutes on mixed practice and checking your answers. On Day 7, use fifty minutes for a focused error review, essential reminders and checking exam arrangements. The weekly total is 400 + 100 + 80 + 50 = 630 minutes."
+        ]
+      },
+      {
+        "id": "sessions",
+        "heading": "Give each session an observable output",
+        "paragraphs": [
+          "A practice block should end with something you can inspect: marked answers, a closed-book explanation, an error log or a corrected worked example. An hour spent looking at open notes does not tell you which questions you can answer unaided.",
+          "For a topic session, first identify what you need to know, then attempt a representative task and inspect the gap. Use the review blocks for retrieving earlier learning and fixing errors. The plan becomes more informative when you record both the time used and the task completed, rather than marking a session successful merely because its timer finished."
+        ]
+      },
+      {
+        "id": "buffer",
+        "heading": "Adapt when a day goes wrong",
+        "paragraphs": [
+          "If Day 3 loses forty minutes, do not pretend the missing topic was completed. Choose between moving a task into a genuine later opening, reducing a lower-priority task or seeking help with the difficult area. Preserve enough checking time to discover whether the revision is working.",
+          "Also distinguish focus time from calendar time. A 100-minute focused budget may require a longer appointment once breaks, setup and transitions are included. Do not compress food, sleep, travel and other obligations into nonexistent gaps. When several exams compete for the same week, make one combined schedule so the same hour is not allocated twice."
+        ]
+      },
+      {
+        "id": "tools",
+        "heading": "Use calculators to check the plan, not choose the learning",
+        "paragraphs": [
+          "The Study Time Planner can verify a topic-and-review budget. For this example, ten topics at forty minutes give 400 minutes; a 57.5% review allowance adds 230, and seven days produce a ninety-minute daily average. The actual schedule deliberately varies the days while retaining the same total.",
+          "The Final Grade Calculator can identify the score associated with a stated course target, but that number cannot tell you how many minutes of revision will produce it. Compare the target with relevant practice evidence, and avoid treating a calculated minimum as a prediction or a reason to ignore separate exam requirements."
+        ]
+      },
+      {
+        "id": "finish",
+        "heading": "End with a clear handover to exam day",
+        "paragraphs": [
+          "Before the final day ends, confirm the start time, location, permitted materials and relevant assessment instructions. Decide which reminders are essential and keep them brief enough to review without restarting the whole course. Use the error log to select a small number of unfinished questions that genuinely need attention.",
+          "After the exam, retain the timetable and compare estimated task lengths with the time actually needed. That record can improve the next study plan even before a grade arrives. A useful schedule is an adjustable account of tasks and time, not a guarantee that every topic will be mastered after a predetermined number of minutes."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: 630 focused minutes across seven days",
+      "caption": "This original schedule separates 400 minutes of topic preparation from 230 minutes of review and practice.",
+      "steps": [
+        {
+          "label": "Days 1–4",
+          "value": "100 min each",
+          "detail": "Two forty-minute topics plus twenty minutes of review daily."
+        },
+        {
+          "label": "Day 5",
+          "value": "100 min",
+          "detail": "Finish two topics and review for twenty minutes."
+        },
+        {
+          "label": "Day 6",
+          "value": "80 min",
+          "detail": "Mixed practice and answer checking."
+        },
+        {
+          "label": "Day 7",
+          "value": "50 min",
+          "detail": "Targeted error review and essential preparation."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Must I study exactly ninety minutes every day?",
+        "No. Ninety minutes is the average of this example. Distribute the total around real availability while keeping tasks and review time visible."
+      ],
+      [
+        "What if I have more than ten topics?",
+        "Estimate their actual size, group small items or split large ones, and recalculate the available budget. The ten-topic scenario is only an illustration."
+      ],
+      [
+        "Does this plan guarantee the final score I need?",
+        "No. Time allocation cannot guarantee a grade. Use practice performance and course feedback to check understanding and adjust preparation."
+      ]
+    ],
+    "tool_slugs": [
+      "study-time-planner",
+      "final-grade-calculator",
+      "exam-time-allocation-calculator"
+    ],
+    "sources": [
+      {
+        "label": "Cornell Learning Strategies Center: preparing and reviewing across days",
+        "url": "https://lsc.cornell.edu/how-to-study/studying-for-and-taking-exams/the-five-day-study-plan/"
+      }
+    ]
+  },
+  {
+    "slug": "exam-pacing-optional-questions",
+    "title": "Exam Pacing When You Can Choose Which Questions to Answer",
+    "description": "Allocate exam time when a paper includes optional questions. Use required marks, protect checking time and build realistic checkpoints from a worked example.",
+    "excerpt": "An optional-question paper needs a pacing plan based on the answers required, not every mark printed in the booklet.",
+    "category": "Study planning",
+    "primary_keyword": "exam pacing optional questions",
+    "secondary_keywords": [
+      "minutes per mark",
+      "exam time allocation",
+      "optional exam questions",
+      "exam checkpoints"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "heading": "Count the paper you must complete",
+        "paragraphs": [
+          "A paper might contain six essay questions but ask you to answer only three. Dividing writing time by the marks printed across all six questions gives the wrong pacing rate. You need the mark total for the permitted answer combination you will actually submit.",
+          "Begin with the exam cover sheet. Identify compulsory sections, optional choices, section-specific restrictions and the time available for writing. A general minutes-per-mark calculation cannot override those instructions. Do not assume that answering extra questions will earn extra credit or that an examiner will select the strongest answer for you."
+        ]
+      },
+      {
+        "id": "structure",
+        "heading": "Separate selection, working and checking time",
+        "paragraphs": [
+          "Your plan may need time for choosing questions, writing answers and checking the script. If a separate reading period exists, confirm what you are allowed to do during it and whether it falls inside or outside the stated writing duration.",
+          "For example, University of Melbourne rules restrict writing, selecting answers and other actions during reading time unless the exam cover sheet says otherwise. That is an institution-specific rule, not a universal instruction for every exam. Follow the rules for your own paper before assigning a task to a particular time period."
+        ]
+      },
+      {
+        "id": "marks",
+        "heading": "Build a required-marks worksheet",
+        "paragraphs": [
+          "Consider a hypothetical 120-minute paper. Section A is compulsory and carries forty marks. Section B offers four questions worth thirty marks each, but you must answer two. The required answer total is 40 + 30 + 30 = 100 marks.",
+          "The booklet prints 160 marks of questions, but you should not divide by 160 because sixty printed marks belong to questions you will not answer. Check that your selected combination meets every section rule; a numerically correct total can still describe an invalid selection if a compulsory question is omitted."
+        ]
+      },
+      {
+        "id": "budget",
+        "heading": "Work through the pacing calculation",
+        "paragraphs": [
+          "Suppose you reserve fifteen of the 120 writing minutes for final checking. This leaves 105 working minutes. Dividing by 100 required marks gives 1.05 minutes per mark. Section A receives 40 × 1.05 = 42 working minutes, and each selected Section B question receives 31.5.",
+          "The complete allocation is 42 + 31.5 + 31.5 + 15 = 120 minutes. A value of 31.5 means thirty-one minutes and thirty seconds, not thirty-one minutes and five seconds. The Exam Time Allocation Calculator can check each question allowance once the required-mark total and reserve are confirmed."
+        ]
+      },
+      {
+        "id": "checkpoints",
+        "heading": "Turn allowances into elapsed-time checkpoints",
+        "paragraphs": [
+          "If you begin working on Section A at the start of writing time, the first checkpoint is 42 minutes elapsed. After the first selected essay it is 73.5 minutes, and after the second it is 105 minutes. The remaining fifteen minutes are the planned checking reserve.",
+          "Convert those elapsed milestones to clock times only after confirming the actual start time. If writing begins at 10:00, the example milestones are 10:42, 11:13:30 and 11:45, finishing at 12:00. Use whatever clock or timing method is permitted rather than bringing an unauthorized device into the venue."
+        ]
+      },
+      {
+        "id": "choice",
+        "heading": "Choose questions by coverage and evidence",
+        "paragraphs": [
+          "When selection is allowed, compare the task words, subparts and evidence each question demands. Recognizing a topic heading does not mean you can answer the complete question. A short permitted planning step can identify whether you have enough relevant material for every part of a proposed answer.",
+          "Try an optional-question practice paper before the exam and record how long selection takes. If that time must come out of the writing period, budget it explicitly. For instance, reserving five minutes for selection as well as fifteen for checking leaves 100 working minutes, changing the proportional rate to one minute per required mark."
+        ]
+      },
+      {
+        "id": "adjust",
+        "heading": "Respond to a missed checkpoint deliberately",
+        "paragraphs": [
+          "If a thirty-mark answer takes forty minutes instead of its 31.5-minute allowance, the overrun is 8.5 minutes. Continuing without changing the plan does not restore that time. Review what remains, identify essential unfinished parts and decide how to use the reduced budget within the paper’s instructions.",
+          "The proportional schedule is a starting framework, not an instruction to abandon a sentence at an arbitrary second. Different question formats may need different planning or calculation effort. Preserve awareness of the whole paper, and avoid repeatedly taking time from an untouched compulsory section because the current question feels almost finished."
+        ]
+      },
+      {
+        "id": "check",
+        "heading": "Use the final reserve for a defined review",
+        "paragraphs": [
+          "Checking time is more useful when you know what to check: unanswered subparts, omitted units, answer numbering, inconsistent signs, unsupported claims or a missed instruction. The appropriate list depends on the subject and assessment format. It is not simply fifteen minutes to reread every word without a purpose.",
+          "After practice, compare each allocation with the time actually used and the marks lost through omissions. Revise the plan using that evidence. Optional-question pacing works best when selection rules, required marks and the available writing period are all correct before the first division is performed."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: use 100 required marks, not 160 printed marks",
+      "caption": "Hypothetical 120-minute writing period; selection time must be budgeted separately if it consumes writing time.",
+      "steps": [
+        {
+          "label": "Required work",
+          "value": "40 + 30 + 30 = 100 marks",
+          "detail": "One compulsory section and two selected questions."
+        },
+        {
+          "label": "Working time",
+          "value": "120 − 15 = 105 min",
+          "detail": "Keep a fifteen-minute checking reserve."
+        },
+        {
+          "label": "Proportional pace",
+          "value": "1.05 min per mark",
+          "detail": "The forty-mark section gets 42 minutes; each essay gets 31.5."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Should optional questions count in total marks?",
+        "Count the marks for the required answer combination, not every question offered. Follow the paper’s compulsory and optional section rules."
+      ],
+      [
+        "Can I use reading time to write a plan?",
+        "Only if the actual exam rules permit it. Reading-time restrictions differ, so check the cover sheet and supervisor instructions."
+      ],
+      [
+        "Must equal-mark questions receive exactly equal time?",
+        "Not necessarily. Proportional timing is a starting budget. Practice can reveal different planning needs, but any change must still fit the whole paper."
+      ]
+    ],
+    "tool_slugs": [
+      "exam-time-allocation-calculator",
+      "study-time-planner"
+    ],
+    "sources": [
+      {
+        "label": "University of Melbourne: exam and reading-time rules",
+        "url": "https://students.unimelb.edu.au/course-admin/exams/exam-rules"
+      }
+    ]
+  },
+  {
+    "slug": "dropped-grade-policy-points-vs-percentages",
+    "title": "Dropped Grades: Why the Lowest Percentage May Not Be Removed",
+    "description": "Understand dropped-grade policies for equal-weight scores and pooled points, with an example where removing the lowest percentage is not the best group result.",
+    "excerpt": "Check eligibility, point totals and the gradebook rule before assuming that “drop lowest” means remove the smallest percentage.",
+    "category": "Study planning",
+    "primary_keyword": "dropped grade policy points vs percentages",
+    "secondary_keywords": [
+      "drop lowest grade rule",
+      "Canvas drop lowest score",
+      "unequal point assignments",
+      "dropped assignment average"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "heading": "The word lowest does not define the whole rule",
+        "paragraphs": [
+          "A syllabus may say that one quiz grade is dropped, but that phrase alone does not identify every detail of the calculation. Which assignments are eligible? Are scores averaged as equal percentages or pooled as raw points? Does the system remove the smallest percentage or the assignment whose removal produces the best group result?",
+          "Those questions matter when assessments have different point totals. A short weak quiz and a large moderately weak exam can affect the pooled group differently. Reconstruct the stated rule before treating a calculator result as an explanation of what the gradebook must display."
+        ]
+      },
+      {
+        "id": "eligible",
+        "heading": "Identify the eligible set first",
+        "paragraphs": [
+          "List each assessment’s earned points, possible points and whether it can be dropped. Check for a minimum number of completed tasks, protected assessments and rules about missing work. An assignment marked “never drop” must remain even when its removal would raise the mathematical average.",
+          "Only remove a zero if the policy allows that particular assessment to be excluded. A blank for ungraded work is different from an awarded zero, and a compulsory-submission condition may still apply. Do not change the source record while experimenting; keep the original scores beside each hypothetical scenario."
+        ]
+      },
+      {
+        "id": "equal",
+        "heading": "Equal-weight percentages are the simpler case",
+        "paragraphs": [
+          "For four equally important quiz percentages of 60, 80, 90 and 100, the original mean is 330 ÷ 4 = 82.5%. Dropping the lowest eligible percentage leaves 80, 90 and 100, which average 270 ÷ 3 = 90%. Both the sum and the count change.",
+          "The Drop Lowest Grade Calculator uses this equal-weight percentage model. It does not examine raw assignment point totals or decide which assessments are policy-eligible. Entering unequal-point assignments as percentages silently changes their importance unless the instructor actually assigns them equal weight."
+        ]
+      },
+      {
+        "id": "points",
+        "heading": "A pooled-points example changes the decision",
+        "paragraphs": [
+          "Consider three assessments scored 6/10, 70/100 and 90/100. Their percentages are 60%, 70% and 90%. The pooled group score is (6 + 70 + 90) ÷ (10 + 100 + 100) × 100 = 79.05%. Each available point has equal importance in this system.",
+          "Removing the lowest percentage, 6/10, leaves 160/200 = 80%. Removing 70/100 instead leaves 96/110 = 87.27%. Removing 90/100 leaves 76/110 = 69.09%. Therefore the best pooled result comes from removing the 70% assessment, even though 60% is the smallest percentage in the original list."
+        ]
+      },
+      {
+        "id": "software",
+        "heading": "Read what the gradebook actually optimizes",
+        "paragraphs": [
+          "Instructure’s official Canvas documentation explains that its assignment-group drop rule can select the removal that most improves the group total. It is therefore unsafe to assume that every gradebook’s “lowest score” label refers only to sorting displayed percentages. Inspect the actual rule and point structure.",
+          "That behavior does not establish a universal policy across all platforms or courses. Your instructor’s syllabus and configured group rules still determine the eligible calculations. When the displayed exclusion surprises you, compare the retained earned-and-possible totals before concluding that the software has made an arithmetic error."
+        ]
+      },
+      {
+        "id": "course",
+        "heading": "Apply the category weight after the drop",
+        "paragraphs": [
+          "Suppose the example group contributes 20% of the course. A retained group score of 87.27% contributes approximately 17.45 course percentage points. A retained score of 80% contributes sixteen points. The difference at course level is smaller than the difference between the group percentages because the category supplies only one fifth of the course.",
+          "Keep unrounded fractions for your manual check where possible. For the better pooled outcome, 96 ÷ 110 × 0.20 × 100 = 17.4545… course points. Do not multiply each retained assignment separately by the full 20% category weight; that would apply the category’s importance more than once."
+        ]
+      },
+      {
+        "id": "timing",
+        "heading": "Expect a provisional exclusion to change",
+        "paragraphs": [
+          "When new grades arrive, the best removal may change because both the group’s score distribution and available point total change. An assessment currently shown as dropped is not necessarily permanently excluded from the final record. Check whether the course applies drops continuously or only once all required work has been marked.",
+          "A plan based on an expected future drop should therefore be labeled provisional. Recalculate after each new assessment and verify that the required number of eligible scores exists. Do not assume the exclusion can be used a second time in another category or that it removes an independent attendance or submission condition."
+        ]
+      },
+      {
+        "id": "audit",
+        "heading": "A short checklist for an unexplained result",
+        "paragraphs": [
+          "Check the eligible assignments, retained numerator, retained denominator, category weight and any protected scores. Then calculate the plausible removal alternatives. If one matches the gradebook, describe that mathematical rule clearly when asking the instructor for confirmation.",
+          "Use the Grade Percentage Calculator for each retained pooled total, the Drop Lowest Grade Calculator for genuinely equal-weight percentages and the Weighted Grade Calculator for combining the resulting category with others. Choosing the correct model is more important than choosing the model that gives the highest number."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: the smallest percentage is not the best removal",
+      "caption": "All three assessments are assumed eligible. This is a pooled-points illustration, not an inferred rule for your course.",
+      "steps": [
+        {
+          "label": "Original group",
+          "value": "166 / 210 = 79.05%",
+          "detail": "Scores are 6/10, 70/100 and 90/100."
+        },
+        {
+          "label": "Drop60% score",
+          "value": "160 / 200 = 80%",
+          "detail": "Remove the six earned and ten possible points."
+        },
+        {
+          "label": "Drop70% score",
+          "value": "96 / 110 = 87.27%",
+          "detail": "This removal produces the stronger pooled result."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can the equal-percentage calculator reproduce every Canvas drop?",
+        "No. It averages equal-weight percentages. Unequal possible points and eligibility rules require a separate retained-points calculation."
+      ],
+      [
+        "Does a dropped score disappear from my academic record?",
+        "This guide concerns its exclusion from a calculation. Display, transcript and submission treatment depend on institutional and course rules."
+      ],
+      [
+        "Why did the dropped assignment change after another quiz?",
+        "A new score can change which eligible removal produces the best group result. Check how and when the configured rule is applied."
+      ]
+    ],
+    "tool_slugs": [
+      "drop-lowest-grade-calculator",
+      "grade-percentage-calculator",
+      "weighted-grade-calculator"
+    ],
+    "sources": [
+      {
+        "label": "Instructure Canvas: assignment-group drop rules",
+        "url": "https://community.instructure.com/en/kb/articles/660670-how-do-i-create-rules-for-an-assignment-group"
+      }
+    ]
+  },
+  {
+    "slug": "uk-module-and-year-weighted-averages",
+    "title": "UK Module and Year Weighted Averages: A Worked Planning Method",
+    "description": "Calculate a credit-weighted module average, then combine year averages using stated year weights. Understand why this estimate is not an official degree classification.",
+    "excerpt": "Keep module credits and year weights as two separate layers when estimating a university average.",
+    "category": "Study planning",
+    "primary_keyword": "UK module and year weighted averages",
+    "secondary_keywords": [
+      "credit weighted module average",
+      "university year weighting",
+      "degree average calculation",
+      "module credits and marks"
+    ],
+    "sections": [
+      {
+        "id": "layers",
+        "heading": "Two weighting layers answer different questions",
+        "paragraphs": [
+          "A UK university record may combine marks within an academic year using module credits, then combine eligible year averages using separate year weights. Treating every module across all years as one undifferentiated list can lose that second layer.",
+          "This guide demonstrates a hypothetical calculation, not the regulations of a particular programme. Universities and programmes may differ in which credits count, how reassessments are treated and how award decisions are made. The arithmetic can estimate a mark only after the relevant inclusion and weighting rules are confirmed."
+        ]
+      },
+      {
+        "id": "rules",
+        "heading": "Collect the programme and cohort instructions",
+        "paragraphs": [
+          "Find the regulations that apply to your programme and entry cohort. Record eligible modules, their credit values, any capped counted marks and the contribution of each academic stage. Distinguish a mark shown on feedback from a mark that the regulations specify for a later award calculation.",
+          "The University of Manchester’s regulations page separates rules for different registration periods and directs students to their school for guidance. That illustrates why a rule found online for another cohort is not automatically applicable to your record. Do not copy a generic year split into a calculator merely because it appears common."
+        ]
+      },
+      {
+        "id": "year",
+        "heading": "Calculate a hypothetical module average",
+        "paragraphs": [
+          "Assume a sample stage has four counted modules: 62% for twenty credits, 68% for twenty credits, 70% for forty credits and 58% for forty credits. The total is 120 credits. Multiply each mark by its credits before adding the products.",
+          "The products are 1,240, 1,360, 2,800 and 2,320, totaling 7,720 mark-credit units. Divide 7,720 by 120 to obtain 64.333…%. This is the stage’s credit-weighted average under the example’s inclusion rules. The larger modules carry twice the influence of the twenty-credit modules."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "Check the tempting simple average",
+        "paragraphs": [
+          "The simple mean of 62, 68, 70 and 58 is 64.5%. That is different from the credit-weighted 64.333…% because it treats all four modules as equally important. The difference is small in this particular example, but that does not make the unweighted method generally valid.",
+          "A useful check is to split each forty-credit module into two identical twenty-credit contributions. The equivalent six equal-credit marks are 62, 68, 70, 70, 58 and 58. Their mean is 386 ÷ 6 = 64.333…%, confirming the weighted calculation without changing the original module values."
+        ]
+      },
+      {
+        "id": "years",
+        "heading": "Apply a separate hypothetical year split",
+        "paragraphs": [
+          "Now assume the programme’s stated calculation gives this stage a 40% contribution and the next eligible stage a 60% contribution. Suppose the later stage’s correctly calculated average is 70%. The combined mark is 64.333… × 0.40 + 70 × 0.60 = 67.733…%.",
+          "These 40/60 weights are invented for illustration and should not be interpreted as a standard UK split. In the Weighted Grade Calculator, calculate module averages using credit mode first. Then start a fresh calculation using the resulting stage averages and the confirmed stage weights. Keep the full underlying values for a precise manual check."
+        ]
+      },
+      {
+        "id": "change",
+        "heading": "Understand where one module improvement lands",
+        "paragraphs": [
+          "In the example’s first stage, improving a twenty-credit module by six percentage points raises that stage average by 6 × 20 ÷ 120 = one percentage point. If the stage contributes 40%, the combined mark rises by 0.40 percentage points.",
+          "The same six-point improvement in a forty-credit module would raise the stage average by two points and the combined mark by 0.80 points. These comparisons isolate mathematical influence. They do not mean a larger-credit module is easier to improve, or that a reassessment is permitted to replace a mark without a cap."
+        ]
+      },
+      {
+        "id": "precision",
+        "heading": "Keep precision and policy decisions separate",
+        "paragraphs": [
+          "Rounding each module contribution or stage average too early can move the final estimate slightly. Preserve the full calculation until the final display when checking your arithmetic, then compare the result with the institution’s actual rounding or truncation procedure.",
+          "Do not assign a degree class from this planning average alone. An award can depend on credit completion, progression, borderline rules, reassessment treatment and other programme-specific conditions. A mark numerically close to a familiar boundary does not establish that an examination board will award a particular classification."
+        ]
+      },
+      {
+        "id": "review",
+        "heading": "Build a reproducible record of the estimate",
+        "paragraphs": [
+          "Keep a worksheet containing the source of the rules, the cohort, included module marks, credit totals, stage averages and stage weights. Label hypothetical changes clearly. If a result differs from an official statement, compare these assumptions before changing numbers until the two totals happen to match.",
+          "Use the Weighted Grade Calculator for the arithmetic and the Grade Improvement Calculator only when its fixed-weight replacement assumptions fit the proposed change. Ask your school which stage and module rules apply when anything is uncertain. A transparent two-layer estimate is useful preparation for that conversation, while the official award remains the university’s decision."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: credits first, year weights second",
+      "caption": "The sample module record and 40/60 year split are hypothetical, not Manchester’s or any other university’s prescribed calculation.",
+      "steps": [
+        {
+          "label": "Module products",
+          "value": "7,720 mark-credit units",
+          "detail": "Marks 62, 68, 70 and 58 carry 20, 20, 40 and 40 credits."
+        },
+        {
+          "label": "Stage average",
+          "value": "7,720 ÷ 120 = 64.333…%",
+          "detail": "Do not round the underlying value prematurely."
+        },
+        {
+          "label": "Combine stages",
+          "value": "64.333… × 0.40 + 70 × 0.60",
+          "detail": "Apply the separately confirmed stage weights."
+        },
+        {
+          "label": "Planning result",
+          "value": "67.73%",
+          "detail": "A weighted mark estimate, not an official degree award."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Do module credits and year weights mean the same thing?",
+        "No. Module credits combine marks inside a stage, while year or stage weights determine how those stage averages contribute to a later combined mark."
+      ],
+      [
+        "Can I use this method for every UK degree?",
+        "Only when the actual regulations use this structure and your included marks follow their rules. Other programmes may use different exclusions, stages or award methods."
+      ],
+      [
+        "Does 67.73% prove a particular degree classification?",
+        "No. The example calculates a weighted mark. Official classification also depends on the applicable regulations and the university’s award process."
+      ]
+    ],
+    "tool_slugs": [
+      "weighted-grade-calculator",
+      "grade-improvement-calculator"
+    ],
+    "sources": [
+      {
+        "label": "University of Manchester: undergraduate degree regulations by registration period",
+        "url": "https://www.regulations.manchester.ac.uk/academic/undergraduate-degree-regulations/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,744 @@
+[
+  {
+    "slug": "failing-course-gpa-impact",
+    "title": "How a Failing Course Affects GPA: Credits, Zeros and Recovery",
+    "description": "Understand why an F can lower GPA even when it earns no degree credit. Follow a credit-based example and check which transcript hours belong in the calculation.",
+    "excerpt": "A failed course can add zero quality points while still adding GPA hours. Learn which denominator to use before planning recovery.",
+    "category": "GPA & assessment",
+    "primary_keyword": "how a failing course affects GPA",
+    "secondary_keywords": [
+      "F grade GPA impact",
+      "failed course GPA credits",
+      "zero grade points",
+      "GPA recovery after failing"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "heading": "Why a zero grade still changes the average",
+        "paragraphs": [
+          "A failing grade can create a confusing transcript: the course may earn no credit toward completing your degree, yet it can still count in the GPA denominator. Removing it from a calculation because it earned nothing makes the remaining average look better, but may misrepresent the record. The first question is therefore whether the attempt carries GPA hours, not whether it satisfied a graduation requirement.",
+          "This guide uses a hypothetical 4.0 grading system where the failed attempt is included at zero grade points. Your own institution decides which attempts and grade symbols count. The University of Illinois registrar provides a concrete example of an F contributing zero quality points while its credit hours remain included. That example illustrates a method, not a universal rule for every transcript."
+        ]
+      },
+      {
+        "id": "credits",
+        "heading": "Separate earned credits from GPA hours",
+        "paragraphs": [
+          "A transcript can track attempted, earned, transfer and GPA-bearing credits for different purposes. The labels are not interchangeable. A passed course might contribute earned credit without entering the local GPA, while an included failed course might affect GPA without advancing the earned-credit total. Use the institution’s definition of GPA hours when rebuilding the calculation.",
+          "Read the line for the failed course together with the transcript legend. Note its credit value, grade symbol, assigned grade points and any repeat or exclusion marker. A zero in earned credits alone does not tell you whether the course disappeared from GPA. If the record is unclear, ask the registrar which credit total belongs in the GPA denominator."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: one failed three-credit course",
+        "paragraphs": [
+          "Imagine three included courses: four credits at 4.0, three credits at 3.0, and three credits at 0.0. Their quality points are 16, nine and zero. The term contains 25 quality points across ten GPA credits, so the semester GPA is 25 ÷ 10 = 2.50.",
+          "If you mistakenly omit the failed course, the calculation becomes 25 ÷ 7 = 3.5714…, displayed as 3.57 by a rounding calculator. That answer describes only the two passed courses. It is not the GPA for the stated ten-credit record. The difference comes from the denominator, even though the numerator remains 25 in both calculations."
+        ]
+      },
+      {
+        "id": "existing",
+        "heading": "A semester loss and a cumulative change are different",
+        "paragraphs": [
+          "Suppose you previously held a 3.20 GPA across 30 credits. That represents an estimated 96 quality points. Adding the ten-credit semester above gives 121 points across 40 credits: 121 ÷ 40 = 3.025. The exact 3.025 value lies at a hundredth-place boundary, so check the applicable display and comparison rules rather than treating a shortened number as the complete record.",
+          "Do not subtract the failed course’s grade points directly from your cumulative GPA. GPA is an average, not a bank of points that decreases by a fixed amount for each F. Its movement depends on the course credits, the surrounding marks and the size of the previous record. The same failed course has less numerical influence on a larger existing credit total."
+        ]
+      },
+      {
+        "id": "recovery",
+        "heading": "Model recovery without erasing the original attempt",
+        "paragraphs": [
+          "If the failed course remains counted and you add another three-credit course at 4.0, the example semester becomes 37 quality points over 13 credits, or about 2.85. The new high mark helps, but does not magically remove the original three-credit zero.",
+          "A permitted grade-replacement policy can produce a different result because an earlier attempt may be excluded from GPA. That is a separate record change. Do not delete the zero merely because you intend to retake the class. Confirm eligibility, deadlines, required applications and how the new attempt will be counted before choosing a retake scenario."
+        ]
+      },
+      {
+        "id": "boundaries",
+        "heading": "GPA does not settle every academic requirement",
+        "paragraphs": [
+          "A satisfactory GPA does not establish that a compulsory course has been passed. A program might require completion of a specific module, a prerequisite, a minimum individual grade or a separate progression decision. Conversely, improving an overall average does not by itself confirm whether a failed prerequisite can be waived.",
+          "Keep the numerical question and the policy question separate when seeking advice. Ask what counts in GPA, what must be repeated for the degree, and what options exist for future registration. A calculator can answer the first question once the inputs are known; it cannot make an eligibility decision or replace an institution’s academic review."
+        ]
+      },
+      {
+        "id": "checklist",
+        "heading": "Build a reliable recovery worksheet",
+        "paragraphs": [
+          "Save the original record before testing hypothetical grades. Label each scenario with the future credits and grade-point assumptions used. Recalculate from the full record after new marks arrive, rather than repeatedly adding rounded summaries. Use the GPA calculator for course rows and the cumulative calculator when combining non-overlapping periods."
+        ],
+        "bullets": [
+          "Confirm the failing symbol’s assigned grade points.",
+          "Use GPA-bearing hours, not only earned hours.",
+          "Keep a failed attempt unless an actual exclusion rule applies.",
+          "Check degree and progression requirements separately from GPA."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: the failed course stays in the denominator",
+      "caption": "Hypothetical included three-credit failure on a compatible 4.0 scale.",
+      "steps": [
+        {
+          "label": "Passed courses",
+          "value": "25 quality points",
+          "detail": "Four credits at 4.0 plus three credits at 3.0."
+        },
+        {
+          "label": "Failed course",
+          "value": "0 points; 3 GPA credits",
+          "detail": "The failure adds no quality points but remains included."
+        },
+        {
+          "label": "Semester GPA",
+          "value": "25 ÷ 10 = 2.50",
+          "detail": "All ten GPA-bearing credits belong in this record."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Does every F count toward GPA?",
+        "Check your institution’s rules and transcript markers. This example assumes the failed course is included with zero grade points; exclusions or replacement policies can change the record."
+      ],
+      [
+        "Why did my degree credits stay the same?",
+        "Earned degree credits and GPA-bearing credits serve different purposes. An unsuccessful attempt may fail to satisfy a degree requirement while still affecting the GPA calculation."
+      ],
+      [
+        "Can a later good semester cancel the failure?",
+        "It can improve the credit-weighted average, but does not automatically remove the earlier attempt. Removal requires an applicable institutional rule, not simply a stronger later mark."
+      ]
+    ],
+    "tool_slugs": [
+      "gpa-calculator",
+      "cumulative-gpa-calculator",
+      "retake-gpa-calculator"
+    ],
+    "sources": [
+      {
+        "label": "University of Illinois: GPA hours, quality points and an included F",
+        "url": "https://www.registrar.illinois.edu/courses-grades/calculate-your-gpa/"
+      }
+    ]
+  },
+  {
+    "slug": "rounded-gpa-target-planning",
+    "title": "Rounded GPA and Target Planning: Why Two Decimals Can Mislead",
+    "description": "See how rounding and truncation affect GPA targets. Work from quality points and credits, avoid repeated rounding, and understand small differences near a threshold.",
+    "excerpt": "A displayed GPA is a summary. Reconstructing quality points from rounded figures can change a narrow target calculation.",
+    "category": "GPA & assessment",
+    "primary_keyword": "rounded GPA target planning",
+    "secondary_keywords": [
+      "GPA rounding vs truncation",
+      "GPA precision",
+      "quality points GPA target",
+      "cumulative GPA rounding"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "heading": "A displayed GPA may hide a different underlying value",
+        "paragraphs": [
+          "A transcript showing 3.33 does not necessarily mean the underlying average is exactly 3.330000. The displayed number may be rounded or truncated, and those choices matter when a target sits near a boundary. Before deciding what next-term GPA you need, identify whether you have the complete quality-point record or only a shortened display.",
+          "The University of Illinois registrar explicitly states that its official transcript GPA is truncated to two decimal places. Other institutions can use different methods. GradeTargetCalc planning tools generally round ordinary outputs to two decimals and round required minimum scores upward. Those display conventions help explain calculations; they do not establish your school’s official reporting rule."
+        ]
+      },
+      {
+        "id": "difference",
+        "heading": "Understand rounding and truncation separately",
+        "paragraphs": [
+          "Rounding chooses a nearby displayed value according to a stated rule. Truncation discards digits beyond the specified place. For example, a mathematical value of 3.338 becomes 3.34 under ordinary nearest-hundredth rounding, while truncating to two decimal places gives 3.33. Neither shortened value retains the complete original fraction.",
+          "Do not assume that a calculator displaying a higher hundredth has found extra quality points. It may simply use a different display method. Also avoid assuming every institution rounds a borderline figure upward. A requirement can refer to an unrounded value, an officially reported GPA or another defined measure; only the published rule identifies the applicable comparison."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: reconstructing quality points loses detail",
+        "paragraphs": [
+          "Suppose the actual record contains 100 quality points over 30 credits. The mathematical GPA is 100 ÷ 30 = 3.333333…. If you enter the shortened display 3.33 into a cumulative calculation, multiplying by 30 reconstructs 99.9 quality points, not the original 100.",
+          "Now add 12 new credits at 4.0, contributing 48 points. The complete record gives 148 ÷ 42 = 3.523809…. Reconstructing from 3.33 instead produces 147.9 ÷ 42 = 3.521428…. Both may display as 3.52, but the underlying values differ. Equal displayed outputs therefore do not prove that the calculations retained equal precision."
+        ]
+      },
+      {
+        "id": "target",
+        "heading": "A narrow target can magnify a small starting error",
+        "paragraphs": [
+          "Using the same 30-credit record, imagine a target of 3.50 after 12 more credits. The combined 42 credits need 147 quality points. With the actual starting total of 100, the new term must supply 47 points: 47 ÷ 12 = 3.916666….",
+          "Using reconstructed 99.9 instead requires 47.1 new points, or 3.925. That is a small difference, but a target plan near the top of a scale should not pretend the input is more exact than it is. Record the result as an estimate when your current GPA input is shortened, and confirm borderline requirements using the official record."
+        ]
+      },
+      {
+        "id": "repeat",
+        "heading": "Avoid rounding after every intermediate step",
+        "paragraphs": [
+          "Keep grade points, credits and quality-point products at the precision provided by the institution. Add the products and divide once at the end when the applicable method permits. Repeatedly rounding each course contribution or each combined semester can create a different total from preserving the original values.",
+          "If you plan multiple terms, a course-level worksheet is easier to audit than a chain of rounded cumulative GPAs. Keep hypothetical terms separate from awarded results. When a term finishes, replace its assumptions with actual course grades and credits instead of treating the old forecast as a confirmed intermediate record."
+        ]
+      },
+      {
+        "id": "boundary",
+        "heading": "Treat a threshold as a policy-defined question",
+        "paragraphs": [
+          "Suppose a hypothetical application asks for a 3.50 GPA. A value just below 3.50 might display as 3.50 with one rounding rule, but that does not establish eligibility. Check whether the organization evaluates the reported transcript figure, recalculates from individual courses, applies its own conversions or specifies a minimum before rounding.",
+          "The point is not to choose whichever display is favorable. It is to compare the correct measure with the actual requirement. When asking an adviser, provide the quality points and GPA credits if available, the transcript’s displayed value, and the exact wording of the requirement. This makes the source of a small discrepancy much easier to identify."
+        ]
+      },
+      {
+        "id": "checklist",
+        "heading": "A practical precision checklist",
+        "paragraphs": [
+          "Use the cumulative GPA calculator for a quick estimate from non-overlapping periods. Use the target GPA calculator to test a next-term requirement, while remembering that it starts from the values you supply. When only a rounded current GPA is known, leave a realistic margin rather than treating the final hundredth as certain."
+        ],
+        "bullets": [
+          "Find the institution’s rounding or truncation rule.",
+          "Prefer original quality points and GPA-bearing credits when available.",
+          "Keep intermediate records at their documented precision.",
+          "Check application and progression thresholds using their own definitions."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: identical displays can hide different totals",
+      "caption": "A hypothetical 30-credit record illustrates reconstruction error rather than an official reporting method.",
+      "steps": [
+        {
+          "label": "Actual record",
+          "value": "100 ÷ 30 = 3.333…",
+          "detail": "Original quality points retain the complete starting total."
+        },
+        {
+          "label": "Shortened input",
+          "value": "3.33 × 30 = 99.9",
+          "detail": "Reconstructing from the display loses 0.1 quality points."
+        },
+        {
+          "label": "Target term",
+          "value": "3.9167 vs 3.925",
+          "detail": "Required next-term averages differ for a 3.50 goal over 12 new credits."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Is a displayed 3.50 always an exact 3.50?",
+        "No. It may summarize a longer decimal or use a particular official reporting convention. Check the underlying record and the rule relevant to your decision."
+      ],
+      [
+        "Should I add extra zeros to improve precision?",
+        "Typing 3.3300 does not recover discarded digits. Only the original grade-point and credit record, or an authoritative more precise figure, can provide that information."
+      ],
+      [
+        "Why does an official GPA differ from this calculator?",
+        "Possible reasons include display rules, excluded courses, repeated attempts and shortened input GPAs. Compare the underlying record before attributing the difference to rounding alone."
+      ]
+    ],
+    "tool_slugs": [
+      "cumulative-gpa-calculator",
+      "target-gpa-calculator",
+      "gpa-calculator"
+    ],
+    "sources": [
+      {
+        "label": "University of Illinois: transcript GPA truncation and quality-point calculation",
+        "url": "https://www.registrar.illinois.edu/courses-grades/calculate-your-gpa/"
+      }
+    ]
+  },
+  {
+    "slug": "retake-gpa-transcript-checklist",
+    "title": "Before Retaking a Course: A GPA and Transcript Checklist",
+    "description": "Check repeat eligibility, grade replacement, both-attempt rules and transcript markers before estimating how a retake could change your cumulative GPA.",
+    "excerpt": "A better retake grade does not automatically erase the original attempt. Gather the policy details before comparing GPA scenarios.",
+    "category": "GPA & assessment",
+    "primary_keyword": "retake GPA transcript checklist",
+    "secondary_keywords": [
+      "grade replacement policy",
+      "both attempts GPA",
+      "repeated course transcript",
+      "retake course credits"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "heading": "Start with the policy, not the desired GPA",
+        "paragraphs": [
+          "A course retake can serve different goals: meeting a prerequisite, completing a degree requirement, demonstrating improved understanding or raising GPA. Those goals do not always follow the same counting rules. Before estimating the numerical benefit, identify what the institution will do with the original grade, the new grade and each attempt’s credits.",
+          "Do not assume that the higher attempt automatically replaces the lower one. The University of Maryland’s repeat-course guidance illustrates why a blanket assumption fails: its published undergraduate policy includes all-attempt counting with defined exceptions, while the graduate section describes a different approach. The details are institution-specific, and the example is a reason to read your own applicable policy."
+        ]
+      },
+      {
+        "id": "record",
+        "heading": "Copy the original transcript facts accurately",
+        "paragraphs": [
+          "Find the course code, term, credit value, original grade and numeric grade points. Note whether the attempt already appears excluded or has a repeat marker. Record the current cumulative GPA and the GPA-bearing credit total covering that same record. A degree audit’s earned-credit total may not be the appropriate GPA denominator.",
+          "Also confirm whether the planned retake is genuinely equivalent. A similarly titled course at another institution may transfer differently, and a changed credit value can require a more detailed calculation. The retake calculator models one existing course with one stated credit value under two simplified counting policies; it does not decide course equivalence or automatically reproduce every transcript rule."
+        ]
+      },
+      {
+        "id": "questions",
+        "heading": "Ask which rule applies to your exact attempt",
+        "paragraphs": [
+          "Look for the rule covering your academic level, cohort and course. Read conditions attached to grade replacement rather than only the headline. A policy can limit eligible grades, eligible credits or the number of repeats, and may require an application before a stated deadline. Do not infer eligibility from another student’s experience.",
+          "Separate three questions: whether you may register again, whether the new attempt satisfies the academic requirement, and how GPA is calculated afterward. A yes to registration does not answer the other two. If the policy mentions exceptions or approval, ask the responsible office which conditions apply before treating a calculator scenario as the expected transcript result."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked comparison: the same retake can produce two GPAs",
+        "paragraphs": [
+          "Consider a hypothetical 3.00 GPA across 30 GPA credits, including a three-credit course graded at 2.00 points. The existing total is 90 quality points, and the original course supplied six of them. A retake at 4.00 would supply twelve quality points.",
+          "Under simple replacement, remove six and add twelve: 96 points remain over the same 30 GPA credits, giving 3.20. Under both-attempt counting, retain the old attempt and add twelve points plus three GPA credits: 102 ÷ 33 = 3.0909…, displayed as 3.09. The difference is about which records count, not different performance on the new course."
+        ]
+      },
+      {
+        "id": "visibility",
+        "heading": "Transcript visibility and GPA inclusion are separate",
+        "paragraphs": [
+          "An attempt can remain visible on a transcript even if it is excluded from a particular GPA calculation. Maryland explicitly notes that prior repeat attempts remain on the transcript regardless of whether their grades are included in the cumulative GPA. Your institution may use specific markers to explain this distinction.",
+          "A calculator result therefore cannot promise that a failed or low grade will disappear from an academic record. An outside evaluator may also calculate its own GPA from visible attempts. When preparing an application, check the receiving organization’s instructions rather than assuming the home institution’s replacement GPA is the only figure that can be considered."
+        ]
+      },
+      {
+        "id": "tradeoffs",
+        "heading": "Check a lower retake and an unchanged grade too",
+        "paragraphs": [
+          "Test more than an optimistic maximum. Under the example replacement model, a 1.00 retake would change quality points by (1 − 2) × 3 = −3, giving 87 ÷ 30 = 2.90. Whether that lower attempt would replace the earlier grade is entirely policy-dependent.",
+          "A retake at the original 2.00 leaves a simple replacement GPA unchanged. When both attempts count, adding another 2.00 to a 3.00 record pulls the combined average downward. These scenarios help identify the importance of the counting rule, but should sit alongside workload, course availability and academic support when deciding on a realistic plan."
+        ]
+      },
+      {
+        "id": "checklist",
+        "heading": "Keep a written comparison before making a decision",
+        "paragraphs": [
+          "Use the retake GPA calculator only after choosing the policy that actually fits the record. Save the unmodified transcript figures separately from the hypothetical new grade. After the retake is posted, check the official repeat marker, GPA hours and cumulative calculation instead of assuming the forecast was applied."
+        ],
+        "bullets": [
+          "Identify which attempt counts and whether the rule uses the latest or highest grade.",
+          "Confirm credit treatment, repeat limits, applications and deadlines.",
+          "Check whether both attempts remain visible on the transcript.",
+          "Ask how an external evaluator handles repeated courses if relevant."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: policy changes the denominator",
+      "caption": "Illustrative three-credit retake within a 30-credit record, not a promise of eligibility.",
+      "steps": [
+        {
+          "label": "Before retake",
+          "value": "90 points / 30 credits",
+          "detail": "The record includes six points from the original course."
+        },
+        {
+          "label": "Simple replacement",
+          "value": "96 / 30 = 3.20",
+          "detail": "Replace six old quality points with twelve new points."
+        },
+        {
+          "label": "Both attempts",
+          "value": "102 / 33 ≈ 3.09",
+          "detail": "Add the new points and credits without deleting the old attempt."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Does retaking remove the old grade from my transcript?",
+        "Not necessarily. Transcript visibility and GPA inclusion are different questions. Check the institution’s repeat markers and the rules of any receiving evaluator."
+      ],
+      [
+        "Can I use the calculator before approval?",
+        "You can explore a clearly labeled hypothetical scenario, but do not describe it as an approved replacement or expected official outcome before eligibility and counting rules are confirmed."
+      ],
+      [
+        "What if the repeated course has different credits?",
+        "The simplified same-course model may not fit. Rebuild the exact included attempts and quality points using the applicable credit and equivalence rules, with registrar guidance when needed."
+      ]
+    ],
+    "tool_slugs": [
+      "retake-gpa-calculator",
+      "gpa-calculator",
+      "cumulative-gpa-calculator"
+    ],
+    "sources": [
+      {
+        "label": "University of Maryland: undergraduate and graduate repeat-course rules",
+        "url": "https://www.registrar.umd.edu/grades-records/grades/course-repeats"
+      }
+    ]
+  },
+  {
+    "slug": "percentage-vs-percentile-rank",
+    "title": "Percentage vs Percentile Rank: Same Mark, Different Meaning",
+    "description": "Learn the difference between a percentage score and a percentile rank, with two class examples, tied scores and a checklist for comparing assessment reports.",
+    "excerpt": "A percentage describes marks earned; a percentile describes position within a defined comparison group. One cannot be converted into the other from the mark alone.",
+    "category": "GPA & assessment",
+    "primary_keyword": "percentage vs percentile rank",
+    "secondary_keywords": [
+      "percentage and percentile difference",
+      "class percentile rank",
+      "tied scores percentile",
+      "percent correct vs rank"
+    ],
+    "sections": [
+      {
+        "id": "difference",
+        "heading": "A percentage and a percentile answer different questions",
+        "paragraphs": [
+          "A percentage grade tells you how much of an assessment’s available credit you earned. A percentile rank describes how a score stands relative to a comparison group under a particular convention. Seeing 80 in both places does not make the measures interchangeable, and a mark of 80% does not automatically place a student in the 80th percentile.",
+          "The percentage can be calculated from earned and possible marks. A percentile needs information about other scores or a published reference distribution. Before interpreting a report, identify the label, the comparison group and the rule used for ties. This matters especially when comparing a classroom result with a standardized examination report."
+        ]
+      },
+      {
+        "id": "percentage",
+        "heading": "Read percentage scores using their denominator",
+        "paragraphs": [
+          "If you earn 36 marks out of 45, the percentage is 36 ÷ 45 × 100 = 80%. That result describes the share of available marks awarded. It does not reveal whether the assessment was difficult, how classmates performed or which letter grade the school assigns.",
+          "If every student scores highly, an 80% mark may sit toward the lower end of the class. In a different test where most students struggle, the same percentage could be relatively high. A percentage remains useful for tracking comparable marked work, but it cannot supply the missing class distribution by itself."
+        ]
+      },
+      {
+        "id": "midrank",
+        "heading": "Understand the tie convention before calculating rank",
+        "paragraphs": [
+          "GradeTargetCalc’s class percentile tool uses a midrank convention: (Number below + Half the number equal) ÷ Total students × 100. The equal group includes you. Half-weight places tied scores in the middle of their group rather than at its bottom or top.",
+          "This is one convention, not the definition used in every report. College Board’s SAT percentile explanation uses the share of a reference group scoring at or below a score and distinguishes different comparison populations. A class midrank calculation should therefore not be presented as an official SAT percentile or used to overwrite a provider’s reported rank."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: an 80% mark and a 75 midrank",
+        "paragraphs": [
+          "Imagine you earn 80% in a class of 20. Fourteen students have lower scores, one other student shares your mark, and four score higher. The equal group contains two students, including you, so the total is 14 + 2 + 4 = 20.",
+          "The midrank is (14 + 0.5 × 2) ÷ 20 × 100 = 75. Your percentage is 80%, while this midrank percentile is 75. The strictly lower share alone is 14 ÷ 20 × 100 = 70%, showing how tie treatment changes the reported position. Keep each measure labeled so the shared use of a 0–100 scale does not disguise the difference."
+        ]
+      },
+      {
+        "id": "cohort",
+        "heading": "Keep the mark fixed and change the comparison group",
+        "paragraphs": [
+          "Now place the same 80% mark in another hypothetical group of 20. Suppose six students scored lower, two including you share the mark, and twelve scored higher. The midrank becomes (6 + 1) ÷ 20 × 100 = 35. The earned percentage did not change, but the comparison group did.",
+          "Moving from a 75 midrank to a 35 midrank across those groups would not prove that your knowledge fell by forty percentage points. It describes relative standing in different distributions. To assess learning over time, consider comparable tasks, content coverage and feedback alongside rank. Changes in the cohort can alter relative position even when an individual mark stays fixed."
+        ]
+      },
+      {
+        "id": "boundaries",
+        "heading": "Check endpoints and avoid reverse conversion",
+        "paragraphs": [
+          "Under the midrank convention, a unique highest score in a 20-person class has 19 below and one equal. Its percentile is 19.5 ÷ 20 × 100 = 97.5, rather than 100. A unique lowest score gives 0.5 ÷ 20 × 100 = 2.5. Those endpoints follow the stated rule; they are not calculation errors.",
+          "A percentile also cannot normally be converted back into an exact percentage grade without the reference distribution. Many different marks can occupy the same rank position in different groups. If an application asks for percentage, enter the requested original measure or obtain an authorized conversion; do not substitute a percentile simply because its number looks stronger."
+        ]
+      },
+      {
+        "id": "checklist",
+        "heading": "Compare reports with the right questions",
+        "paragraphs": [
+          "Use the grade percentage calculator when you know awarded marks and the assessment maximum. Use the class percentile rank calculator when you have a valid lower/equal/higher tally and want the stated midrank estimate. Keep the two outputs labeled rather than presenting an unlabeled number."
+        ],
+        "bullets": [
+          "Is the number a mark, percentage, percentile or scaled score?",
+          "Which students, assessment and date define the comparison group?",
+          "Does the equal count include the student being ranked?",
+          "Which tie convention and endpoint rules does the report use?"
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: one mark, two comparison groups",
+      "caption": "Both hypothetical groups contain 20 students; the midrank convention stays fixed.",
+      "steps": [
+        {
+          "label": "Earned percentage",
+          "value": "36 / 45 = 80%",
+          "detail": "This mark depends on earned and possible credit."
+        },
+        {
+          "label": "Group A",
+          "value": "(14 + 1) / 20 = 75th",
+          "detail": "Fourteen lower and two tied, including the student."
+        },
+        {
+          "label": "Group B",
+          "value": "(6 + 1) / 20 = 35th",
+          "detail": "Six lower and two tied; the mark itself is unchanged."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Does the 90th percentile mean 90% correct?",
+        "No. It describes a position within a comparison group under the report’s convention. It does not state the fraction of assessment marks earned."
+      ],
+      [
+        "Why can two websites show different percentile ranks?",
+        "They may use different reference groups, score dates or tie conventions. Compare those definitions before treating the difference as a mathematical error."
+      ],
+      [
+        "Can I calculate percentile from my mark alone?",
+        "Not reliably. You need a comparison distribution, a valid rank tally or the provider’s published conversion for the specific assessment and reference group."
+      ]
+    ],
+    "tool_slugs": [
+      "grade-percentage-calculator",
+      "class-percentile-rank-calculator",
+      "grade-statistics-calculator"
+    ],
+    "sources": [
+      {
+        "label": "College Board: percentile definitions and reference populations",
+        "url": "https://research.collegeboard.org/reports/sat-suite/understanding-scores/sat"
+      }
+    ]
+  },
+  {
+    "slug": "negative-marking-penalties-and-blanks",
+    "title": "Negative Marking: Penalty Fractions, Wrong Answers and Blanks",
+    "description": "Translate a negative-marking rule into raw marks, distinguish a fraction of a mark from a fraction of the reward, and compare practice tests fairly.",
+    "excerpt": "A one-quarter penalty can mean different deductions depending on its units. Read the rule before comparing wrong answers with blanks.",
+    "category": "GPA & assessment",
+    "primary_keyword": "negative marking penalties and blanks",
+    "secondary_keywords": [
+      "negative marking calculation",
+      "one quarter negative marking",
+      "wrong answers vs unanswered",
+      "raw exam marks"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "heading": "Identify exactly what the penalty is measured against",
+        "paragraphs": [
+          "Negative marking means incorrect answers deduct marks under a stated scoring rule. But phrases such as a quarter penalty are incomplete without units. A deduction of 0.25 marks is different from deducting one quarter of the reward for a correct answer when that reward is four marks.",
+          "Start with the current instructions for the exact examination and section. Do not transfer a familiar practice-test rule to another assessment. Some tests deduct marks for incorrect answers, others do not, and raw marks may later be transformed. The negative-marking calculator is a configurable arithmetic model; it does not identify an exam’s current policy from its name."
+        ]
+      },
+      {
+        "id": "units",
+        "heading": "Convert a fractional penalty into marks per wrong answer",
+        "paragraphs": [
+          "Suppose a hypothetical test awards four marks per correct answer and deducts one quarter of that reward for a wrong answer. The deduction is four × 0.25 = one mark. Enter 1 as the positive penalty amount; the calculator subtracts it automatically.",
+          "If the instructions instead deduct a flat quarter mark, enter 0.25. On ten incorrect answers, these rules deduct ten marks and 2.5 marks respectively. The difference is substantial despite the similar wording. Write the reward and the deduction in the same marks-per-question units before entering either value."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: compare attempted accuracy with net marks",
+        "paragraphs": [
+          "Consider 50 equally valued questions, four marks for correct answers, one mark deducted for wrong answers and zero for blanks. A practice tally of 32 correct, ten incorrect and eight blank earns 32 × 4 − 10 × 1 = 118 raw marks. The maximum is 50 × 4 = 200, so the raw percentage is 59%.",
+          "Attempted-question accuracy is a different measure: 32 correct out of 42 attempted is approximately 76.19%. Correct answers as a share of all questions is 64%. Neither figure is the 59% net mark percentage. Keeping the labels separate prevents a practice dashboard’s accuracy number from being mistaken for the awarded examination score."
+        ]
+      },
+      {
+        "id": "blanks",
+        "heading": "A blank and a wrong answer can have different effects",
+        "paragraphs": [
+          "Under this hypothetical rule, replacing one wrong answer with a blank raises the score by one mark because the deduction disappears. Replacing one wrong answer with a correct answer raises the score by five marks: a one-mark loss becomes a four-mark reward. Those are descriptions of outcomes after answers are known.",
+          "They are not a universal instruction to leave uncertain questions blank. During an examination, the eventual correctness of an uncertain answer is unknown. Appropriate choices depend on the official instructions, time available and the uncertainty attached to that particular question. A completed tally cannot establish the best strategy for every future question."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "Compare practice sessions with a consistent scoring rule",
+        "paragraphs": [
+          "Suppose another session has 30 correct, four wrong and 16 blank under the same 50-question rule. Its raw score is 120 − 4 = 116 marks, or 58%. Attempted accuracy is 30 ÷ 34 × 100, approximately 88.24%, higher than the first session, yet its net score is slightly lower.",
+          "This does not make accuracy useless. It shows that attempted accuracy alone misses the number of rewarded answers and deducted marks. Keep correct, incorrect, blank, total questions, reward and penalty alongside each practice result. If test lengths or scoring rules differ, recompute comparable measures instead of ranking sessions by one unlabeled percentage."
+        ]
+      },
+      {
+        "id": "official",
+        "heading": "Separate an illustrative rule from an official reported score",
+        "paragraphs": [
+          "An official provider’s instructions illustrate why assumptions must be checked. ETS states that the GRE General Test’s Verbal Reasoning and Quantitative Reasoning measures do not subtract marks for incorrect answers. A negative-marking strategy copied from another test would therefore be inappropriate for those stated measures.",
+          "A historical NTA JEE Main 2022 instruction document, by contrast, describes specified sections with four marks for correct answers, a one-mark deduction and zero for unanswered items. That source is a historical example, not verification of the current rules for a future examination. Always read the latest applicable instructions before entering a scoring model."
+        ]
+      },
+      {
+        "id": "checklist",
+        "heading": "Record the complete rule before calculating",
+        "paragraphs": [
+          "The calculator accepts a positive wrong-answer penalty and subtracts it from the reward total. Its raw result can be negative; it does not silently apply a zero floor, curve or official score conversion. If your examination does apply those adjustments, the raw calculation is only an intermediate step."
+        ],
+        "bullets": [
+          "Confirm reward and deduction in marks per question.",
+          "Check how blanks, multiple selections and disputed questions are treated.",
+          "Keep separate records for sections with different question values.",
+          "Label raw marks, net percentage and attempted accuracy separately."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: three ways to describe the same practice paper",
+      "caption": "Illustrative 50-question paper with +4 correct, −1 incorrect and zero for blanks.",
+      "steps": [
+        {
+          "label": "Answer tally",
+          "value": "32 correct; 10 wrong; 8 blank",
+          "detail": "Forty-two questions were attempted."
+        },
+        {
+          "label": "Net score",
+          "value": "128 − 10 = 118 marks",
+          "detail": "The complete paper offers 200 marks."
+        },
+        {
+          "label": "Different measures",
+          "value": "59% net; 76.19% attempted accuracy",
+          "detail": "The denominators and deductions answer different questions."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Should the penalty input have a minus sign?",
+        "No. Enter the positive amount deducted per wrong answer. The calculator subtracts it; entering a negative amount would misstate the model."
+      ],
+      [
+        "Is attempted accuracy the same as raw percentage?",
+        "No. Attempted accuracy excludes blanks and ignores the scoring reward and deduction. Net percentage uses awarded marks divided by the full available maximum."
+      ],
+      [
+        "Does this predict a standardized exam score?",
+        "No. Scaling, section rules and official reporting conversions require the provider’s actual method. A configurable raw-mark example is not an official scaled-score prediction."
+      ]
+    ],
+    "tool_slugs": [
+      "negative-marking-calculator",
+      "grade-percentage-calculator",
+      "test-score-calculator"
+    ],
+    "sources": [
+      {
+        "label": "ETS: GRE General Test strategies and no wrong-answer subtraction",
+        "url": "https://www.in.ets.org/gre/test-takers/general-test/prepare/strategies-tips.html"
+      },
+      {
+        "label": "NTA: historical JEE Main 2022 section marking instructions",
+        "url": "https://nta.ac.in/Download/Notice/Notice_20220622111256.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "rubric-feedback-to-course-grade",
+    "title": "Turn Rubric Feedback into a Course Grade Improvement Plan",
+    "description": "Connect rubric criteria to an assignment percentage and its course weight. Use a worked example to compare improvements without confusing raw marks and course points.",
+    "excerpt": "A weak rubric criterion is not automatically the largest course-grade opportunity. Combine its weight, possible improvement and assignment weight.",
+    "category": "GPA & assessment",
+    "primary_keyword": "rubric feedback course grade",
+    "secondary_keywords": [
+      "rubric improvement priorities",
+      "rubric criterion weights",
+      "assignment grade course contribution",
+      "weighted rubric feedback"
+    ],
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Use the rubric to identify a specific change",
+        "paragraphs": [
+          "A rubric breaks an assessment into criteria such as analysis, evidence and clarity. That makes feedback more actionable than a single total, but numerical weights still need careful interpretation. A criterion’s raw marks, its share of the assignment and the assignment’s share of the course represent three different levels of the calculation.",
+          "Carnegie Mellon’s Eberly Center describes rubrics as tools for communicating performance criteria and helping students use feedback to improve. This guide adds a hypothetical numerical worksheet for linking that feedback to course contribution. It does not predict how many marks an assessor will award for a revision or imply that every course permits resubmission."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Find all three weighting layers",
+        "paragraphs": [
+          "For each criterion, write the awarded marks, the possible marks and its assignment weight. Then find the assignment’s course weight in the syllabus. Check whether the rubric already embeds weighting in its available marks; do not apply an additional criterion weight unless the assessment actually specifies one.",
+          "Also distinguish feedback on a completed assignment from guidance for a future one. A past mark changes only if a permitted correction, reassessment or revision is applied. If the next assignment uses different criteria or course weight, build a new worksheet rather than assuming the same numerical return on an improvement."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: an assignment contributes 18 course points",
+        "paragraphs": [
+          "Consider an assignment with analysis worth 50%, evidence worth 30% and presentation worth 20%. Hypothetical criterion scores are 6/10, 16/20 and 9/10. These become 60%, 80% and 90%. Their assignment contributions are 30, 24 and 18 percentage points, producing a 72% assignment grade.",
+          "If the assignment is worth 25% of the course, it contributes 72 × 0.25 = 18 course percentage points. The assignment’s 72% mark and its 18-point course contribution are both correct, but describe different levels. Do not add the 72 directly to other course contributions or treat the rubric weights as separate full-course weights."
+        ]
+      },
+      {
+        "id": "impact",
+        "heading": "Compare improvements using percentage-point changes",
+        "paragraphs": [
+          "Suppose analysis could improve from 60% to 80% under a hypothetical permitted revision. Its criterion percentage rises by twenty points. With a 50% criterion weight, the assignment rises by twenty × 0.50 = ten points, from 72% to 82%. At a 25% course weight, that adds 2.5 course percentage points.",
+          "Presentation could instead improve from 90% to 100%. The ten-point criterion change at a 20% criterion weight raises the assignment by two points and the course by 0.5 points. In this specific example, the analysis scenario has a larger possible numerical impact. That does not establish which change is easier, permissible or educationally more important."
+        ]
+      },
+      {
+        "id": "feedback",
+        "heading": "Translate a mark target into an observable action",
+        "paragraphs": [
+          "A target such as improve analysis is too broad to guide work. Return to the criterion descriptor and feedback: does the assessor identify unsupported conclusions, unclear reasoning, missing comparison or weak application of a concept? Turn the comment into a task that can be checked in the draft, such as connecting each conclusion to a stated piece of evidence.",
+          "The numerical worksheet identifies the weight of a possible change; the feedback identifies what the change should involve. Do not replace the learning task with a promise to gain a fixed number of marks. Ask for clarification of a descriptor or use an available feedback discussion when the required improvement is unclear."
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "Check constraints before choosing priorities",
+        "paragraphs": [
+          "A heavily weighted criterion may depend on another skill. Better evidence might support stronger analysis, while clearer presentation might make existing reasoning easier to assess. Criteria are useful scoring categories, but the work itself can be interconnected. Avoid treating every improvement as an independent guaranteed mark purchase.",
+          "Some assessments also require a minimum in a particular criterion, competence or section. A weighted average can be satisfactory while that separate hurdle remains unmet. Late penalties, caps, academic-integrity requirements and moderation can also affect the recorded result. The rubric calculator does not automatically apply these extra rules."
+        ]
+      },
+      {
+        "id": "workflow",
+        "heading": "Build a realistic feedback-to-action worksheet",
+        "paragraphs": [
+          "Use the rubric grade calculator to verify the current assignment percentage. Use the grade improvement calculator only if a particular assignment mark is actually being replaced at a known course weight. Otherwise keep the comparison clearly labeled as planning for a future assessment."
+        ],
+        "bullets": [
+          "Identify the criterion descriptor and the evidence supporting the awarded score.",
+          "Calculate the possible criterion change, then apply criterion and course weights.",
+          "Check deadlines, resubmission permission, caps and mandatory criteria.",
+          "Choose a concrete learning action and review the next draft against it."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: a twenty-point criterion gain becomes 2.5 course points",
+      "caption": "Hypothetical permitted revision; the rubric has 50/30/20 weights and the assignment carries 25% of the course.",
+      "steps": [
+        {
+          "label": "Current assignment",
+          "value": "30 + 24 + 18 = 72%",
+          "detail": "Criterion percentages are 60, 80 and 90."
+        },
+        {
+          "label": "Improve analysis",
+          "value": "20 × 0.50 = 10 assignment points",
+          "detail": "Analysis moves from 60% to 80% in the scenario."
+        },
+        {
+          "label": "Course effect",
+          "value": "10 × 0.25 = 2.5 course points",
+          "detail": "The assignment would rise from 72% to 82%."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Should I focus only on the lowest criterion score?",
+        "Not automatically. Consider the criterion weight, possible improvement, feedback, dependencies and any compulsory threshold. The lowest score is one useful signal, not a complete priority rule."
+      ],
+      [
+        "Can this worksheet guarantee extra marks?",
+        "No. The numerical scenarios assume a change in awarded performance. Actual marks depend on the submitted work, the rubric and the assessor’s decision under the applicable rules."
+      ],
+      [
+        "What if the rubric already uses weighted mark totals?",
+        "Follow the specified marking method. If the available point totals already encode the intended importance, applying another set of percentage weights can double-weight the criteria."
+      ]
+    ],
+    "tool_slugs": [
+      "rubric-grade-calculator",
+      "weighted-grade-calculator",
+      "grade-improvement-calculator"
+    ],
+    "sources": [
+      {
+        "label": "Carnegie Mellon Eberly Center: rubric criteria, performance levels and feedback",
+        "url": "https://www.cmu.edu/teaching/assessment/assesslearning/rubrics.html"
+      }
+    ]
+  }
+]

@@ -1,0 +1,764 @@
+[
+  {
+    "slug": "why-gradebook-grade-changes-ungraded-work",
+    "title": "Why Your Gradebook Grade Changes When Work Is Ungraded",
+    "description": "Understand current versus total grades, ungraded assignments and recorded zeros before using a gradebook percentage to plan your final.",
+    "excerpt": "Find out whether a changing grade reflects new marks, a different denominator or an ungraded-work display.",
+    "category": "Grade calculations",
+    "primary_keyword": "why did my grade change",
+    "secondary_keywords": [
+      "current grade vs total grade",
+      "ungraded assignments",
+      "gradebook zeros",
+      "grade excluding final"
+    ],
+    "sections": [
+      {
+        "id": "diagnose",
+        "heading": "A different displayed grade does not always mean a new score",
+        "paragraphs": [
+          "You open your course page and see 86%. After changing a display option, the total becomes 51.6%, even though none of your marked assignments changed. Before assuming a grading mistake, check what each total includes. One number may summarize completed work; the other may spread those same earned contributions across the whole planned course.",
+          "The useful question is not which number looks more reassuring. Ask which record, weighting and reporting period each number represents. A current-grade percentage can be perfectly accurate for completed work while being unsuitable as a forecast of your final outcome."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Follow one record through two denominators",
+        "paragraphs": [
+          "Imagine that completed assessments represent 60% of a course and average 86%. Their contribution is 86 × 0.60 = 51.6 course percentage points. The other 40% has not been assessed. A completed-work view divides the earned contribution by the completed fraction: 51.6 ÷ 0.60 = 86%.",
+          "A whole-course view that temporarily counts unfinished work as zero reports 51.6%. That does not mean the earlier 86% was erased. The same contribution is being interpreted against a different denominator. If the remaining work later averages 80%, it supplies another 32 points and the completed course becomes 83.6%."
+        ]
+      },
+      {
+        "id": "statuses",
+        "heading": "Separate ungraded, missing, excused and awarded-zero work",
+        "paragraphs": [
+          "A blank mark is a status requiring explanation, not a mathematical instruction. It might mean that feedback is pending, work is due later, a submission has not been recorded or an assessment is excluded. A recorded zero, by contrast, may be an actual awarded mark that belongs in the calculation.",
+          "Do not remove a genuine zero simply because excluding it raises your average. Equally, do not turn an unmarked future assessment into an awarded zero without checking the course policy. An excused assessment may require removing its possible points or redistributing weights, which changes the model again."
+        ]
+      },
+      {
+        "id": "platform",
+        "heading": "Read your platform’s explanation, then the syllabus",
+        "paragraphs": [
+          "Canvas documents separate current and total grade views. Its student guidance explains that the current view uses graded work, while the total view also considers ungraded assignments. The exact options available can depend on the course configuration.",
+          "Treat that documentation as an explanation of a platform feature, not proof of your instructor’s intended reporting rule. Other systems may use different labels. Look for an inclusion checkbox, an assignment-status legend and a category-weight breakdown, then compare them with the syllabus rather than guessing from a large percentage at the top."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Choose the correct input for a final-exam calculation",
+        "paragraphs": [
+          "A standalone final-grade calculation needs the normalized grade for all work other than that final. In the example, 86 is the relevant current average if the unfinished 40% consists entirely of the final. Entering 51.6 as the current grade would apply the completed-work fraction a second time.",
+          "If several assignments remain, a final-only model is incomplete. Use the earned 51.6 course points with the completed 60% weight in a remaining-work calculation. Also verify whether the final is a separate category or is added inside an existing test category, because those arrangements have different effective weights."
+        ]
+      },
+      {
+        "id": "checklist",
+        "heading": "Reconcile the display with a small worksheet",
+        "paragraphs": [
+          "Write down the information needed to reproduce the record before contacting your course team. A short worksheet often exposes a category mismatch or an accidentally included future zero faster than comparing two unexplained totals."
+        ],
+        "bullets": [
+          "Record the reporting period, grading mode and date of the displayed total.",
+          "List awarded marks separately from pending, missing and excused items.",
+          "Confirm whether category percentages or pooled points determine the grade.",
+          "Rebuild one category and compare it with the gradebook breakdown.",
+          "Keep hypothetical what-if scores separate from actual awarded scores."
+        ]
+      },
+      {
+        "id": "resolve",
+        "heading": "Ask a precise question when totals still disagree",
+        "paragraphs": [
+          "If the difference remains, describe the specific inclusion rule you cannot reconcile. For example: “My graded quiz points total 43 out of 50, but the category shows 71.67%. Does it include an ungraded ten-point quiz?” This gives the instructor a reproducible issue rather than a request to choose the higher total.",
+          "A calculator cannot access hidden marks, alter a register or decide whether a late-work policy should apply. Use it to identify the source of the difference and to make planning assumptions explicit. Once the course team confirms the record, update your estimate using that clarified information."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: one earned contribution, two views",
+      "caption": "Illustration only: completed work covers 60% and unfinished work has no awarded score.",
+      "steps": [
+        {
+          "label": "Completed average",
+          "value": "86%",
+          "detail": "This describes the marked portion only."
+        },
+        {
+          "label": "Earned contribution",
+          "value": "51.6 points",
+          "detail": "86 × 0.60 belongs to the full course."
+        },
+        {
+          "label": "Whole-course zero view",
+          "value": "51.6%",
+          "detail": "The unfinished 40% temporarily contributes nothing."
+        },
+        {
+          "label": "If remaining work earns 80%",
+          "value": "83.6% overall",
+          "detail": "Add 80 × 0.40 = 32 course points."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Is an ungraded assignment always a zero?",
+        "No. Its treatment depends on the assignment status, platform setting and course policy. A recorded awarded zero is different from a score that has not yet been entered."
+      ],
+      [
+        "Can switching a grade display change my official mark?",
+        "A display option changes what you see under its calculation assumptions. It does not by itself award marks or change the instructor’s recorded assessment results."
+      ],
+      [
+        "Which current grade should I use for a final target?",
+        "Use the normalized percentage for all non-final work, excluding the final itself. First confirm that no other unfinished work or category rule makes that standalone model incomplete."
+      ]
+    ],
+    "tool_slugs": [
+      "weighted-grade-calculator",
+      "remaining-grade-calculator",
+      "final-grade-calculator"
+    ],
+    "sources": [
+      {
+        "label": "Canvas student guide: current and total grades",
+        "url": "https://community.instructure.com/en/kb/articles/661305-how-do-i-view-my-grades-in-a-current-course"
+      },
+      {
+        "label": "Ohio State: final-grade checks and student views",
+        "url": "https://teaching.resources.osu.edu/toolsets/carmencanvas/guides/calculate-final-grades"
+      }
+    ]
+  },
+  {
+    "slug": "percentage-points-vs-percent-change-in-grades",
+    "title": "Percentage Points vs Percent Change in Grades",
+    "description": "Learn the difference between percentage-point gains and relative percent increases, with grade, exam-weight and target examples.",
+    "excerpt": "Describe a grade improvement accurately and avoid confusing a course-point gain with an assessment percentage.",
+    "category": "Grade calculations",
+    "primary_keyword": "percentage points vs percent change",
+    "secondary_keywords": [
+      "grade percentage increase",
+      "percentage point difference",
+      "grade improvement",
+      "assessment weight"
+    ],
+    "sections": [
+      {
+        "id": "language",
+        "heading": "Two descriptions can refer to the same improvement",
+        "paragraphs": [
+          "A mark rises from 64% to 72%. Someone calls it an eight-point improvement; another person says it increased by 12.5%. Those statements can both be correct, but they measure different things. Percentage points describe the direct distance between two percentage values. Percent change compares that distance with the starting value.",
+          "In academic planning, the distinction matters when discussing reassessments, estimating a weighted course gain or setting a target. Using “eight percent” without naming the basis can lead someone to calculate a different result from the one you intended."
+        ]
+      },
+      {
+        "id": "difference",
+        "heading": "Calculate the percentage-point difference first",
+        "paragraphs": [
+          "Percentage-point change = New percentage − Original percentage. Moving from 64% to 72% gives 72 − 64 = eight percentage points. The subtraction uses the same percentage scale on both sides. Moving from 88% to 96% also gains eight percentage points.",
+          "For a decrease, retain the sign when it helps interpretation. A fall from 72% to 64% is a change of minus eight percentage points, or an eight-percentage-point decrease. This direct distance is usually the clearest wording for a course grade because the grade itself is already expressed as a percentage."
+        ]
+      },
+      {
+        "id": "relative",
+        "heading": "Use the original value for a relative percent increase",
+        "paragraphs": [
+          "Relative percent change = (New − Original) ÷ Original × 100. For 64% rising to 72%, divide the eight-point difference by 64 and multiply by 100. The relative increase is 12.5%. Starting at 88% and gaining eight points instead produces approximately 9.09%.",
+          "The same absolute gain therefore has a larger relative size when the starting score is lower. If the starting value is zero, this standard relative-change formula is undefined because it divides by zero. A rise from zero to 20% can be described as twenty percentage points without assigning a finite relative percentage increase."
+        ]
+      },
+      {
+        "id": "weight",
+        "heading": "Translate an assessment change into course percentage points",
+        "paragraphs": [
+          "Suppose a project worth 25% of a course is replaced from 64% to 72%, with all other contributions unchanged. The assessment improves by eight percentage points, but its effect on the course is 8 × 0.25 = two course percentage points. A current overall grade of 70% would become 72% under that replacement model.",
+          "The project’s 12.5% relative increase is not the multiplier to apply to the whole course. Multiplying 70 by 1.125 would incorrectly give 78.75%. That calculation assumes the entire course result improves proportionally, rather than changing one quarter-weight assessment by a known amount."
+        ]
+      },
+      {
+        "id": "targets",
+        "heading": "Read “increase by ten percent” carefully",
+        "paragraphs": [
+          "Starting from 70%, a ten-percentage-point increase reaches 80%. A ten-percent relative increase reaches 70 × 1.10 = 77%. If your planning conversation uses the shorter phrase “improve by ten percent,” ask whether it refers to ten points on the grade scale or ten percent of the existing score.",
+          "A target grade of 80% does not require converting the gap into a relative increase before using a grade calculator. Enter the target directly in the tool designed for that question. Relative change is useful for describing a comparison; it is usually unnecessary for solving a weighted academic target."
+        ]
+      },
+      {
+        "id": "reverse",
+        "heading": "An increase and its reversal need different relative percentages",
+        "paragraphs": [
+          "Going from 64% to 72% is a 12.5% relative increase. Returning from 72% to 64% is an 8 ÷ 72 × 100 = 11.11…% relative decrease. The percentage-point change has the same magnitude in both directions, while the relative percentage changes because its starting denominator changes.",
+          "This is also why two successive ten-percent relative increases do not equal twenty percentage points. Starting at 50%, the first reaches 55% and the second reaches 60.5%. Each increase uses a new base. Avoid applying compound-growth language to grading rules unless the rule genuinely operates that way."
+        ]
+      },
+      {
+        "id": "communication",
+        "heading": "Choose wording that makes the basis visible",
+        "paragraphs": [
+          "When sharing a result, include the before-and-after scores and the unit. “My project increased from 64% to 72%, adding two points to a course where it counts 25%” communicates more than an isolated claim that your grade improved by a percentage.",
+          "If you are comparing practice tests, record their question totals and marking rules too. A change in percentages does not establish equal assessment difficulty or equal learning gains. The arithmetic describes the observed scores; interpreting progress still requires comparable tasks and useful feedback."
+        ],
+        "bullets": [
+          "Subtract percentages to report an absolute percentage-point change.",
+          "Divide that change by the original value only when relative change is the question.",
+          "Apply assessment weight to the absolute score change when estimating its course impact.",
+          "Label rounded comparisons as approximate when the underlying fraction continues."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: three valid numbers, three different meanings",
+      "caption": "A replacement project rises from 64% to 72% and retains a 25% course weight.",
+      "steps": [
+        {
+          "label": "Assessment change",
+          "value": "8 percentage points",
+          "detail": "72 − 64 is the direct grade-scale difference."
+        },
+        {
+          "label": "Relative increase",
+          "value": "12.5%",
+          "detail": "8 ÷ 64 × 100 compares with the original mark."
+        },
+        {
+          "label": "Course impact",
+          "value": "2 percentage points",
+          "detail": "8 × 0.25 applies the project’s course weight."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Is a 5% increase always five percentage points?",
+        "No. A relative five-percent increase multiplies the original value by 1.05. Five percentage points are added directly to a percentage grade. State which meaning applies."
+      ],
+      [
+        "Can a percentage-point change be negative?",
+        "Yes. A new mark below the original produces a negative difference. You can report that sign or describe the magnitude as a percentage-point decrease."
+      ],
+      [
+        "Which number belongs in the grade-improvement calculator?",
+        "Enter the actual old and new assessment percentages and its course weight. The tool computes the course-point effect without requiring a relative percent-change input."
+      ]
+    ],
+    "tool_slugs": [
+      "grade-improvement-calculator",
+      "grade-percentage-calculator"
+    ],
+    "sources": [
+      {
+        "label": "OpenStax: percent increase and decrease",
+        "url": "https://openstax.org/books/prealgebra-2e/pages/6-2-solve-general-applications-of-percent"
+      }
+    ]
+  },
+  {
+    "slug": "combine-assignment-scores-different-point-totals",
+    "title": "How to Combine Assignment Scores with Different Point Totals",
+    "description": "Combine marks from unequal assignment totals correctly, compare pooled points with equal percentages, and check the syllabus before averaging.",
+    "excerpt": "Use a three-assignment worksheet to find the combined percentage without accidentally changing the weighting.",
+    "category": "Grade calculations",
+    "primary_keyword": "combine assignment scores different point totals",
+    "secondary_keywords": [
+      "pooled points grade",
+      "average assignment percentages",
+      "total marks percentage",
+      "unequal assignment scores"
+    ],
+    "sections": [
+      {
+        "id": "decision",
+        "heading": "Choose the grading rule before combining marks",
+        "paragraphs": [
+          "An eight-point worksheet and a hundred-point project may appear as neighboring rows in a gradebook, but that does not mean they carry equal influence. Before averaging their percentages, establish whether the course pools their raw points, gives each assignment equal importance or assigns separate weights.",
+          "This guide follows a pooled-points rule. Under that rule, every available point in the selected pool has equal numerical value. An assessment offering more points therefore contributes more to the final fraction. A different syllabus rule needs a different calculation even when the underlying marks are identical."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Build two columns with the same eligible assignments",
+        "paragraphs": [
+          "List earned marks in one column and possible marks in the other. Use the awarded values, including valid partial credit, rather than rounded percentages copied from a dashboard. Both columns must cover exactly the same assessments and reporting period.",
+          "For an example, use a worksheet scored 6/8, a short report scored 21/30 and a project scored 84/100. The individual percentages are 75%,70% and 84%, but keep the original fractions. They preserve the relative point totals that the pooling rule requires. Mark ungraded work separately until you know how it belongs in the calculation."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Add earned points and possible points separately",
+        "paragraphs": [
+          "Combined percentage = Sum of earned points ÷ Sum of possible points ×100. For the example, earned marks total 6+21+84=111. Possible marks total 8+30+100=138. The pooled grade is 111÷138×100=80.4347…%, displayed as approximately 80.43%.",
+          "Do not add the three percentage values and divide by three unless the assignments count equally. That method gives(75+70+84)÷3=76.33…%. Its lower result is not a contradiction: it gives the small worksheet as much influence as the larger project, changing the intended weighting."
+        ]
+      },
+      {
+        "id": "check",
+        "heading": "Explain why the result is closer to the large project",
+        "paragraphs": [
+          "The project carries 100 of the 138 available points, about 72.46% of this pool. The report carries about 21.74%, and the worksheet about 5.80%. Those proportions explain why the combined percentage sits closer to 84% than to 70%. They are effective shares within this selected pool, not necessarily course-category weights.",
+          "You can verify the answer by treating each percentage as weighted by its possible marks. The weighted sum is 75×8+70×30+84×100=11,100; dividing by 138 gives the same 80.4347…%. This alternative check works because each percentage was derived from the matching earned and possible values."
+        ]
+      },
+      {
+        "id": "newwork",
+        "heading": "Adding a new assignment changes both totals",
+        "paragraphs": [
+          "Suppose you later earn 17/20 on another eligible assignment. The new pool is 128 earned out of 158 possible, or 81.0126…%. You cannot simply add 17 to the old numerator while leaving 138 as the denominator, because the new assignment adds available points as well as earned points.",
+          "A recorded zero on that same twenty-point assignment produces 111/158, approximately 70.25%. Excluding an ungraded assignment leaves 111/138 instead. These are different records, so the large difference must be resolved through assignment status and policy rather than choosing whichever percentage seems more plausible."
+        ]
+      },
+      {
+        "id": "categories",
+        "heading": "Pool inside a category before applying its course weight",
+        "paragraphs": [
+          "Sometimes raw points are pooled within a homework category that represents only part of the course. If the initial 111/138 pool belongs to homework worth 20% of the course, its 80.4347…% category average contributes approximately 16.08696 course percentage points. Other categories must supply the remaining contributions.",
+          "Do not combine homework raw points with exam raw points if the syllabus assigns those categories different percentages. A hundred-point exam may have a specified 40% course share regardless of how many homework points are available. First calculate each category using its own rule, then combine category percentages using the course weights."
+        ]
+      },
+      {
+        "id": "audit",
+        "heading": "Check exclusions and communicate the calculation clearly",
+        "paragraphs": [
+          "Before relying on the total, check whether any assignment is dropped, excused, capped, excluded from the grade or governed by an extra-credit rule. Each change can alter the eligible numerator, denominator or both. A score above its normal maximum also needs an explicit policy; our standard percentage tool rejects earned points above possible points.",
+          "A useful result record states“111 earned from 138 possible points across these three graded assignments,” rather than presenting 80.43% without context. Keep your worksheet so a future assignment can be added consistently and a discrepancy can be reproduced."
+        ],
+        "bullets": [
+          "Use raw awarded marks before rounding to percentages.",
+          "Include each eligible assignment once in both columns.",
+          "Separate pending work from awarded zeros.",
+          "Pool only the assessments the course treats as one points group."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: pool the marks, not the displayed percentages",
+      "caption": "Three unequal-point assessments form one eligible points-based pool.",
+      "steps": [
+        {
+          "label": "Earned marks",
+          "value": "6+21+84=111",
+          "detail": "Add marks awarded on the same three tasks."
+        },
+        {
+          "label": "Possible marks",
+          "value": "8+30+100=138",
+          "detail": "Preserve each task’s available point total."
+        },
+        {
+          "label": "Combined percentage",
+          "value": "111÷138×100≈80.43%",
+          "detail": "The hundred-point project has more influence."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can I average the displayed percentages instead?",
+        "Only when the assignments are supposed to count equally. Pooled points preserve unequal possible totals; a simple percentage average gives each assignment one equal share."
+      ],
+      [
+        "Should I round each percentage first?",
+        "Prefer the original earned and possible marks. Rounding individual percentages before combining can introduce unnecessary error, particularly near a reporting boundary."
+      ],
+      [
+        "Does a pooled homework grade equal my course grade?",
+        "Only if that pool represents the whole course. Otherwise apply its category weight and combine it with the other category contributions."
+      ]
+    ],
+    "tool_slugs": [
+      "grade-percentage-calculator",
+      "weighted-grade-calculator",
+      "points-needed-calculator"
+    ],
+    "sources": [
+      {
+        "label": "Canvas: points within weighted assignment groups",
+        "url": "https://community.instructure.com/en/kb/articles/660669-unknown"
+      }
+    ]
+  },
+  {
+    "slug": "calculate-grades-within-weighted-categories",
+    "title": "How to Calculate Grades Within Weighted Categories",
+    "description": "Work through nested grading: pool quiz points, apply category weights and update one score without counting its category twice.",
+    "excerpt": "Follow a quiz, project and exam example to separate assignment-level calculations from course weights.",
+    "category": "Grade calculations",
+    "primary_keyword": "calculate grades within weighted categories",
+    "secondary_keywords": [
+      "weighted categories grade",
+      "quiz category average",
+      "nested grade calculation",
+      "assignment group weights"
+    ],
+    "sections": [
+      {
+        "id": "layers",
+        "heading": "A category weight is not an assignment weight",
+        "paragraphs": [
+          "A syllabus may state“quizzes 30%, project 30%, final exam 40%.” The quiz category can contain several assignments with different point totals. You therefore have two calculations: determine the quiz category percentage, then apply its 30% share of the course. Giving every quiz a 30% course weight would count the category repeatedly.",
+          "Start by drawing a simple hierarchy: course, categories, assignments. Each item belongs in one place. This is especially useful when a calculator and a gradebook disagree despite showing the same individual marks."
+        ]
+      },
+      {
+        "id": "inside",
+        "heading": "Calculate the quiz category using its own rule",
+        "paragraphs": [
+          "Suppose three quizzes are scored 8/10,16/20 and 27/30. If quizzes are pooled by points, the category contains 51 earned out of 60 possible, giving 85%. Notice that the third quiz has three times the possible points of the first, so it carries three times its influence within this category.",
+          "If the syllabus instead weights all quiz percentages equally, the category becomes(80+80+90)÷3=83.333…%. Those are genuinely different internal rules. The category’s 30% course weight does not tell you which rule applies inside it. Confirm the internal method rather than inferring it from the category label."
+        ]
+      },
+      {
+        "id": "course",
+        "heading": "Turn category percentages into course contributions",
+        "paragraphs": [
+          "Continue with the pooled-points quiz average of 85%, a project grade of 76% and a final exam grade of 82%. Apply the syllabus weights: quizzes contribute 85×0.30=25.5 course points, the project contributes 76×0.30=22.8, and the final contributes 82×0.40=32.8.",
+          "Adding the three contributions gives 81.1% overall. The category weights total 100%, so this example represents the completed course. The earned quiz marks 51 do not enter this last addition directly; they already helped produce the quiz percentage that receives the 30% course weight."
+        ]
+      },
+      {
+        "id": "impact",
+        "heading": "Find the effect of correcting one quiz mark",
+        "paragraphs": [
+          "Imagine the third quiz changes from 27/30 to 30/30 while all other records stay fixed. The quiz pool becomes 54/60=90%, up five category percentage points. Because quizzes count 30% of the course, that change adds 5×0.30=1.5 course percentage points. The course result becomes 82.6%.",
+          "Assigning the changed quiz the whole 30% course weight would exaggerate its influence. Under this particular pooled-points structure, its effective course share is 30/60×30%=15%. A ten-percentage-point increase on that quiz therefore adds 10×0.15=1.5 points to the course, confirming the same result."
+        ]
+      },
+      {
+        "id": "incomplete",
+        "heading": "Avoid treating an unfinished category as a completed grade",
+        "paragraphs": [
+          "Before the final exam is graded, the quiz and project contributions total 48.3 course points and represent 60% of the course. Their normalized completed-work average is 48.3÷0.60=80.5%. That running average is different from the earned full-course contribution 48.3.",
+          "A gradebook may show a normalized running figure or a whole-course view with unfinished work temporarily contributing zero. Read the display setting before using its total. If only part of a category is graded, its internal denominator also needs attention; normalizing at the course level cannot repair an incorrectly constructed category average."
+        ]
+      },
+      {
+        "id": "special",
+        "heading": "Keep special category rules visible",
+        "paragraphs": [
+          "Dropped quizzes, score replacement, compulsory components and late penalties can change the category result before the course weight is applied. A basic category average does not establish whether those rules were satisfied. Record the counted marks after confirmed adjustments rather than silently inventing exclusions.",
+          "Canvas’s official assignment-group guide describes a points ratio within each weighted group. That is a helpful example of a two-layer system, but it does not establish that every school or every learning platform uses that arrangement. Your course’s published grading structure remains the relevant instruction."
+        ]
+      },
+      {
+        "id": "worksheet",
+        "heading": "Use a repeatable two-stage worksheet",
+        "paragraphs": [
+          "Keep one small table for each category and a separate final summary. This makes later corrections easier to track because you can identify whether a difference began within an assignment group or when category weights were combined. Save the original marks alongside any hypothetical scenario.",
+          "When using the weighted calculator, enter the category percentages and their course weights for the final stage. Calculate an internal points pool separately first. Do not place both a whole category and its individual assignments in that same final-stage list, because they represent overlapping contributions."
+        ],
+        "bullets": [
+          "Confirm the internal rule for every category.",
+          "Rebuild category percentages from eligible records.",
+          "Apply each category’s course weight exactly once.",
+          "Check whether all course weight is completed.",
+          "Compare revised scenarios with an unchanged copy of the original record."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: assignment points become category contributions",
+      "caption": "A completed course uses pooled quiz points and fixed 30/30/40 category weights.",
+      "steps": [
+        {
+          "label": "Quiz pool",
+          "value": "51÷60=85%",
+          "detail": "Combine 8/10,16/20 and 27/30."
+        },
+        {
+          "label": "Category contributions",
+          "value": "25.5+22.8+32.8",
+          "detail": "Apply 30%,30% and 40% to 85%,76% and 82%."
+        },
+        {
+          "label": "Course result",
+          "value": "81.1%",
+          "detail": "Sum contributions after applying each category once."
+        },
+        {
+          "label": "Corrected quiz scenario",
+          "value": "82.6%",
+          "detail": "Adding three quiz marks raises the course by 1.5 points."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Do quizzes in a 30% category each count 30%?",
+        "No. The category collectively carries 30% of the course. Each quiz’s effective share depends on the internal rule, such as its possible points within the quiz pool."
+      ],
+      [
+        "Can categories have equal internal percentages but different course weights?",
+        "Yes. Two categories scoring 80% contribute different course points if one counts 10% and the other counts 40%. Their contributions would be 8 and 32 points respectively."
+      ],
+      [
+        "Why does my running grade change when a new category appears?",
+        "Previously ungraded categories may have been excluded from normalization. Once they contain a score, both included contributions and the combined completed weight can change. Check the platform’s calculation settings."
+      ]
+    ],
+    "tool_slugs": [
+      "weighted-grade-calculator",
+      "grade-percentage-calculator",
+      "grade-improvement-calculator"
+    ],
+    "sources": [
+      {
+        "label": "Canvas: how weighted assignment groups are calculated",
+        "url": "https://community.instructure.com/en/kb/articles/660669-unknown"
+      },
+      {
+        "label": "Florida State: assignment-group weights",
+        "url": "https://support.canvas.fsu.edu/kb/article/988-how-do-i-create-assignment-weights/"
+      }
+    ]
+  },
+  {
+    "slug": "extra-credit-points-vs-weighted-grades",
+    "title": "Extra Credit in Points-Based and Weighted Grades",
+    "description": "Compare extra-credit points, bonus category marks and course-point additions. Learn which denominator changes and why bonus policies need checking.",
+    "excerpt": "See why five extra marks do not automatically add five percentage points to your course result.",
+    "category": "Grade calculations",
+    "primary_keyword": "extra credit points vs weighted grades",
+    "secondary_keywords": [
+      "extra credit grade calculation",
+      "bonus points course grade",
+      "weighted extra credit",
+      "extra credit denominator"
+    ],
+    "sections": [
+      {
+        "id": "question",
+        "heading": "Ask where the bonus enters the calculation",
+        "paragraphs": [
+          "“Five points of extra credit” is incomplete information. Five raw marks in a thousand-point course, five percentage points on an exam and five percentage points added to the course total can have very different effects. Before calculating, identify the unit and the level at which the bonus is applied.",
+          "Extra credit is a grading policy, not a universal formula. The examples here illustrate possible rules so you can interpret a syllabus or ask a precise question. They do not authorize bonus marks or imply that your instructor uses any particular arrangement."
+        ]
+      },
+      {
+        "id": "points",
+        "heading": "Bonus earned points with no added possible points",
+        "paragraphs": [
+          "Imagine a completed points-based course with 430 earned out of 500 possible. Its ordinary percentage is 86%. Under an explicitly confirmed rule that adds five earned bonus marks without changing the 500-point maximum, the result becomes 435÷500×100=87%. Five bonus marks have added one course percentage point.",
+          "The general change for this rule is Bonus points÷Original possible points×100. A five-mark bonus in a 200-point course adds 2.5 percentage points instead. The denominator controls the effect, so never interpret a raw-point bonus without knowing the applicable pool of available points."
+        ]
+      },
+      {
+        "id": "ordinary",
+        "heading": "An ordinary additional assignment changes the denominator too",
+        "paragraphs": [
+          "Now suppose those five earned points belong to a new task worth ten possible points. The updated record becomes 435/510, approximately 85.29%. That is below the earlier 86%, even though the earned total increased. The task added available marks as well as earned marks, and its 50% performance was below the previous average.",
+          "This does not prove a promised bonus was applied incorrectly. It shows why you must clarify whether the task is extra credit or an ordinary required assignment. The name shown in a gradebook is not enough to determine which numerator and denominator operations the course intends."
+        ]
+      },
+      {
+        "id": "weighted",
+        "heading": "Bonus marks inside a weighted category",
+        "paragraphs": [
+          "Consider a quiz category containing 70 earned out of 100 possible, worth 20% of the course. A confirmed ten-mark earned-only bonus changes the category from 70% to 80%. Its contribution rises from 14 to 16 course points, adding two points to the course total.",
+          "The same ten raw marks would produce a different effect in a larger quiz pool or a differently weighted category. For example, ten added marks in a 200-point category raise its percentage by five points; at a 20% course weight, that adds only one course point. Keep the category denominator and course weight visible together."
+        ]
+      },
+      {
+        "id": "coursebonus",
+        "heading": "A direct course bonus is a different rule",
+        "paragraphs": [
+          "A policy might explicitly add 1.5 percentage points to the completed course result. If the ordinary result is 84%, that rule produces 85.5% before any stated cap or rounding. This is different from multiplying 84 by 1.015, which gives 85.26% and represents a 1.5% relative increase.",
+          "Another arrangement may introduce a separately weighted bonus category. Do not automatically normalize that category together with ordinary weights totaling 100%, because doing so can turn a bonus into a redistribution of importance. Follow the stated bonus equation, including any eligibility requirements, caps and treatment of students who do not complete the bonus work."
+        ]
+      },
+      {
+        "id": "platform",
+        "heading": "Check the implementation as well as the written policy",
+        "paragraphs": [
+          "Instructure documents several Canvas extra-credit methods and warns that a weighted group with no possible points cannot be evaluated as an ordinary points ratio. That platform example illustrates why extra-credit setup needs more care than adding a conveniently named group.",
+          "As a student, you normally need clarification rather than configuration access. Ask whether the bonus changes earned marks, possible marks, a category percentage or the course total. If a displayed total seems unexpected, provide the relevant marks and ask which rule is being applied. Do not attempt to reproduce the result by switching methods until one happens to match."
+        ]
+      },
+      {
+        "id": "tools",
+        "heading": "Respect the limits of a standard grade calculator",
+        "paragraphs": [
+          "GradeTargetCalc’s ordinary percentage and weighted-grade tools do not automatically implement extra-credit policies. The percentage tool rejects earned marks above possible marks, and percentage assessment weights in the weighted tool cannot exceed 100%. Those limits should not be bypassed by disguising a bonus as an unrelated ordinary score.",
+          "You can still use standard tools for the ordinary portion of the calculation, then apply a confirmed bonus rule separately on a worksheet. Label that final adjustment clearly. If the policy is ambiguous, keep more than one hypothetical scenario rather than presenting a chosen result as an official course mark."
+        ],
+        "bullets": [
+          "Identify the bonus unit and where it is applied.",
+          "Confirm whether possible points remain unchanged.",
+          "Check category weights, score caps and eligibility conditions.",
+          "Keep ordinary results separate from the bonus adjustment."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: five earned-only bonus marks in a 500-point course",
+      "caption": "This illustration assumes the policy adds earned marks without increasing possible marks.",
+      "steps": [
+        {
+          "label": "Ordinary record",
+          "value": "430÷500=86%",
+          "detail": "Calculate the completed ordinary points result."
+        },
+        {
+          "label": "Add confirmed bonus",
+          "value": "430+5=435 earned",
+          "detail": "Keep the possible total fixed at 500."
+        },
+        {
+          "label": "Adjusted result",
+          "value": "435÷500=87%",
+          "detail": "Five raw marks add one course percentage point."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Does extra credit always increase my grade?",
+        "Only under the actual rule. Earned-only bonus points with a fixed positive denominator increase the fraction; an ordinary added assignment can lower it if its score is below your existing average."
+      ],
+      [
+        "Can I enter a zero-point bonus task as a separate weighted category?",
+        "A standalone percentage ratio cannot divide by zero. Your platform and course need a supported explicit extra-credit arrangement rather than an ordinary zero-denominator category."
+      ],
+      [
+        "Why does the calculator reject a score above 100%?",
+        "The standard tools model ordinary capped scores, not every extra-credit policy. Apply a confirmed bonus adjustment separately instead of changing inputs to defeat the stated limits."
+      ]
+    ],
+    "tool_slugs": [
+      "grade-percentage-calculator",
+      "weighted-grade-calculator"
+    ],
+    "sources": [
+      {
+        "label": "Canvas: extra-credit methods and weighted-group limitations",
+        "url": "https://community.instructure.com/en/kb/articles/660681-how-do-i-give-extra-credit-in-a-course"
+      }
+    ]
+  },
+  {
+    "slug": "how-much-can-a-final-change-your-grade",
+    "title": "How Much Can a Final Exam Change Your Grade?",
+    "description": "Measure a final exam’s effect on your course grade, compare reachable outcomes and understand why a ten-point exam gain has a smaller course impact.",
+    "excerpt": "Build an outcome range before deciding how much a stronger final result can change your overall grade.",
+    "category": "Grade calculations",
+    "primary_keyword": "how much can a final change your grade",
+    "secondary_keywords": [
+      "final exam effect on grade",
+      "final worth30percent",
+      "maximum possible course grade",
+      "exam score scenarios"
+    ],
+    "sections": [
+      {
+        "id": "influence",
+        "heading": "Start with influence rather than a single target",
+        "paragraphs": [
+          "Before asking what score you need, it can help to ask how much the final can change your course result at all. A final worth 15% leaves most of the outcome determined by earlier work. A final worth 50% gives the exam much more influence, but it does not erase the other half.",
+          "This guide focuses on outcome ranges and score sensitivity for a standalone final. The current grade must represent all non-final work, normalized to a percentage. If other assignments remain or the final belongs inside a test category, rebuild that structure before using these simple comparisons."
+        ]
+      },
+      {
+        "id": "model",
+        "heading": "Separate the fixed contribution from the variable one",
+        "paragraphs": [
+          "Overall grade = Current grade×(1−Final weight/100)+Final score×(Final weight/100). The first contribution stays fixed while you vary the examination score. The second changes linearly with that score.",
+          "Suppose the non-final average is 78% and the final counts 30% of the course. Earlier work supplies 78×0.70=54.6 course points. Every possible exam scenario therefore begins with 54.6. An exam score of 60% adds 18 points, producing 72.6% overall; a score of 80% adds 24, producing 78.6%."
+        ]
+      },
+      {
+        "id": "sensitivity",
+        "heading": "Read the final weight as a conversion factor",
+        "paragraphs": [
+          "Course-point change = Exam-score change×Final weight/100. With a 30%-weight final, improving the examination score by ten percentage points improves the course result by three percentage points. A five-point exam improvement adds 1.5 course points.",
+          "This relationship compares two examination scenarios while keeping previous work fixed. It does not say that a ten-point exam gain is easy to achieve, or that preparation time converts predictably into marks. Use practice performance and feedback to judge realistic scenarios rather than interpreting the arithmetic influence as a forecast."
+        ]
+      },
+      {
+        "id": "range",
+        "heading": "Find the ordinary minimum and maximum available",
+        "paragraphs": [
+          "For the 78% current grade and 30%-weight final, a zero exam score gives 54.6% overall. A perfect exam gives 54.6+30=84.6%. Under this capped 0–100 model, every possible final course result lies between those endpoints.",
+          "A target of 85% is therefore outside the ordinary range, while 80% remains mathematically reachable. This range check is useful before spending time comparing many precise required-score values. A result below the minimum might already be secured mathematically, but separate examination-pass, attendance and compulsory-submission rules can still remain binding."
+        ]
+      },
+      {
+        "id": "compare",
+        "heading": "Compare exam scenarios on one consistent scale",
+        "paragraphs": [
+          "Use 60%,70%,80%,90% and 100% as illustrative exam results. With the same 78% current average and 30% final weight, they give 72.6%,75.6%,78.6%,81.6% and 84.6% overall. Each ten-point examination step moves the course result by three points.",
+          "Notice that scoring 78% on the final would leave the course at 78% overall. When the new score equals the current non-final average, combining them preserves that average regardless of the positive weight. A stronger examination raises it; a weaker examination lowers it. This gives a quick reasonableness check before inspecting decimals."
+        ]
+      },
+      {
+        "id": "weights",
+        "heading": "A heavier final creates more room in both directions",
+        "paragraphs": [
+          "Keep the current grade at 78% but compare a 50%-weight final. Prior work now supplies 39 course points. A 60% exam produces 69% overall, while a 100% exam produces 89%. The exam has more power to raise the result, and more power to pull it down.",
+          "Do not mix these scenarios by changing the exam weight without adjusting the non-final contribution. The full course weights must still describe one complete course. Weight is determined by the syllabus; changing it in a calculator explores a hypothetical arrangement, not an available way to improve your actual grade."
+        ]
+      },
+      {
+        "id": "plan",
+        "heading": "Turn a range into a practical revision decision",
+        "paragraphs": [
+          "After checking the range, choose a realistic target and use the final-grade tool to calculate its corresponding minimum. For an 80% target in the 30%-weight example, the exam must supply 25.4 course points. Dividing 25.4 by 0.30 gives 84.666…%, displayed upward as 84.67%.",
+          "Plan beyond that boundary if possible, and compare it with marked practice work. Small input errors or institution-specific rounding can matter near a threshold. If a target is unreachable, discuss legitimate academic options with your course team instead of assuming an unsupported extra-credit or curve adjustment."
+        ],
+        "bullets": [
+          "Confirm that the current percentage excludes the final.",
+          "Calculate the ordinary zero-to-perfect outcome range.",
+          "Compare plausible exam scores with the same fixed previous contribution.",
+          "Check separate pass conditions before relying on a secured average.",
+          "Use the target as a planning guide rather than a promised result."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: a 30%-weight final changes a 78% current grade",
+      "caption": "Only the examination score varies; non-final work contributes 54.6 course points in every scenario.",
+      "steps": [
+        {
+          "label": "Exam 60%",
+          "value": "Course 72.6%",
+          "detail": "54.6+60×0.30"
+        },
+        {
+          "label": "Exam 80%",
+          "value": "Course 78.6%",
+          "detail": "54.6+80×0.30"
+        },
+        {
+          "label": "Exam 100%",
+          "value": "Course 84.6%",
+          "detail": "This is the ordinary maximum under the example weights."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Does a ten-point improvement on the final add ten course points?",
+        "Only if the final represents the entire course. At 30% weight, a ten-percentage-point exam improvement adds three percentage points to the course result."
+      ],
+      [
+        "Can a perfect final always reach my target?",
+        "No. The maximum depends on the existing contribution and the remaining exam weight. Check the perfect-exam outcome before assuming a target is still reachable."
+      ],
+      [
+        "What if the final is one more test in a category?",
+        "Its effective course influence depends on the category weighting and the existing tests. Use the final-counts-as-a-test tool rather than treating the category’s whole weight as the final’s separate course weight."
+      ]
+    ],
+    "tool_slugs": [
+      "final-grade-calculator",
+      "must-pass-final-calculator",
+      "final-counts-as-test-calculator"
+    ],
+    "sources": [
+      {
+        "label": "Canvas: course and assignment-group weighting",
+        "url": "https://community.instructure.com/en/kb/articles/660669-unknown"
+      }
+    ]
+  }
+]

@@ -35,7 +35,7 @@ assert (ROOT/'.nojekyll').exists()
 assert sum(p.stat().st_size for p in ROOT.rglob('*') if p.is_file())<1500000
 print(f'Static audit passed: {len(pages)} HTML pages, valid local links/assets/fragments, unique metadata, JSON-LD, sitemap, CNAME; entire site under 1.5 MB.')
 
-assert len(pages)==41, 'Expected 30 calculator pages, home, guides, policies and 404'
+assert len(pages)==59, 'Expected 30 calculator pages, home, guides, policies and 404'
 assert sum('data-calculator=' in p.read_text() for p in pages)==31
-assert len(ET.parse(ROOT/'sitemap.xml').getroot())==40
+assert len(ET.parse(ROOT/'sitemap.xml').getroot())==58
 assert all(p.stat().st_size<45000 for p in pages), 'Individual page exceeds 45 KB budget'
