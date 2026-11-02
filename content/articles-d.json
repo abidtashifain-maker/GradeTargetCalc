@@ -1,0 +1,679 @@
+{
+  "statistics": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Read the pattern behind a set of grades",
+        "paragraphs": [
+          "A single average can hide an important difference between two groups of results. Scores of 78, 80 and 82 have the same mean as 60, 80 and 100, but their spread is very different. The grade statistics calculator helps describe that difference by reporting the median, mean, range and population standard deviation of percentage grades.",
+          "Use it to review your own equally weighted assessments, summarize an anonymous practice group, or check a small collection of class results you are allowed to use. These statistics describe the numbers entered. They do not determine whether an assessment was fair, explain why a student struggled, or establish a passing mark."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Prepare a consistent list of percentages",
+        "paragraphs": [
+          "Enter scores separated by commas, spaces or new lines. The calculator accepts between one and 1,000 values, each from zero to 100. Include a recorded zero when it belongs in the dataset; leaving it out changes every summary. Empty or invalid input needs correction before a result can be calculated.",
+          "Convert raw marks to percentages before entering them. A mark of 18 out of 20 becomes 90, whereas 45 out of 60 becomes 75. Do not enter the raw numbers 18 and 45 and treat them as comparable percentages. Also decide whether the scores refer to the same assessment or to assessments whose percentages can reasonably be compared.",
+          "Keep the purpose of the dataset explicit. Five tests taken by one student describe that student’s selected results; five students taking one test describe a different collection. The same formulas apply, but the interpretation changes because the observations represent different things."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "How the four statistics are calculated",
+        "paragraphs": [
+          "The mean adds every grade and divides the total by the number of grades. The median first sorts the grades from lowest to highest. An odd number of grades has one middle value; an even number uses the average of the two middle values. Sorting affects the median calculation but does not alter the grades themselves.",
+          "The range subtracts the lowest score from the highest. Population standard deviation finds each score’s distance from the mean, squares those distances, averages the squares using the number of entered grades, and takes the square root. Squaring prevents positive and negative differences from canceling. A larger result indicates more spread around the mean within this particular dataset."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: five equally weighted scores",
+        "paragraphs": [
+          "Consider 60, 70, 80, 90 and 100. Their total is 400, so the mean is 400 ÷ 5 = 80%. The grades are already sorted, and the third score is the middle value, making the median 80%. The range is 100 − 60 = 40 percentage points.",
+          "Distances from the mean are −20, −10, zero, 10 and 20. Their squares total 1,000. Dividing by five gives a population variance of 200, and its square root is approximately 14.14 percentage points. The calculator displays the median prominently and places the mean, population standard deviation, range and count in the explanation beneath it. These are complementary descriptions, rather than competing answers."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "Why mean and median sometimes disagree",
+        "paragraphs": [
+          "Suppose four grades are 40, 80, 85 and 95. The mean is 300 ÷ 4 = 75%. The median is the average of 80 and 85, which is 82.5%. The low score pulls the mean downward more strongly than it changes the middle of the ordered list.",
+          "That difference does not make either statistic incorrect. The mean answers a question about equal numerical contributions; the median answers a question about the center of the ranking. If you want your actual course grade, neither should replace the syllabus weighting. A heavily weighted final exam cannot be treated as one ordinary score simply because it occupies one row in your list."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Interpret spread in the right units",
+        "paragraphs": [
+          "A standard deviation of 14.14 is expressed in percentage points here, not as a 14.14% increase or decrease in your grade. Similarly, a range of 40 points means the largest score exceeds the smallest by 40. It does not say that most grades fall evenly across that interval.",
+          "Do not infer a normal distribution, a grading curve, or a specific share of students above a threshold from these summaries alone. Very different score lists can share a mean and standard deviation. Compare the actual list with the summary when the decision matters, especially when there are few scores or one unusually low result."
+        ]
+      },
+      {
+        "id": "limitations",
+        "heading": "Population and sample calculations are different",
+        "paragraphs": [
+          "This tool treats the entered list as the full population being described. Its standard deviation therefore divides squared deviations by n, the number of grades. A sample standard deviation commonly divides by n − 1 when estimating spread in a larger population. Those calculations answer different statistical questions and should not be interchanged without checking your assignment instructions.",
+          "One entered grade produces a median and mean equal to that grade, with zero range and zero population standard deviation. That is a mathematical consequence of a dataset containing one value, not evidence of consistent performance across a course. The calculator also does not weight scores by credits, question counts or assessment importance."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Turn the summary into a useful review",
+        "paragraphs": [
+          "If the mean and median differ substantially, identify which scores create the difference and check for transcription mistakes first. If the range is wide, look for relevant context such as different topics, preparation time or test formats. The summary can guide a question to ask, but it cannot identify a cause by itself.",
+          "For your own revision, group comparable practice tests and compare their actual scores over time rather than mixing unrelated subjects into one large average. Keep personal student records private and use anonymous figures when discussing a group. When the task is calculating a final course mark, move to the weighted grade calculator and enter the institution’s actual weights."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: one list, four useful summaries",
+      "caption": "Illustrative scores only. The example describes a population of five equally weighted grades.",
+      "steps": [
+        {
+          "label": "Input",
+          "value": "60, 70, 80, 90, 100",
+          "detail": "Start with percentages on the same scale."
+        },
+        {
+          "label": "Center",
+          "value": "Mean 80%; median 80%",
+          "detail": "The total is 400 and the middle score is 80."
+        },
+        {
+          "label": "Spread",
+          "value": "Range 40 points",
+          "detail": "Subtract the lowest value from the highest."
+        },
+        {
+          "label": "Variation",
+          "value": "Population SD 14.14",
+          "detail": "Use all five scores in the denominator."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Does the calculator find a sample standard deviation?",
+        "No. It reports population standard deviation for the entered list. If coursework explicitly requests a sample statistic, use the required n − 1 denominator in a suitable statistics tool instead."
+      ],
+      [
+        "Can I enter scores in any order?",
+        "Yes. Sorting is performed for the median, and the other summaries do not depend on the original order. Repeated scores should remain repeated when they represent separate observations."
+      ],
+      [
+        "Does a higher standard deviation mean a worse class?",
+        "No. It indicates greater numerical spread in this dataset. Assessment difficulty, teaching quality and student circumstances cannot be established from a spread statistic alone."
+      ],
+      [
+        "Can these numbers predict my next test score?",
+        "They summarize past or supplied results. They do not predict a future mark or guarantee that later assessments will follow the same pattern. Use them to review preparation, alongside actual course feedback."
+      ]
+    ]
+  },
+  "percentile": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Compare a score with a defined group",
+        "paragraphs": [
+          "A grade percentage tells you how many available marks you earned. A percentile rank tells you where that score sits relative to a particular group. Those are different questions. The class percentile rank calculator uses counts of students below, tied with and above your score to estimate a tie-aware position within the group.",
+          "This is useful when you already have a class distribution and want to understand relative standing without entering everyone’s individual marks. It uses the midrank convention, which gives half-weight to tied students. It does not calculate an official admissions percentile, award a class rank, or convert an examination mark into a standardized score."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Count below, equal and above consistently",
+        "paragraphs": [
+          "Use results from the same assessment and comparison group. Enter whole numbers for students scoring below your mark, students tied at your mark, and students scoring above it. The tied count must include you, so it is at least one. The calculator adds the three counts to obtain the group size.",
+          "Avoid mixing one section’s lower scores with another section’s higher scores. Decide whether absent students or incomplete results belong in the group according to the dataset you actually have. Each student must appear in exactly one category. If 30 students have valid results, the three counts should add to 30 before you interpret the output.",
+          "If exact ties are based on rounded marks, clarify whether the comparison uses those rounded marks or more precise underlying scores. Two displayed grades of 80 may not be equal internally. Your three counts need to follow one consistent definition rather than mixing displayed and unrounded scores."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Understand the midrank percentile formula",
+        "paragraphs": [
+          "The calculation is: percentile = (below + 0.5 × equal) ÷ (below + equal + above) × 100. Students below your score contribute fully to the position. Students sharing your score contribute half, reflecting the middle of the tied group rather than placing every tied student at its highest or lowest edge.",
+          "The result is a percentile value, not a percentage grade to add to your transcript. Several conventions exist for percentile ranks, particularly when handling ties or endpoints. Therefore this calculator’s answer can differ from a school report even with correct counts. Check which convention the report uses before treating a difference as an error."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: a three-student tie",
+        "paragraphs": [
+          "Suppose 18 students scored below you, three students including you share your mark, and nine scored higher. The class size is 18 + 3 + 9 = 30. Half of the tied group is 1.5, giving an adjusted count of 19.5. Dividing 19.5 by 30 and multiplying by 100 gives a midrank percentile of 65.",
+          "Your actual mark could be 58%, 76% or another value compatible with that ordering. The counts alone do not reveal it. A percentile of 65 also does not mean exactly 65% of students scored strictly below you. In this example, the strictly lower share is 18 ÷ 30 = 60%; the extra five points arise from the tie convention."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "See what changes when the group changes",
+        "paragraphs": [
+          "Imagine the same mark in a different group of 30, where 24 students are below, one student is equal including you, and five are above. The midrank percentile becomes 24.5 ÷ 30 × 100, or approximately 81.67. Your earned marks need not change for your relative position to change.",
+          "This is why percentiles from different cohorts are not automatically comparable measures of improvement. A stronger comparison group, a different exam or a different inclusion rule can shift the rank. When reviewing your learning, look at actual performance on comparable tasks and teacher feedback as well as relative standing. A lower percentile alone does not establish that your knowledge has declined."
+        ]
+      },
+      {
+        "id": "endpoints",
+        "heading": "Why the highest score can be below 100",
+        "paragraphs": [
+          "With 29 students below you, only you tied at the top, and nobody above, the midrank percentile is 29.5 ÷ 30 × 100 = 98.33. The highest score therefore does not receive 100 under this convention. Similarly, a sole lowest score receives 0.5 ÷ 30 × 100 = 1.67 rather than zero.",
+          "If every student has the same score, nobody is below or above and the full group is tied. The formula gives 50 regardless of group size. These outcomes reflect the definition being used, not a failure to recognize a top score or a perfect mark. A one-student group also produces 50 and offers little meaningful comparative information."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Avoid common ranking mistakes",
+        "paragraphs": [
+          "Do not count yourself both in the tied group and in the below or above group. If the report says two other students have your score, enter three tied students including yourself. Likewise, use student counts rather than grade values: entering your mark as the below count would describe an unrelated dataset.",
+          "Small groups make rank changes look large because each student represents a bigger share of the total. A missing result may also alter the comparison. The output does not resolve grade appeals, determine scholarship eligibility, or supply evidence about a particular student’s ability. Those decisions require the institution’s actual rules and more context than this calculation contains."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use relative standing as one piece of feedback",
+        "paragraphs": [
+          "After calculating, write down the comparison group, assessment date and tie convention with the result. Those details make the number understandable later. If your institution publishes a percentile using another method, keep its official value separate from this estimate rather than silently replacing one with the other.",
+          "For practical study planning, identify topics you missed and compare your own answers with the marking guidance. Relative rank can prompt a useful conversation about support or exam strategy, but it does not identify which topic needs work. If you need the percentage of available marks earned, use the grade percentage calculator. For a summary of an entire score list, use grade statistics."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: how a tie becomes a midrank",
+      "caption": "A 30-student illustration using the midrank convention, not an official examination percentile.",
+      "steps": [
+        {
+          "label": "Below",
+          "value": "18 students",
+          "detail": "Count all scores strictly lower than yours."
+        },
+        {
+          "label": "Equal",
+          "value": "3 students",
+          "detail": "Include yourself; half of this group contributes 1.5."
+        },
+        {
+          "label": "Above",
+          "value": "9 students",
+          "detail": "The three groups total 30 students."
+        },
+        {
+          "label": "Result",
+          "value": "65th percentile",
+          "detail": "Compute 19.5 ÷ 30 × 100."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Is a percentile of 65 the same as 65% on my exam?",
+        "No. Percentile describes relative position within a group. A percentage grade describes earned marks divided by possible marks. Either number can be high or low independently of the other."
+      ],
+      [
+        "Why must the tied count include me?",
+        "Your score belongs in the comparison group. Midrank centers the entire group of equal scores, including your observation. Omitting yourself changes both the numerator and the total group size."
+      ],
+      [
+        "Can I use this for a national testing percentile?",
+        "Only as a calculation on counts you supply. Official testing programs may use specific reference populations, scaling and percentile conventions. This page does not reproduce those scoring systems."
+      ],
+      [
+        "Will another class give me the same percentile?",
+        "Not necessarily. The percentile depends on the distribution in the chosen group. Always retain the group description and do not compare unrelated percentiles as though they measure the same population."
+      ]
+    ]
+  },
+  "attendance": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Find your current attendance percentage",
+        "paragraphs": [
+          "Attendance records are easier to understand when the count and percentage are shown together. The attendance percentage calculator compares the classes you attended with the classes that have already taken place. It provides a current snapshot, helping you check your own record before discussing an attendance question with your course office.",
+          "Use this tool when each counted class carries equal weight. It does not decide whether an absence is excused, count clinical hours, or determine permission to sit an examination. Those decisions belong to your institution. The calculation is useful because it makes the arithmetic transparent, while keeping administrative rules separate from a simple ratio."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Use classes held rather than the full schedule",
+        "paragraphs": [
+          "Enter the number of classes attended and the number held so far. Both must be whole numbers, with at least one held class. Attended classes cannot exceed held classes. If 30 classes have taken place and you attended 22, those are the two inputs even when another ten classes appear on the future timetable.",
+          "Check that both counts cover the same course and reporting period. A weekly total from one module cannot be combined with a term total from another without changing the question. Where your institution excludes canceled sessions, exclude them from both the relevant schedule and your count. If the official record is unclear, confirm the underlying entries instead of guessing."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "How attendance is calculated",
+        "paragraphs": [
+          "The formula is attendance percentage = attended classes ÷ classes held × 100. Dividing creates the share of held sessions attended. Multiplying by 100 expresses that share as a percentage. The number of missed classes is the difference between held and attended, although the percentage result remains the main output.",
+          "For example, attending every one of 12 held classes gives 12 ÷ 12 × 100 = 100%. Attending none of 12 gives zero. Between those endpoints, each session has the same importance under this model. The tool does not infer an extra penalty for consecutive absences, lateness or missing a particular kind of session."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: 22 attended out of 30",
+        "paragraphs": [
+          "Suppose your register shows 30 classes held and 22 attended. Divide 22 by 30 to get 0.733333… and multiply by 100. Your attendance is approximately 73.33%, displayed to two decimal places. You missed eight of the counted classes because 30 − 22 = 8.",
+          "The displayed value is a rounded summary of the underlying fraction. If a course threshold matters, compare the exact attendance record with the institution’s rounding rule rather than assuming the displayed hundredth is the official decision. For a hypothetical 75% threshold, 22 out of 30 is below it. This example threshold illustrates comparison only; it is not a universal attendance requirement."
+        ]
+      },
+      {
+        "id": "changes",
+        "heading": "Understand how the next class changes the ratio",
+        "paragraphs": [
+          "If you attend the next class in that example, both counts rise by one: 23 attended out of 31 held. The new percentage is approximately 74.19%. If you instead miss the next class, only the held count increases, giving 22 out of 31, or approximately 70.97%.",
+          "The size of the change depends on the existing total. Early in a course, one absence can shift the percentage sharply because the denominator is small. Later, one session usually changes it less. This does not make a late absence administratively acceptable; it simply explains the arithmetic. To find how many future attended classes would reach a target, use the attendance target calculator."
+        ]
+      },
+      {
+        "id": "records",
+        "heading": "Resolve differences with an official register",
+        "paragraphs": [
+          "If your result differs from a student portal, first compare individual dates rather than repeatedly changing the calculator inputs. Look for a session marked absent by mistake, a canceled class still counted, or a report covering different dates. A mismatch in the denominator can create a difference even when the attended count agrees.",
+          "Keep any correction request factual, using your institution’s attendance review process and supporting information where appropriate. The calculator cannot prove attendance or alter a register. It also cannot decide whether authorized leave should be excluded, counted as attended, or counted as an absence. Enter the official treatment only after it has been established for your course.",
+          "A useful personal log records the date, course, whether the session occurred and how attendance was recorded. That makes it easier to identify a counting difference without collecting unnecessary information about classmates. Keep it synchronized with confirmed corrections rather than maintaining an unverified alternative register. Retain any relevant correction reference as well."
+        ]
+      },
+      {
+        "id": "limitations",
+        "heading": "When a class-count model is unsuitable",
+        "paragraphs": [
+          "Some courses measure attendance in hours, require separate lecture and laboratory minimums, or apply special rules to placements. Equal session counts cannot represent those systems accurately when session lengths or requirements differ. For example, a one-hour tutorial and a four-hour practical would receive identical weight here, which may not match an hours-based policy.",
+          "Partial attendance and late arrival are also outside this whole-class model. Do not round half a session into a full attendance simply to fit the input. Use the official recording unit and seek the appropriate calculation method. Combining lecture and laboratory totals can hide a shortage in one required component even when the overall percentage appears high."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use the snapshot for a realistic attendance plan",
+        "paragraphs": [
+          "Save the current counts alongside the reporting date so you can update them correctly after the next session. Track held and attended classes separately. Adding a future class to both counts before it happens would overstate your current record, while adding it only to held classes would understate attendance.",
+          "If you are close to a required threshold, check the remaining schedule and ask how the institution handles make-up sessions or documented absences. Avoid treating an apparent numerical margin as permission to miss teaching. The useful next step is understanding the actual requirement and keeping an accurate record, not relying on a rounded percentage without the course policy behind it."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: calculate a current attendance snapshot",
+      "caption": "Only classes already held belong in this example. Every counted session has equal weight.",
+      "steps": [
+        {
+          "label": "Attended",
+          "value": "22 classes",
+          "detail": "These are recorded attended sessions."
+        },
+        {
+          "label": "Held",
+          "value": "30 classes",
+          "detail": "Future scheduled sessions are excluded."
+        },
+        {
+          "label": "Divide",
+          "value": "22 ÷ 30",
+          "detail": "The attended share is 0.733333…"
+        },
+        {
+          "label": "Percentage",
+          "value": "73.33%",
+          "detail": "Eight of the 30 counted classes were missed."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Should future classes be included in classes held?",
+        "No. The current percentage covers sessions that have already taken place. Future sessions belong in a projection, and should be added to the current record only as they occur."
+      ],
+      [
+        "What happens before any classes have been held?",
+        "A percentage based on zero held classes is undefined because the denominator would be zero. The calculator requires at least one held class rather than inventing a starting attendance percentage."
+      ],
+      [
+        "Can an excused absence count as attended?",
+        "That depends on the institution’s policy. The calculator does not classify absences. Confirm how the official register treats that session and use consistent counts for the same reporting period."
+      ],
+      [
+        "Does the result establish exam eligibility?",
+        "No. Eligibility can depend on separate components, documentation, timing and institutional decisions. This tool calculates an equal-session percentage; it does not replace an official attendance review."
+      ]
+    ]
+  },
+  "attendance-target": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Work out the attendance recovery path",
+        "paragraphs": [
+          "When your current attendance is below a target, dividing the missing percentage by one class can give a misleading answer. Every future class you attend increases both the attended count and the number held. The attendance target calculator accounts for that changing denominator and finds the minimum consecutive classes needed to meet your chosen percentage.",
+          "Use it to explore a recovery plan using an accurate current register. It assumes you attend every counted future class in the plan. It does not know how many sessions remain, approve absences, or determine examination eligibility. Treat the answer as a mathematical requirement to compare with your actual schedule and institutional policy."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Choose a target and verify the starting counts",
+        "paragraphs": [
+          "Enter classes attended, classes held and your target attendance percentage. Counts must be whole numbers, at least one class must have been held, and attendance cannot exceed the held total. The target must be above zero and no greater than 100. Use only sessions that have already taken place in the starting record.",
+          "The target is your input, not a universal rule supplied by the website. Obtain any required percentage from your course documentation. Confirm whether lectures, practical sessions or placements have separate requirements before combining them. If classes differ in length and the policy measures hours, an equal-class model may not represent the requirement accurately."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Why both counts increase in the formula",
+        "paragraphs": [
+          "Let A be attended classes, H be classes held and t be the target expressed as a decimal. If you attend x future classes, attendance becomes (A + x) ÷ (H + x). To meet the target, that fraction must be at least t. Rearranging gives x ≥ (t × H − A) ÷ (1 − t), provided t is below one.",
+          "A class is a whole event in this model, so the calculator rounds a positive requirement upward to the next whole number. If you already meet the target, the additional requirement is zero. A target of exactly 100% needs separate treatment because its denominator in the rearranged formula would be zero."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: reach 75% from 22 of 30",
+        "paragraphs": [
+          "Start with 22 attended classes out of 30 and choose a hypothetical 75% target. Convert the target to 0.75. The numerator is 0.75 × 30 − 22 = 0.5, and the denominator is 1 − 0.75 = 0.25. Dividing gives two additional classes.",
+          "After attending two consecutive classes, the record becomes 24 out of 32, which equals 75%. Attending just one produces 23 out of 31, approximately 74.19%, so one is insufficient. This check confirms that two is the minimum whole number, not merely a possible answer. The 75% figure is used to demonstrate the calculation and does not establish any particular institution’s attendance rule."
+        ]
+      },
+      {
+        "id": "rounding",
+        "heading": "Check a result that needs rounding upward",
+        "paragraphs": [
+          "Suppose you attended 20 of 30 classes and want 75%. The calculation is (22.5 − 20) ÷ 0.25 = 10. You need ten consecutive attended classes, producing 30 out of 40. However, a target of 80% from 22 out of 30 gives (24 − 22) ÷ 0.20 = 10 as well, despite the different starting shortfall.",
+          "These comparisons show why percentage gaps alone cannot determine the required sessions. When the algebra gives a fraction of a class, round upward and verify the resulting ratio. Rounding down would leave the record below the target. The calculator performs that whole-class step for you and shows the resulting attendance in the explanation."
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "Recognize impossible or incomplete plans",
+        "paragraphs": [
+          "After you miss a counted class, you cannot restore exactly 100% lifetime attendance by attending a finite number of later classes. The missed class remains in the denominator. The calculator reports that target as not reachable. If your record is already perfect, zero extra classes are needed to meet 100% now.",
+          "A different limitation arises when the answer is mathematically possible but more classes are required than remain in the term. The tool cannot detect that because the remaining timetable is not an input. Compare the required count with actual sessions available. Ten needed classes are not a feasible term recovery plan when only six remain."
+        ]
+      },
+      {
+        "id": "changes",
+        "heading": "Update the calculation after any new absence",
+        "paragraphs": [
+          "The plan assumes consecutive attendance. If you miss a future class, increase held classes without increasing attended classes, then calculate again from the updated record. Do not simply add one class to the old answer: the new denominator and shortfall may require a different adjustment.",
+          "Likewise, do not add canceled sessions unless the institution counts them. A make-up session changes the calculation only if it is actually recorded as a counted attendance opportunity. Authorized leave, late arrival and partial attendance require the institution’s treatment first. This calculator does not erase an absence or replace administrative decisions with a mathematical scenario."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Build a schedule you can realistically follow",
+        "paragraphs": [
+          "Once the result is known, identify the specific future sessions that could satisfy it. Check dates, travel, work commitments and any separate practical requirements. Keep the starting counts and target with your plan so you can see which assumptions produced the number rather than remembering an isolated result.",
+          "Reaching the target does not secure it permanently. A later absence can lower the ratio again, especially when the record is close to the threshold. Keep tracking attendance after the recovery point. If illness or another serious issue affects attendance, use your institution’s support and documentation process rather than treating the calculator as a substitute for timely communication.",
+          "For example, if your recovery count is two and only one counted session remains, attending that one improves the ratio but does not complete the stated recovery. Presenting that distinction clearly can help you discuss the situation early, while there is still time to understand any institution-approved options. Keep the exact starting record available for that discussion."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: two consecutive classes reach the target",
+      "caption": "This is an illustrative 75% target. It assumes both future sessions count equally and are attended.",
+      "steps": [
+        {
+          "label": "Starting record",
+          "value": "22 of 30",
+          "detail": "Current attendance is approximately 73.33%."
+        },
+        {
+          "label": "Attend one",
+          "value": "23 of 31",
+          "detail": "Approximately 74.19% remains below the target."
+        },
+        {
+          "label": "Attend two",
+          "value": "24 of 32",
+          "detail": "Attendance reaches exactly 75%."
+        },
+        {
+          "label": "Check schedule",
+          "value": "2 classes needed",
+          "detail": "Confirm at least two counted sessions remain."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Why do I need more classes than the percentage gap suggests?",
+        "Each future class also increases the total held. The calculation must account for both changes, so a fixed percentage-per-class shortcut does not describe the recovery accurately."
+      ],
+      [
+        "What does zero additional classes mean?",
+        "Your current record already meets the chosen target. It does not mean future attendance is unnecessary. Later absences can lower your percentage and separate participation rules still apply."
+      ],
+      [
+        "Can I recover exactly 100% after an absence?",
+        "Not while that absence remains counted and only future attended classes are added. Your percentage can approach 100%, but cannot equal it with a finite number of additional sessions."
+      ],
+      [
+        "Does the answer guarantee enough sessions are available?",
+        "No. Compare the result with the remaining course timetable and the institution’s counting rules. The calculator knows the starting record and target, but not your future schedule."
+      ]
+    ]
+  },
+  "target-gpa": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Turn a cumulative GPA goal into a next-term target",
+        "paragraphs": [
+          "A desired cumulative GPA does not tell you directly what average you need next term. Existing credits continue to influence the record, so the next term often needs a higher GPA than the cumulative goal. The target GPA calculator finds that required future average using your current GPA, existing credits, target and planned new credits.",
+          "This is a planning tool for non-overlapping records on one grade-point scale. It helps you test whether a goal fits a particular term’s credit load. It does not select courses, predict grades, convert percentages to GPA, or confirm eligibility for a scholarship or program. Use the actual institutional GPA system behind your transcript."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Collect GPA-bearing credits and one consistent scale",
+        "paragraphs": [
+          "Select the maximum GPA scale used by your institution. Then enter your current cumulative GPA, the credits included in that GPA, your desired cumulative GPA and the GPA-bearing credits planned next term. Future credits must be positive. Current credits may be zero if you are modeling a record before any prior GPA-bearing work.",
+          "Do not automatically use every completed or registered credit. Pass/fail, transfer, withdrawn or other courses may be treated differently under the institution’s policy. Current, target and future GPAs must share one scale, and all credits must use the same unit system. Mixing semester and quarter credits without an authorized conversion would distort the weighting."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Calculate the quality points still needed",
+        "paragraphs": [
+          "GPA is a credit-weighted average. Multiplying current GPA by current GPA-bearing credits estimates the quality points already earned. Multiplying the target by combined current and future credits gives the quality points required at the end of the next term. Subtract existing points and divide the difference by future credits.",
+          "In symbols, required next GPA = [target × (current credits + next credits) − current GPA × current credits] ÷ next credits. This rearranges the ordinary cumulative GPA equation. It assumes the prior record stays counted and the next-term work is added once. Grade replacement, forgiveness or removal of an old attempt is not applied in this model."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: raise 3.20 to 3.30",
+        "paragraphs": [
+          "Suppose your current GPA is 3.20 across 45 credits, and you plan 15 new credits. Your target cumulative GPA is 3.30. Existing quality points are 3.20 × 45 = 144. The combined record would have 60 credits, requiring 3.30 × 60 = 198 quality points.",
+          "The new term therefore needs 198 − 144 = 54 quality points. Dividing 54 by 15 gives a next-term GPA of 3.60. Check the result by recombining the records: (144 + 3.60 × 15) ÷ 60 = 3.30. The target is achievable mathematically on a 4.0 scale, but the calculation does not guarantee that your actual course results will produce 3.60."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "See how the planned credit load changes the answer",
+        "paragraphs": [
+          "Keep the same current 3.20 GPA, 45 credits and 3.30 goal, but change next-term credits to nine. The required average becomes [3.30 × 54 − 144] ÷ 9 = 3.80. With 18 future credits it becomes [3.30 × 63 − 144] ÷ 18 = 3.55.",
+          "More future credits give the new work a larger share of the combined record, reducing the required average in this example. That arithmetic is not a recommendation to overload your timetable. A heavier workload can affect preparation and performance. Compare scenarios within a realistic, permitted course plan rather than choosing the largest credit count solely because its required GPA looks lower."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Read reachable and already-secured results carefully",
+        "paragraphs": [
+          "A required next GPA above the selected maximum means the target is not reachable in the stated number of credits under this additive model. For example, raising 3.20 across 45 credits to 3.50 with only nine new credits requires 5.00, which exceeds a 4.0 scale. Recheck the inputs before exploring a lower target or a longer timeline.",
+          "A required average at or below zero means even zero new quality points would meet that cumulative threshold mathematically. It does not remove course-pass, progression or enrollment requirements. Minimum targets are displayed upward to two decimal places so the visible minimum does not fall below the calculated requirement."
+        ]
+      },
+      {
+        "id": "precision",
+        "heading": "Account for transcript rounding and course grade steps",
+        "paragraphs": [
+          "A displayed current GPA may already be rounded. Multiplying 3.20 by credits estimates existing quality points; it may not reproduce an institution’s internal record exactly. Use the most precise approved figures available and treat a close threshold result cautiously. An official calculation can also use its own rounding or truncation rule.",
+          "The required next-term average is not a promise that a particular combination of letter grades can achieve exactly that number. Course credits and grade-point steps create discrete combinations. Use the semester GPA calculator to test plausible individual course outcomes after finding the overall target. Always use your institution’s points for those grades rather than a generic letter conversion.",
+          "When comparing two very close scenarios, retain the unrounded intermediate quality points. Rounding each intermediate multiplication before combining the records can introduce avoidable differences."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use the target to guide a practical academic plan",
+        "paragraphs": [
+          "Compare the required average with recent performance and the demands of the planned courses. Identify where assessment feedback suggests useful changes, such as earlier practice, office hours or a more balanced timetable. A target becomes more actionable when you connect it to specific course expectations instead of treating the GPA alone as a study method.",
+          "If the result is out of reach for one term, test a longer period only with credits that can actually count. For repeated courses, use the retake GPA calculator with the applicable policy rather than pretending replacement is ordinary new credit. Discuss formal progression or award requirements with the institution, because this calculation does not establish those decisions."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: the quality-point bridge to 3.30",
+      "caption": "Illustrative figures on one consistent GPA scale; the old record and new term do not overlap.",
+      "steps": [
+        {
+          "label": "Existing record",
+          "value": "144 points",
+          "detail": "3.20 GPA multiplied by 45 credits."
+        },
+        {
+          "label": "Target total",
+          "value": "198 points",
+          "detail": "3.30 GPA multiplied by 60 combined credits."
+        },
+        {
+          "label": "New term needed",
+          "value": "54 points",
+          "detail": "Subtract the existing 144 from 198."
+        },
+        {
+          "label": "Required average",
+          "value": "3.60 GPA",
+          "detail": "Divide 54 new quality points by 15 credits."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Why is the next-term target higher than my cumulative target?",
+        "When your existing GPA is below the goal, future work must offset that lower record. Averaging the goal itself into a lower GPA would still leave the combined result below the goal."
+      ],
+      [
+        "Can I enter a current record with zero credits?",
+        "Yes. With no prior GPA-bearing credits, the required next-term GPA equals the cumulative target. A positive future credit count is still needed to calculate an average."
+      ],
+      [
+        "Does the tool convert percentages or letter grades?",
+        "No. Enter GPA values on the selected institutional scale. The semester calculator can combine institution-defined numeric grade points and credits, but it does not create a universal conversion."
+      ],
+      [
+        "What if the target requires more than my scale allows?",
+        "The stated target is not reachable in that credit load while the old record remains counted. Check inputs, consider a realistic longer horizon, or consult an adviser about the actual academic options available."
+      ]
+    ]
+  },
+  "gpa-credits": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Estimate the credits behind a cumulative GPA goal",
+        "paragraphs": [
+          "A GPA can rise slowly when many existing credits remain in the average. The credits to raise GPA calculator estimates how much new GPA-bearing work you would need to reach a target while maintaining a planned future GPA. It answers a different question from a next-term target: here the future average is specified and the unknown is the credit total.",
+          "Use the result to explore a realistic academic timeline. It assumes the existing record remains counted and new work is added under the same scale. The answer does not guarantee that enough suitable courses exist, that an additional enrollment is allowed, or that the planned future grades can be earned."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Set the current record, future average and credit step",
+        "paragraphs": [
+          "Select your institution’s maximum GPA scale. Enter current cumulative GPA, current GPA-bearing credits, target GPA and the average you plan to earn across new credits. Current credits must be positive. All GPA values must fit the selected scale, and old and new credits must use the same credit system.",
+          "The allowed credit increment controls upward rounding. Enter one if you can add credits in whole units, or 0.5 if half-credit units genuinely apply. An increment is not a course catalog. Three-credit courses, prerequisites and program restrictions can impose larger practical steps than the numerical credit unit. Confirm which courses actually contribute to the cumulative GPA before using their credits."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Balance the old record with higher future results",
+        "paragraphs": [
+          "When the target is higher than your current GPA, the formula is new credits = current credits × (target GPA − current GPA) ÷ (future GPA − target GPA). The numerator represents the shortfall associated with the old record. The denominator represents how far each future credit’s planned average sits above the target.",
+          "This equation comes from setting the combined weighted GPA equal to the target and solving for new credits. A positive finite answer requires the planned future GPA to be strictly higher than the target. After solving, the calculator rounds upward to the chosen increment and shows the estimated combined GPA at that rounded credit total."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: move from 3.00 to 3.50",
+        "paragraphs": [
+          "Suppose you have 60 GPA-bearing credits at 3.00 and want a cumulative 3.50 on a 4.0 scale. If all future credits average 4.00, the requirement is 60 × (3.50 − 3.00) ÷ (4.00 − 3.50). That is 60 × 0.50 ÷ 0.50 = 60 additional credits.",
+          "Check by recombining: the old record contains 180 quality points, and the new work adds 240. Dividing 420 total quality points by 120 total credits gives 3.50. This is a substantial amount of work because the existing record carries the same credit weight as the new record. Maintaining 4.00 throughout those credits is an assumption, not a forecast."
+        ]
+      },
+      {
+        "id": "rounding",
+        "heading": "Understand why a fractional answer rounds upward",
+        "paragraphs": [
+          "Consider 45 credits at 3.10, a target of 3.30 and a planned future GPA of 3.80. The exact requirement is 45 × 0.20 ÷ 0.50 = 18 credits. If only four-credit increments were realistically available, the rounded requirement would be 20 credits rather than 18.",
+          "At 20 new credits, the estimated cumulative GPA is (3.10 × 45 + 3.80 × 20) ÷ 65, approximately 3.3154. At 16 new credits it would be approximately 3.2836, below the target. Rounding upward protects the threshold under the stated average. Actual course combinations and institutional rounding still need checking separately, even when the mathematical increment is correct."
+        ]
+      },
+      {
+        "id": "limits",
+        "heading": "Recognize targets that cannot be reached this way",
+        "paragraphs": [
+          "If the current GPA already meets or exceeds the chosen target, the calculator reports zero additional credits needed to reach it now. For a higher target, a future GPA equal to or below that target cannot lift the lower existing record to it in a finite number of added credits. The calculator reports such a plan as not reachable.",
+          "For example, a record below 4.00 cannot reach exactly 4.00 by adding only 4.00 grades on a 4.0 scale while all previous grades remain counted. It can approach 4.00 without equaling it. Grade replacement could change the underlying record, but that is a different model requiring the institution’s actual retake policy."
+        ]
+      },
+      {
+        "id": "sensitivity",
+        "heading": "Test the effect of a more cautious future average",
+        "paragraphs": [
+          "For the 3.00 GPA over 60 credits example, reaching 3.50 at a future average of 3.80 requires 60 × 0.50 ÷ 0.30 = 100 new credits. At 4.00 it required 60. A relatively small change in planned future performance can therefore change the timeline substantially.",
+          "The closer the future average is to the target from above, the smaller the denominator and the larger the requirement. This is useful information when evaluating an optimistic plan. Try a realistic range of future averages and compare the resulting credit totals with your remaining program. Do not treat the most favorable scenario as a commitment that later performance will follow it."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Translate the number into an academic conversation",
+        "paragraphs": [
+          "After finding the requirement, compare it with GPA-bearing credits actually left in your program. Check term limits, prerequisites and whether optional courses count toward the relevant record. If only 30 applicable credits remain but the model needs 60, the goal cannot be met through that planned additive route within those 30 credits.",
+          "Use precise approved GPA information where possible, because a rounded current GPA creates uncertainty in estimated quality points. Keep the assumptions with the result and update the calculation after each term. For a fixed upcoming credit load, the target GPA calculator is more direct. For repeated courses, calculate using the actual replacement or both-attempts rule instead of silently changing the old record."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: match the existing record with new credits",
+      "caption": "An illustrative 3.00-to-3.50 plan assumes every new credit averages 4.00 on the same scale.",
+      "steps": [
+        {
+          "label": "Starting record",
+          "value": "60 credits at 3.00",
+          "detail": "Existing quality points equal 180."
+        },
+        {
+          "label": "Required new work",
+          "value": "60 credits at 4.00",
+          "detail": "New quality points equal 240."
+        },
+        {
+          "label": "Combined record",
+          "value": "120 total credits",
+          "detail": "Add both non-overlapping records."
+        },
+        {
+          "label": "New cumulative GPA",
+          "value": "3.50",
+          "detail": "420 quality points divided by 120 credits."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Does the answer mean I should enroll in all those credits?",
+        "No. It is a numerical requirement under a stated average. Course availability, academic workload, program rules and the value of further study require a separate practical decision."
+      ],
+      [
+        "Why must the future GPA exceed a higher target?",
+        "A weighted average containing an existing value below the target stays below the target if all new work only matches it. Future performance must exceed the target to offset the old shortfall in finite credits."
+      ],
+      [
+        "What credit increment should I choose?",
+        "Use the smallest unit you can actually add under the relevant system. Then check course scheduling separately. A one-credit mathematical increment does not mean every needed one-credit course exists or counts."
+      ],
+      [
+        "Does this include grade forgiveness?",
+        "No. It retains the current record and adds new credits. If an institution removes or replaces earlier attempts, use an appropriate retake model and confirm the policy before adjusting the record."
+      ]
+    ]
+  }
+}

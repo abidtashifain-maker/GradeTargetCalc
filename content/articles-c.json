@@ -1,0 +1,698 @@
+{
+  "must-pass": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "When a passing average is not enough",
+        "paragraphs": [
+          "A strong coursework average can make a final exam target look surprisingly low. However, some courses set two separate conditions: reach a minimum overall course grade and earn a minimum score on the final itself. The Must-Pass Final Calculator combines those conditions so you can see which one determines your exam target.",
+          "This is useful when your syllabus says that the examination must be passed independently, or when a progression rule specifies an examination threshold. Enter the actual rules for your course. The calculator does not assume that every university, school, programme or country applies the same passing percentages."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Collect four values before calculating",
+        "paragraphs": [
+          "Your current grade must represent all work other than the final, expressed as a percentage. If the gradebook already counts the unfinished final as zero, its headline number is not the right input. Find the normalized average of the completed non-final work instead.",
+          "Then enter the required overall course percentage, the final examination weight in the course, and the minimum permitted examination score. A final worth 40% needs a weight of 40, not 0.40. The separate exam minimum is an exam percentage, not the number of course percentage points it contributes.",
+          "The final weight must be greater than zero and no more than 100%. All grade percentages must be between zero and 100. A zero exam minimum means that only the weighted course target constrains the answer; it does not declare that sitting the exam is optional."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Two conditions, one required score",
+        "paragraphs": [
+          "First calculate the examination score needed for the course average. Required exam score = (Course threshold − Current grade × (1 − Final weight / 100)) ÷ (Final weight / 100). This removes the contribution already supplied by coursework and assigns the remaining requirement to the examination.",
+          "Next compare that answer with the separate examination minimum. The larger value is the binding requirement. An exam score must satisfy both conditions simultaneously, so taking their average would be incorrect. The calculator displays a nonnegative minimum and rounds it upward to two decimal places when necessary."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: the exam hurdle controls",
+        "paragraphs": [
+          "Imagine that your non-final average is 80%, the final counts for 40% of the course, and the overall passing threshold is 50%. Non-final work contributes 80 × 0.60 = 48 course percentage points. Only two additional points are needed for the weighted average.",
+          "Dividing two by 0.40 gives an exam target of 5%. But suppose the syllabus separately requires at least 40% on the final. The combined requirement is therefore 40%, because 40 is larger than five. At that score, the overall result is 48 + 40 × 0.40 = 64%.",
+          "The 14 points above the course threshold are not a calculation error. They arise because the independent exam hurdle is stricter than the weighted-average requirement. A score of 30% would produce a 60% course average in this example, while still missing the stated 40% examination condition."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "When the course target controls instead",
+        "paragraphs": [
+          "Now consider a 50% current average, a final worth 50%, a required course grade of 60%, and a separate exam minimum of 40%. Coursework contributes 25 points. The final must supply another 35, requiring 70% on the examination. Here the weighted course requirement is stronger.",
+          "This distinction helps you plan revision realistically. Looking only at the independent pass mark would suggest that 40% is enough, but that would give a course result of 45%. Looking only at your current average can also hide how heavily the final affects the remaining result."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Read reachable and unreachable results carefully",
+        "paragraphs": [
+          "A displayed minimum above the ordinary exam ceiling is reported as not reachable. For example, a 20% current average with a final worth 20% cannot reach a 60% course target: even a perfect final gives 36% overall. Recheck the inputs before drawing conclusions about your options.",
+          "When a mathematical course target is already secured, the separate exam minimum can still remain binding. Even if both conditions allow zero mathematically, attendance, compulsory submission or professional competency requirements may still apply. This tool checks only the two percentage conditions entered here."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Avoid these common interpretation mistakes",
+        "paragraphs": [
+          "Do not enter a desired letter grade without first locating its actual percentage threshold. Do not substitute a previous term average for the current course average. Also check whether the exam has component hurdles: a requirement to pass both a practical and a written paper cannot be represented by one combined minimum alone.",
+          "Use the published rules about rounding rather than assuming that an overall value just below a threshold will be rounded up. Minimum targets shown here are cautious decimal displays of the calculation, not a promise about how an institution records marks. A teacher may use unrounded underlying scores unavailable in the gradebook.",
+          "A useful sensitivity check is to keep the course threshold fixed and compare different examination weights only when those weights correspond to genuine alternative assessment arrangements. Changing a weight just to obtain an easier target does not change the real syllabus. The result is meaningful only for the assessment structure that will actually be used."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Turn the minimum into a practical study target",
+        "paragraphs": [
+          "Treat the result as a boundary to understand, rather than the exact score to aim for. A personal buffer can account for uncertain marking or uneven performance across topics. Compare that buffer with past practice papers scored using the real assessment scheme, rather than relying on a single optimistic practice result.",
+          "If the result is outside your realistic range, ask the course team about the applicable reassessment or progression options. Bring the relevant syllabus clause and your inputs so the question is specific. Keep the mathematical estimate separate from decisions about eligibility, resits or professional requirements; those decisions belong to the institution."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: two passing conditions",
+      "caption": "Illustrative values only. The stricter condition determines the final-exam minimum.",
+      "steps": [
+        {
+          "label": "Course contribution",
+          "value": "48 points",
+          "detail": "80% current grade multiplied by the 60% non-final share."
+        },
+        {
+          "label": "Average requirement",
+          "value": "5% exam",
+          "detail": "Two remaining course points divided by the 40% final weight."
+        },
+        {
+          "label": "Separate hurdle",
+          "value": "40% exam",
+          "detail": "The syllabus independently requires this examination score."
+        },
+        {
+          "label": "Combined minimum",
+          "value": "40% exam",
+          "detail": "The larger requirement wins; the resulting course average is 64%."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can I enter a higher personal course target?",
+        "Yes. The course threshold field can represent a personal target rather than the minimum passing percentage. Keep the independent exam minimum at the actual requirement if you want to understand both constraints."
+      ],
+      [
+        "What if there is no separate exam hurdle?",
+        "Enter zero for the examination minimum. The result then follows the ordinary standalone final-exam target calculation, provided the current grade excludes the final and all remaining course weight belongs to it."
+      ],
+      [
+        "Does this handle compulsory attendance?",
+        "No. Attendance, clinical competencies, required submissions and minimum scores within individual examination sections need their own checks. Meeting these two numerical conditions cannot establish that every course requirement has been fulfilled."
+      ],
+      [
+        "Why can the overall result exceed the course threshold?",
+        "A separate examination minimum may require more exam marks than the course average needs. Passing the stronger hurdle then raises the weighted course result above the threshold, which is mathematically consistent."
+      ]
+    ]
+  },
+  "two-part": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Plan the unfinished part of your final",
+        "paragraphs": [
+          "A final assessment may have a completed first paper and an upcoming second paper, or a marked presentation followed by a written examination. The Two-Part Final Calculator estimates the average needed on the unfinished portion to reach your chosen overall course grade.",
+          "The calculation has two layers. First it determines the final-exam average required within the course. Then it subtracts the contribution of Part 1 and solves for Part 2. Keeping these layers separate prevents a common mistake: treating a share of the final as though it were the same share of the entire course."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Enter the course and exam shares separately",
+        "paragraphs": [
+          "Begin with the current course grade excluding the entire final assessment. Both Part 1 and Part 2 must be left out of that number, even if Part 1 already appears in your online gradebook. Otherwise its marks enter the calculation twice and the required remaining score becomes misleading.",
+          "Enter your target course percentage and the weight of the whole final in the course. Then enter Part 1 as a percentage share of that final, followed by the percentage scored on Part 1. The unfinished share is calculated as 100% minus the Part 1 share.",
+          "For example, a final worth 40% of the course with Part 1 worth half of the final gives Part 1 a course weight of 20%. The form needs 40 for the whole-final weight and 50 for the Part 1 share, rather than entering 20 in both places."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Understand the two-stage calculation",
+        "paragraphs": [
+          "Let C be the course grade excluding the final, T the course target, and w the final weight as a decimal. The whole-final score required is F = (T − C × (1 − w)) ÷ w. The same weighted-average relationship applies whether the final has one paper or several parts.",
+          "Now let p be Part 1’s share of the final as a decimal and S its score. The remaining requirement is Part 2 = (F − p × S) ÷ (1 − p). Part 1 contributes p × S points toward the final average; Part 2 must supply the balance."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: a 95% second-paper target",
+        "paragraphs": [
+          "Suppose your non-final course grade is 80%, your target is 85%, and the entire final is worth 40%. Non-final work contributes 80 × 0.60 = 48 course points. The final must contribute 37, so its required average is 37 ÷ 0.40 = 92.5%.",
+          "Part 1 counts for half of that final and you scored 90%. Its contribution to the final average is 90 × 0.50 = 45 points. Part 2 must contribute another 47.5 final-average points, giving 47.5 ÷ 0.50 = 95%.",
+          "Check the answer forward: a 90% first part and 95% second part, weighted equally, make a 92.5% final average. Combining that with coursework gives 48 + 92.5 × 0.40 = 85%. The calculation therefore meets the original course target."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "Why the unfinished share matters",
+        "paragraphs": [
+          "Keeping the same course target and 90% Part 1 score, imagine Part 1 counts for 25% of the final instead of 50%. The unfinished part must score (92.5 − 22.5) ÷ 0.75 = 93.333…%, displayed upward as 93.34%. A larger unfinished share gives more room to change the final average.",
+          "If Part 1 instead counts for 75%, the remaining requirement becomes (92.5 − 67.5) ÷ 0.25 = 100%. With only one quarter of the final left, the same shortfall requires a higher score. This illustrates why exam shares are essential inputs rather than minor details."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Interpret the answer within the model",
+        "paragraphs": [
+          "The displayed result is a minimum percentage for the entire unfinished portion. It is not an individual question count or a guaranteed official course result. Minimum scores are rounded upward to two decimals so the displayed value does not deliberately fall below the mathematical target.",
+          "A requirement above 100% is not reachable when Part 2 is capped at 100. A result at or below zero means that the weighted-average target is already mathematically covered, even with zero on the unfinished part. Neither message overrides an independent paper-pass requirement or an obligation to complete the assessment."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Check for double counting and missing rules",
+        "paragraphs": [
+          "Part 1 cannot occupy 100% of the final because that leaves no remaining share to solve for. A zero share is mathematically possible, but makes the Part 1 score irrelevant. More importantly, verify that the two entered portions collectively represent the whole final rather than leaving a separate component unaccounted for.",
+          "This tool does not automatically impose a minimum mark on each paper, drop a section, replace a past score or apply an institutional grade curve. If those rules apply, the combined weighted average is only one part of the assessment decision. Read the final-assessment instructions before selecting your planning target.",
+          "If Part 1 was marked out of a point total rather than directly as a percentage, convert it before entering the score. For example, 36 marks out of 40 is 90%. Keep that earned percentage separate from the paper’s weight: scoring 90% and carrying 50% of the final describe different aspects of the same assessment."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use the remaining target to organize preparation",
+        "paragraphs": [
+          "Compare the required Part 2 score with practice performance using the same question types and marking criteria. If the unfinished portion contains several topics, distribute revision time using their likely mark value and your current confidence. A high target may require improving weak high-value topics rather than revisiting only comfortable material.",
+          "When several sections remain, you may combine them into a single Part 2 average if their internal weights are known. The answer then describes their weighted average, not the minimum for every section individually. Keep a record of your assumed weights and update the plan if the course team confirms a different assessment structure."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: course target to Part 2",
+      "caption": "A worked two-stage flow using an 80% current grade, 40%-weight final and equal exam parts.",
+      "steps": [
+        {
+          "label": "Course target",
+          "value": "85%",
+          "detail": "Non-final work supplies 48 course percentage points."
+        },
+        {
+          "label": "Entire final needed",
+          "value": "92.5%",
+          "detail": "The final must supply the remaining 37 course points."
+        },
+        {
+          "label": "Part 1 secured",
+          "value": "45 final points",
+          "detail": "A 90% score at a 50% share supplies this contribution."
+        },
+        {
+          "label": "Part 2 needed",
+          "value": "95%",
+          "detail": "The remaining 47.5 final points come from the other half."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can the first part be a practical assessment?",
+        "Yes, if its mark and share of the final are known and the course combines it linearly with the unfinished part. Additional competency or practical-pass rules are outside this calculation."
+      ],
+      [
+        "Why must my current grade exclude Part 1?",
+        "The calculator adds Part 1 separately inside the final-exam calculation. Including it in the current course grade would count the same assessment twice, usually making the remaining target appear too easy."
+      ],
+      [
+        "What if both exam parts count equally?",
+        "Enter 50 as the Part 1 share of the final. This means each part supplies half of the final average, regardless of the weight that the whole final carries in the course."
+      ],
+      [
+        "Can I use a target letter grade?",
+        "Find the corresponding course percentage in your own grading table first. This calculator accepts percentage targets and does not assume that a particular letter represents the same threshold across institutions."
+      ]
+    ]
+  },
+  "test-category": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "A final inside the test category works differently",
+        "paragraphs": [
+          "Some syllabuses place the final examination inside an existing test category instead of assigning it a separate course weight. In that structure, the final changes the test average, and the category’s fixed percentage then carries that new average into the course result.",
+          "The Final Counts as a Test Calculator estimates the final score needed under this specific arrangement. It supports a final worth the same as one ordinary test or a chosen number of equivalent tests. Use it only when the previous tests have equal importance and all other category contributions remain fixed."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Make sure the gradebook fits this model",
+        "paragraphs": [
+          "Enter the current overall course grade, your target course percentage, and the test category’s full syllabus weight. Also enter the current test-category average, the number of existing equally weighted tests, and how many ordinary tests the final is equivalent to.",
+          "The current overall grade must already include the test category at its full published weight. A gradebook that temporarily renormalizes categories because other work remains ungraded may not supply the correct current value. In that case, calculate the completed category contributions carefully or ask the course team how the displayed average is produced.",
+          "An equivalent-test value of two means that the final counts twice as much as one ordinary test within the category. It does not mean the final is worth 2% of the course. Existing test count must be a positive whole number; the equivalent-test value must be positive."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Separate the unchanged contribution first",
+        "paragraphs": [
+          "Let C be the current course grade, A the current test average, and w the test-category weight as a decimal. Other categories currently contribute C − w × A course points. This contribution stays unchanged in the model, while the final updates the test category.",
+          "To reach target T, the new test average must therefore equal (T − C + w × A) ÷ w. If there are n existing tests and the final counts as k tests, the new average is (n × A + k × F) ÷ (n + k), where F is the final score.",
+          "Solve that expression for F: Final score = {[(T − C + w × A) ÷ w] × (n + k) − n × A} ÷ k. The calculator performs these steps and rounds a required minimum upward to two decimal places."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: one more equally weighted test",
+        "paragraphs": [
+          "Your current overall grade is 80%, tests count for 50% of the course, and three existing tests average 70%. The test category supplies 35 course points. Other categories therefore supply 80 − 35 = 45 points, which stay fixed.",
+          "To reach 82% overall, the test category must contribute 37 course points. At a 50% category weight, that requires a new test average of 74%. The three previous tests contain 3 × 70 = 210 summed percentage-score units.",
+          "If the final counts as one test, four tests must sum to 4 × 74 = 296. The final needs 296 − 210 = 86%. Checking forward, (210 + 86) ÷ 4 = 74%, and 45 + 74 × 0.50 = 82% overall."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "A heavier final changes the required score",
+        "paragraphs": [
+          "Using the same example, let the final count as two tests. The five equivalent tests need a total of 5 × 74 = 370 score units. After subtracting the existing 210, the final supplies 160 across its two equivalent units, requiring an 80% final score.",
+          "The final’s effective course weight is the category weight multiplied by k ÷ (n + k). With three existing tests, a final equivalent to one test has a 12.5% course weight inside a 50% category. At two equivalents it has a 20% effective course weight."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Understand what a minimum does and does not mean",
+        "paragraphs": [
+          "A result above 100% is reported as not reachable under an ordinary capped examination. A nonpositive requirement displays zero, meaning the target is already secured mathematically within this category arrangement. Neither answer accounts for an independent exam-pass condition, attendance requirement or later changes to other categories.",
+          "The required score depends on the number of previous tests because each new test has a smaller influence when more equally weighted tests already exist. Using a simple standalone final weight without reconstructing this category structure can produce a different answer, even when both calculations look reasonable."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Watch for unequal tests and drop policies",
+        "paragraphs": [
+          "Equal weighting is an essential assumption. If one previous test has twice the marks or a special multiplier, a plain average and simple test count may not represent the category. Likewise, a lowest-test drop can change the counted scores after the final is added. This calculator does not decide which test would be dropped.",
+          "The inputs must describe a feasible current course record. For example, the implied contribution from other categories cannot be negative or exceed what their combined course weight permits. The calculator rejects inconsistent combinations rather than returning a polished answer from impossible grade data.",
+          "Do not confuse the number of tests with the number of questions on those tests. Three tests remain three equal category units even if they contain different numbers of questions, provided the syllabus deliberately gives each test the same category weight. If the category instead pools all earned marks, the individual mark totals are needed for a different model."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use a category target to guide revision",
+        "paragraphs": [
+          "Before changing your revision plan, confirm the final’s equivalence in the syllabus. Phrases such as “double test,” “replacement test” and “separate final” describe different policies. A replacement can remove a previous mark, whereas this calculator adds the final to the existing record.",
+          "Once the structure is confirmed, compare a few realistic course targets. The difference between them shows how much more final-exam performance is needed. Keep other category contributions fixed only if that matches your actual situation; if an unfinished project can still change your grade, model that separately before treating this result as a complete course plan."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: update the category, then the course",
+      "caption": "The final counts as one test alongside three tests averaging 70%. All non-test contributions stay fixed.",
+      "steps": [
+        {
+          "label": "Current test points",
+          "value": "35 course points",
+          "detail": "A 70% test average multiplied by the 50% category weight."
+        },
+        {
+          "label": "Other categories",
+          "value": "45 course points",
+          "detail": "The current 80% overall grade minus the test contribution."
+        },
+        {
+          "label": "New test average",
+          "value": "74%",
+          "detail": "This contributes 37 points, reaching an 82% course target."
+        },
+        {
+          "label": "Final score needed",
+          "value": "86%",
+          "detail": "Three previous 70% tests and an 86% final average 74%."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can the final count as half a test?",
+        "A positive fractional equivalent is supported mathematically. Enter 0.5 only if the actual course rule gives the final half the weight of one ordinary test within the same category."
+      ],
+      [
+        "Does this replace the lowest previous test?",
+        "No. Previous tests remain in the category. A replacement policy changes the underlying score record and needs a separate calculation using the exact rule and the individual affected marks."
+      ],
+      [
+        "Why is the current course grade also needed?",
+        "The test average alone does not reveal the contribution from other categories. The current course grade lets the calculator isolate that fixed contribution before solving for the changed test average."
+      ],
+      [
+        "What if the final has its own course category?",
+        "Use the ordinary final grade calculator instead. This tool is specifically for a final added inside the existing test category, where its effective course weight depends on the previous test count."
+      ]
+    ]
+  },
+  "negative-marking": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Calculate the score after wrong-answer penalties",
+        "paragraphs": [
+          "On a test with negative marking, the number of correct answers is not enough to determine your raw result. Incorrect responses may deduct marks, while unanswered questions may receive zero. The Negative Marking Calculator separates these three outcomes and applies the scoring values you provide.",
+          "Use it to check a practice paper or understand an answer tally after an assessment. It reports raw marks and the percentage of the maximum available marks. It does not convert the raw result into a scaled examination score, percentile, rank or official pass decision. Those require the assessment provider’s own rules."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Build an accurate answer tally",
+        "paragraphs": [
+          "Enter the total number of questions, the number answered correctly, and the number answered incorrectly. All three counts must be whole numbers. Correct plus incorrect cannot exceed the total, because each question belongs to one outcome only. The remaining questions are treated as unanswered.",
+          "Next enter the marks earned for each correct answer and the marks deducted for each wrong answer. A correct answer must earn a positive amount. The penalty can be zero or a positive decimal. Enter a deduction of one mark as 1, not −1: the formula performs the subtraction.",
+          "This model assumes every question uses the same correct-answer reward and the same wrong-answer penalty. Blank responses earn zero and incur no deduction. If your examination penalizes omissions or awards different points by question type, this single calculation does not represent its full scoring system."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Rewards minus deductions",
+        "paragraphs": [
+          "Raw marks = Correct answers × Marks per correct answer − Incorrect answers × Penalty per wrong answer. Maximum marks = Total questions × Marks per correct answer. Raw percentage = Raw marks ÷ Maximum marks × 100.",
+          "The maximum uses every question, including blanks, because it represents the score for answering the complete test correctly. Using attempted questions in the denominator would instead describe a different measure and could make the displayed percentage look artificially high. Unanswered questions affect the available maximum even though they do not subtract raw marks."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: 43 marks out of 80",
+        "paragraphs": [
+          "Consider a 20-question test awarding four marks for each correct answer and deducting one mark for each incorrect answer. You answer 12 correctly and five incorrectly. That leaves 20 − 12 − 5 = three unanswered questions.",
+          "The correct answers earn 12 × 4 = 48 marks. The incorrect answers deduct 5 × 1 = five marks. Subtracting gives 43 raw marks. The maximum available is 20 × 4 = 80 marks, so the percentage is 43 ÷ 80 × 100 = 53.75%.",
+          "Notice that 12 correct out of 20 would ordinarily suggest 60% if there were no penalty. Here the five wrong answers reduce the awarded score below that proportion. Treating every non-correct answer as an identical zero would miss this deduction."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "Compare blanks, wrong answers and negative totals",
+        "paragraphs": [
+          "Keeping 12 correct answers on the same test, suppose the other eight questions are all blank. The raw result would be 48 out of 80, or 60%, because blanks carry no penalty in this model. If all eight are incorrect instead, the result becomes 40 out of 80, or 50%.",
+          "Negative totals are also possible. On a 20-question test with the same reward and penalty, zero correct and 20 incorrect produce −20 marks, or −25% of the maximum. This calculator displays that raw negative result rather than silently replacing it with zero. A provider may apply a floor later."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Keep raw score separate from published outcomes",
+        "paragraphs": [
+          "The main result is raw marks, not the percentage of questions answered correctly. Read the accompanying percentage and unanswered count to check the calculation. The percentage is based on the configured maximum, and ordinary results display to two decimal places.",
+          "An assessment provider might scale results, remove faulty questions, apply a minimum floor, adjust sections or use a published conversion table. None of those changes is inferred here. A practice result is most useful when your question selection and scoring instructions resemble the assessment you are preparing for."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Check the penalty units and section rules",
+        "paragraphs": [
+          "A rule described as “one quarter of the question’s marks” needs conversion into an actual deduction. If a correct answer earns four marks, a quarter-mark-value penalty is one mark. Entering 0.25 would model a deduction of one quarter of a mark, which is a different rule.",
+          "For sections with different scoring systems, calculate each section separately and add the raw marks. Also add their maximum available marks before converting the combined result to a percentage. Do not simply average section percentages when their available totals differ.",
+          "Counts based on uncertain memory are estimates. If you are unsure which answers were correct, changing that tally changes both the reward and potential penalty. The calculator cannot resolve uncertain answer keys or judge partial responses.",
+          "When checking a decimal penalty, retain the exact value specified in the instructions rather than rounding it early. A deduction of 0.5 marks across seven incorrect answers removes 3.5 marks. If you round each deduction to one mark before multiplying, you would remove seven marks and substantially understate the result despite having an accurate answer tally."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use practice results to identify a specific improvement",
+        "paragraphs": [
+          "After calculating, examine whether lost marks mostly come from incorrect attempts or unanswered questions. Review the underlying subject knowledge and the reasons for mistakes rather than treating the final percentage as the only useful information. A topic-by-topic log can distinguish misconceptions from rushed reading or time pressure.",
+          "Do not infer a universal guessing strategy from one result. The value of attempting an uncertain question depends on the stated reward, penalty, number of choices and your actual probability of selecting the right answer. Follow the examination instructions and use realistic practice evidence when deciding how to approach uncertain questions."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: from answer tally to awarded marks",
+      "caption": "A 20-question practice test with four marks for correct answers and one mark deducted for wrong answers.",
+      "steps": [
+        {
+          "label": "Correct rewards",
+          "value": "48 marks",
+          "detail": "Twelve correct answers multiplied by four marks."
+        },
+        {
+          "label": "Wrong deductions",
+          "value": "5 marks",
+          "detail": "Five incorrect answers multiplied by a one-mark penalty."
+        },
+        {
+          "label": "Net raw score",
+          "value": "43 marks",
+          "detail": "Subtract the deductions from the correct-answer rewards."
+        },
+        {
+          "label": "Percentage",
+          "value": "53.75%",
+          "detail": "Divide 43 by the 80 available marks; three questions are blank."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Should I type the penalty as a negative number?",
+        "No. Enter the positive amount deducted for one wrong answer. The calculation subtracts that amount automatically, so a one-mark deduction is entered as 1 rather than −1."
+      ],
+      [
+        "What happens when correct plus incorrect is too large?",
+        "The calculator rejects the inputs. Your tally cannot contain more attempted questions than the total test contains. Check whether blanks or uncertain answers were accidentally counted in more than one group."
+      ],
+      [
+        "Can I model a test without negative marking?",
+        "Yes. Enter zero as the wrong-answer penalty. The result then rewards correct answers and gives no marks for wrong or blank answers, assuming equal question values and no partial credit."
+      ],
+      [
+        "Does a negative result mean an official negative grade?",
+        "Not necessarily. It is the raw total under the values entered. A provider may floor, scale or otherwise transform that result, and only its actual marking policy determines the reported outcome."
+      ]
+    ]
+  },
+  "minimum-correct": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Turn a percentage target into a whole-answer goal",
+        "paragraphs": [
+          "An 80% target sounds straightforward until the number of questions makes that percentage impossible to achieve exactly. You cannot usually answer 26.4 questions correctly. The Minimum Correct Answers Calculator converts a percentage threshold into the smallest whole number of correct responses that reaches or exceeds it.",
+          "Use it for an equal-value quiz, a practice test or a classroom examination without partial credit or wrong-answer deductions. Alongside the required correct count, the result explains how many answers can be incorrect or blank and shows the actual percentage produced by that whole-number score."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Check that a question count is appropriate",
+        "paragraphs": [
+          "Enter the total number of equal-value questions and the percentage you want to reach. The question total must be a positive whole number. Your target can range from zero to 100%, including decimal targets such as 72.5%. Type the target as a percentage, not as a decimal fraction.",
+          "Before using a count-based target, confirm that every question contributes the same amount to the test. If some questions are worth one mark and others five, the number correct does not determine the score. A five-mark question cannot be treated as interchangeable with a one-mark question.",
+          "The model also assumes a wrong or blank answer earns zero, and a correct answer earns the full equal question value. Partial credit, negative marking, section thresholds and scaled-score conversions require additional information. Use awarded marks rather than answer counts when those rules are present."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Why the calculation rounds upward",
+        "paragraphs": [
+          "Minimum correct answers = ceiling(Total questions × Target percentage / 100). The ceiling operation takes a value to the next whole number unless it is already whole. It is different from ordinary rounding to the nearest integer.",
+          "This upward step matters because the result must meet a minimum. If the calculation gives 26.4, rounding to 26 produces a score below the requested threshold. Rounding to 27 reaches it. Once the minimum count is known, the maximum incorrect-or-blank count is Total questions − Minimum correct.",
+          "The actual percentage at that minimum is Minimum correct ÷ Total questions × 100. Reading this percentage helps explain why the result may exceed your target: the test offers discrete score steps, not every possible percentage."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: 33 questions and an 80% target",
+        "paragraphs": [
+          "Multiply 33 questions by 80 ÷ 100 to obtain 26.4. Because the target is a minimum, you need 27 correct answers. This allows at most 33 − 27 = six incorrect or unanswered questions under the equal-value, zero-penalty assumptions.",
+          "The resulting percentage is 27 ÷ 33 × 100 = 81.818…%, displayed as 81.82%. By comparison, 26 correct gives 26 ÷ 33 × 100 = 78.787…%, or 78.79%. Therefore 26 misses the 80% threshold even though it is the nearest whole number to 26.4.",
+          "This is a useful check when planning a short quiz. A small increase in the required correct count can jump across several percentage points, so a target percentage alone does not always communicate the practical difference between one score and the next."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "Score steps depend on test length",
+        "paragraphs": [
+          "Each equally weighted question changes the percentage by 100 ÷ Total questions. On a 20-question test, one answer is worth five percentage points. On a 40-question test, it is worth 2.5 points. On a 100-question test, it is worth one percentage point.",
+          "For a 73% target on 20 questions, the calculation gives 14.6 and requires 15 correct, producing 75%. On 40 questions it gives 29.2 and requires 30, again producing 75%. On 100 questions, 73 correct reaches exactly 73%. These are mathematical count thresholds, not claims about equal difficulty between different tests."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Treat the allowance as a boundary, not spare marks",
+        "paragraphs": [
+          "The incorrect-or-blank allowance is the most you can miss while still meeting the entered percentage. It assumes every remaining answer is fully correct. It is not a recommendation to leave questions blank or a guarantee that uncertain answers will be marked correct.",
+          "For a zero-percent target, no correct answers are mathematically required. For a 100% target, every answer must be correct. These endpoints follow the same formula. They do not remove separate requirements to participate, complete compulsory sections or demonstrate a specified skill."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Avoid relying on gradebook rounding",
+        "paragraphs": [
+          "This calculator compares the raw proportion with the entered threshold. It does not assume that a school rounds a score just below the threshold upward. If your institution publishes a specific rounding rule, check the official outcome separately rather than substituting an undocumented assumption.",
+          "A dropped question can change both the total available questions and the relevant answer tally. Update the question count after an official adjustment and recalculate. Do not automatically subtract a disputed question unless the course team has confirmed how it will be treated.",
+          "Likewise, a standardized examination’s scaled passing score is not necessarily a percentage of correct answers. A threshold called 70 on a reporting scale cannot be entered as 70% without evidence that the provider defines it that way.",
+          "A useful final check is to calculate the percentage for one fewer correct answer. It should fall below your target whenever the minimum is positive. This makes the ceiling rule tangible and helps catch mistakes such as entering 0.8 when you intended 80%. In that input mistake, you would be asking for less than one percent."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Apply the result during practice",
+        "paragraphs": [
+          "Set a practice goal slightly above the minimum if you want room for uncertainty, then review which topics or question types create the largest gaps. Track actual correct counts rather than estimated confidence alone. A repeated result above the target is more informative than one unusually strong practice attempt.",
+          "If time management is an issue, combine the correct-answer target with a separate examination time budget. Keep the two ideas distinct: a time allowance does not establish that an answer will be correct, and a required correct count does not tell you how much time each question deserves."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: why 26 correct is not enough",
+      "caption": "A 33-question test with an 80% raw-percentage target and equal question values.",
+      "steps": [
+        {
+          "label": "Raw target",
+          "value": "26.4 answers",
+          "detail": "Multiply 33 questions by the 0.80 target proportion."
+        },
+        {
+          "label": "Whole-answer minimum",
+          "value": "27 correct",
+          "detail": "Round upward because a fraction of a fully correct answer is unavailable."
+        },
+        {
+          "label": "At most missed",
+          "value": "6 answers",
+          "detail": "Subtract the 27 required answers from the 33-question total."
+        },
+        {
+          "label": "Achieved percentage",
+          "value": "81.82%",
+          "detail": "Twenty-seven divided by 33 exceeds the 80% target."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can the required answer count exceed the total?",
+        "With a valid target between zero and 100%, the minimum cannot exceed the total number of equal-value questions. A 100% target requires every question to be correct."
+      ],
+      [
+        "Are blanks different from incorrect answers here?",
+        "No. Both earn zero under this model and belong to the same maximum-missed allowance. If the examination penalizes wrong answers differently from blanks, use a negative-marking calculation instead."
+      ],
+      [
+        "Why not round 26.4 down to 26?",
+        "The goal is to reach a minimum percentage, not find the nearest approximate answer count. Twenty-six correct out of 33 is below 80%, so the next whole answer is necessary."
+      ],
+      [
+        "Can I use a decimal target such as 67.5%?",
+        "Yes. Enter 67.5 as the target. The calculator applies the same upward whole-answer rule and reports the actual percentage associated with the required correct count."
+      ]
+    ]
+  },
+  "rubric": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Combine criteria without losing their intended importance",
+        "paragraphs": [
+          "A rubric may assess research, analysis, organization and presentation using different mark totals and different weights. Simply adding the displayed scores or averaging their percentages can give a different outcome from the rubric’s intended result. The Rubric Grade Calculator normalizes each criterion and then applies its assigned percentage weight.",
+          "This is useful when all criteria have been graded and the complete rubric assigns weights totaling 100%. It turns a completed numerical rubric into one assessment percentage. It does not judge the quality of submitted work, interpret a descriptive performance band or decide what a marker should award."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Enter one complete criterion per line",
+        "paragraphs": [
+          "Each row needs three comma-separated values in this order: earned marks, possible marks, weight percentage. Put one criterion on each line. For example, the row 8, 10, 40 means eight earned out of ten possible, with that criterion carrying 40% of the assessment.",
+          "Possible marks and weights must be positive. Earned marks can be zero but cannot exceed the possible total. Include every weighted criterion so that the weights add up to 100%. The calculator rejects an incomplete weight total rather than presenting it as a completed assessment grade.",
+          "If the rubric uses categories such as excellent, developing or satisfactory, first use the rubric’s own published conversion into numerical marks. Do not invent a numeric scale for those descriptions. A four-level rubric might not represent equally spaced achievement, and the calculator cannot infer the intended conversion."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Normalize first, then multiply by weight",
+        "paragraphs": [
+          "For each criterion, calculate Criterion percentage = Earned ÷ Possible × 100. Then calculate its contribution to the assessment: Criterion contribution = Criterion percentage × Weight / 100. Add the contributions from all criteria to obtain the completed rubric percentage.",
+          "Equivalently, Rubric grade = sum of [(Earned ÷ Possible × 100) × Weight / 100]. The possible marks establish a criterion’s internal scale, while the weight establishes its importance in the final assessment. These are separate pieces of information and neither should silently replace the other."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Worked example: two criteria produce 86%",
+        "paragraphs": [
+          "Consider an analysis criterion marked eight out of ten and weighted at 40%. Its percentage is 8 ÷ 10 × 100 = 80%. Applying the weight gives 80 × 0.40 = 32 percentage points toward the assessment result.",
+          "A second criterion, such as evidence and argument, earns 18 out of 20 and carries 60%. Its percentage is 90%, and its contribution is 90 × 0.60 = 54 points. Add the two contributions: 32 + 54 = 86%.",
+          "The weights total 40 + 60 = 100%, so the assessment is fully represented. The eight and 18 earned marks cannot be directly compared without their denominators, and the denominators alone do not express the intended 40/60 weighting."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "Why other averages give different answers",
+        "paragraphs": [
+          "Pooling the same marks gives (8 + 18) ÷ (10 + 20) × 100 = 86.666…%. That method makes the second criterion twice as important because it has twice the possible marks. It does not reproduce the specified 40/60 rubric weights.",
+          "Taking the simple average of the criterion percentages gives (80 + 90) ÷ 2 = 85%. That makes the criteria equally important. The correct method depends on the assessment instructions; this calculator specifically uses the explicit criterion weights, producing 86% in the worked example.",
+          "If your rubric is actually designed as an unweighted pool of marks, combine earned and possible points instead. Do not introduce a second set of weights unless the rubric says to use them. Clear assessment instructions matter more than choosing whichever arithmetic result looks most favourable."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Understand what the assessment percentage represents",
+        "paragraphs": [
+          "The result describes this completed rubric only. If the assessment is worth 25% of the course, an 86% rubric grade contributes 86 × 0.25 = 21.5 course percentage points. You still need the remaining assessment results and course weights to calculate the overall course grade.",
+          "The calculator displays ordinary results to two decimal places. It does not assign a universal letter grade, apply penalties for lateness or determine whether a separate minimum criterion has been met. Check those rules independently, using the actual feedback and assessment policy."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Do not hide ungraded work as a zero",
+        "paragraphs": [
+          "A criterion that has not been marked is different from a criterion awarded zero. Enter zero only when it is an actual mark. Because this tool expects all criteria and a 100% weight total, wait for a completed rubric or use a clearly identified partial-work calculation elsewhere.",
+          "Check for transcription errors when entering multiple rows. Swapping earned and possible marks can make the record impossible. Entering 0.40 instead of 40 for a 40% weight makes the total wrong. A possible-mark value of zero is rejected because division by zero cannot produce a valid percentage.",
+          "The tool accepts a numerical rubric, not arbitrary scoring exceptions. A rule that fails the whole assessment when one criterion is below a threshold is not equivalent to ordinary weighted averaging. Neither are capped scores, mandatory competencies or special moderation adjustments.",
+          "Keep criterion labels in your own notes beside the entered rows, particularly when several share identical point totals. The calculator reads numerical rows in order but does not know which row represents analysis or presentation. A correct total cannot reveal that you accidentally paired one criterion’s earned marks with another criterion’s weighting, so verify those associations before calculating."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use criterion contributions to understand feedback",
+        "paragraphs": [
+          "When reviewing a completed assessment, look at both the score within each criterion and its weight. Improving a low-weight presentation criterion may have less effect on the total than improving a heavily weighted analysis criterion. However, learning priorities also depend on the feedback, not just the arithmetic.",
+          "For a hypothetical improvement, keep all weights fixed and change only the relevant earned marks. For example, raising the first criterion from eight to nine out of ten changes its contribution from 32 to 36, increasing the total from 86% to 90%. That illustrates a four-point effect without claiming the work has actually earned the higher mark."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: each criterion becomes a contribution",
+      "caption": "A completed two-criterion rubric with explicit 40% and 60% assessment weights.",
+      "steps": [
+        {
+          "label": "First criterion",
+          "value": "80%",
+          "detail": "Eight marks out of ten possible."
+        },
+        {
+          "label": "Weighted contribution",
+          "value": "32 points",
+          "detail": "The 80% criterion percentage multiplied by its 40% weight."
+        },
+        {
+          "label": "Second contribution",
+          "value": "54 points",
+          "detail": "Eighteen out of 20 is 90%; its 60% weight contributes 54."
+        },
+        {
+          "label": "Assessment result",
+          "value": "86%",
+          "detail": "Add 32 and 54; all criterion weights total 100%."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Must every rubric weight be positive?",
+        "Yes. This calculator expects positive weights for the criteria included in the completed assessment. A criterion that carries no numerical weight should not be included as a zero-weight calculation row."
+      ],
+      [
+        "Can I enter decimal marks for partial credit?",
+        "Yes. Decimal earned and possible marks are supported as long as the possible total is positive and earned marks remain between zero and that total. Use the actual awarded marks."
+      ],
+      [
+        "Does this calculate my course grade directly?",
+        "Only if this rubric represents the entire course assessment. Usually it represents one assignment or assessment; apply its course weight separately when combining it with other course components."
+      ],
+      [
+        "What if my rubric has a compulsory pass criterion?",
+        "Check that condition separately. A satisfactory weighted average does not prove every criterion threshold has been met. The calculator combines numerical scores and weights without enforcing additional assessment hurdles."
+      ]
+    ]
+  }
+}

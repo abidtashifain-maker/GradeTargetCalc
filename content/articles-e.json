@@ -1,0 +1,602 @@
+{
+  "retake-gpa": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "See what a repeated course could change",
+        "paragraphs": [
+          "Repeating a course can change your GPA in very different ways depending on which attempts your institution includes. This calculator compares two clearly defined possibilities: replacing the original grade or counting both attempts. It helps you explore the arithmetic before committing time to another enrollment, without assuming that your school offers either option.",
+          "Start with a specific course and a realistic retake grade. The estimate is most useful when you already know your current GPA-bearing credits and can identify the original course within that record. A repeated course can affect eligibility, degree progress and fees as well as GPA, but those decisions require information outside this calculation."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Collect the right transcript figures",
+        "paragraphs": [
+          "Choose the maximum point scale used for your existing GPA. Enter your current GPA and the credits included in that GPA, with the original course already present. Next enter the repeated course's credits, original grade points and expected new grade points. Both attempts must use the same credit value and point scale in this model.",
+          "GPA-bearing attempted credits are not always the same as credits earned toward graduation. A failed course may contribute attempted credits and zero quality points even when it earns no degree credit. Use the denominator behind your official GPA rather than a convenient total from another transcript column. If the course was excluded from that denominator, this particular replacement model does not describe your record."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Understand replacement and both-attempts arithmetic",
+        "paragraphs": [
+          "Quality points are grade points multiplied by course credits. Your estimated existing quality points therefore equal current GPA multiplied by current credits. Replacement removes the original course's quality points and adds the retake's quality points, while keeping the GPA credit total unchanged. The replacement formula is: (Current GPA × Current credits + (New points − Old points) × Course credits) ÷ Current credits.",
+          "When both attempts count, the original course remains in the record. Add the new course's quality points and its credits: (Current GPA × Current credits + New points × Course credits) ÷ (Current credits + Course credits). These are alternative scenarios, not two stages of the same calculation. Selecting a policy changes both the interpretation and, potentially, the denominator."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Work through a three-credit retake",
+        "paragraphs": [
+          "Suppose your current GPA is 3.00 across 30 GPA-bearing credits. That record includes a three-credit course with 2.00 grade points. Existing quality points are 3.00 × 30 = 90. If the retake earns 4.00 points, the original course contributed six quality points and the new attempt contributes twelve.",
+          "Under replacement, the gain is twelve minus six, or six quality points. The new total is 96 across the same 30 credits, producing a 3.20 GPA. Under both-attempts counting, add all twelve new quality points to 90 and add three credits to 30. The result is 102 ÷ 33 = 3.0909…, displayed as 3.09. The same course performance produces different outcomes because the rules count different records."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Read the size of the change realistically",
+        "paragraphs": [
+          "A replacement makes the largest upward change when the old grade is low, the new grade is higher and the course represents a substantial share of your current credits. Replacing 2.00 with 4.00 in a three-credit course adds six quality points whether you have 30 or 90 credits. That raises a 30-credit GPA by 0.20 but a 90-credit GPA by only about 0.067.",
+          "Counting both attempts follows a different pattern: the new grade pulls the cumulative average toward itself. A retake grade above your current GPA raises that average; one below it can lower the average, even if it improves on the original course grade. Compare the new grade against the cumulative GPA as well as against the old mark."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Check exclusions, rounding and policy exceptions",
+        "paragraphs": [
+          "The calculator checks whether your GPA, credit count and original grade can describe a possible record on the selected scale. An inconsistent combination should be investigated rather than adjusted merely to obtain a result. For example, an almost perfect cumulative GPA may be incompatible with a heavily weighted zero-grade course supposedly included in it.",
+          "Your institution may limit replacement to particular grades, count only a limited number of repeats, retain the higher attempt, or apply different rules to transferred courses. This tool does not decide any of those questions. Rounded GPA inputs also reconstruct approximate quality points, so the displayed estimate can differ from an official recalculation using exact transcript totals. A two-decimal result should not be treated as a guarantee of meeting a borderline threshold."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use the estimate to compare practical options",
+        "paragraphs": [
+          "Run the same course with several plausible retake grades rather than planning around the maximum alone. Record the policy used beside each result. You might discover that the improvement is useful but smaller than expected, or that new coursework at a strong average provides another route toward your target. Keep academic requirements and learning needs in that comparison.",
+          "Before enrolling, ask the registrar which attempt contributes to GPA and whether the original grade remains visible. Confirm how the repeat affects degree credit, prerequisites and any funding rules relevant to you. After the retake is posted, replace your estimate with the updated official GPA. For another semester's separate courses, use a cumulative GPA calculation instead of pretending that all new credits are a single repeated course.",
+          "If you are considering more than one repeat, avoid adding separately estimated GPA changes without tracking the underlying quality points. Each later scenario needs an updated record. Multiple repeats, especially with different counting rules, are best checked against a complete course-level transcript."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: one retake, two counting rules",
+      "caption": "Illustrative transcript scenario; the selected policy must match your institution.",
+      "steps": [
+        {
+          "label": "Existing record",
+          "value": "90 quality points",
+          "detail": "3.00 GPA multiplied by 30 credits."
+        },
+        {
+          "label": "Replacement",
+          "value": "96 ÷ 30 = 3.20",
+          "detail": "Remove six old points; add twelve new points."
+        },
+        {
+          "label": "Both attempts",
+          "value": "102 ÷ 33 = 3.09",
+          "detail": "Keep the original and add the new three-credit attempt."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Does replacing a grade erase it from my transcript?",
+        "Not necessarily. GPA calculation and transcript presentation are separate matters. A school may exclude an attempt from the GPA while still displaying it. Confirm both details with your registrar before interpreting replacement as removal from your academic history."
+      ],
+      [
+        "Can I enter a retake with a different credit value?",
+        "This calculator assumes both attempts have the same credits. If the course changed credit value, ask for the exact institutional method or calculate from the underlying quality-point record. Do not enter the new credits while assuming the old course had the same weight."
+      ],
+      [
+        "What if my new grade is lower?",
+        "Replacement can lower your GPA when the new points are below the original points. Counting both attempts depends on whether the new points are above or below your cumulative average. The tool does not automatically keep your better grade."
+      ],
+      [
+        "Can this predict admission or scholarship eligibility?",
+        "No. It estimates GPA under a chosen arithmetic rule. An application may recalculate grades, exclude some courses or assess other criteria. Use the applicable published requirements and official records when making a decision that depends on eligibility."
+      ]
+    ]
+  },
+  "weighted-gpa": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Build the weighted GPA your course rules describe",
+        "paragraphs": [
+          "A weighted GPA adds permitted course bonuses to base grade points before combining courses by credit. This calculator lets you supply those bonuses explicitly instead of assuming that every advanced class receives the same adjustment. It is useful when you have a clear school policy and want to understand how credit values and eligible bonuses interact.",
+          "The result is a custom weighted average, not a universal high-school scale or an admissions prediction. Different schools may use different base points, eligible subjects, bonus limits and treatment of low grades. This tool supports base points from zero to four and individual bonuses from zero to two; it does not infer a course's eligibility from its name."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Enter one complete course per line",
+        "paragraphs": [
+          "Each row contains three comma-separated numbers in this order: base grade points, credits, bonus. Put the next course on a new line. For example, 4, 3, 1 describes a three-credit course with 4.00 base points and a permitted 1.00 bonus. Enter numeric points from your actual grading table, not a percentage or letter grade.",
+          "Credits must be positive. A course without a permitted bonus still needs a third number: use zero. Include the complete group of courses you want the average to represent, and apply the same inclusion rule to every row. Where a school uses half-credit classes, decimal credits can represent their relative weight. Do not replace official credit values with difficulty ratings; the bonus and credit fields perform different jobs."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "See how credits and bonuses combine",
+        "paragraphs": [
+          "For each course, add the bonus to the base grade points. Multiply that boosted value by the course credits to obtain its weighted quality points. Add the weighted quality points from every row and divide by the total credits. In symbols: Weighted GPA = Σ[(Base points + Bonus) × Credits] ÷ Σ(Credits).",
+          "Adding bonuses after averaging is only equivalent when you also credit-weight those bonuses correctly. A one-point bonus on a one-credit course does not have the same effect on the full record as a one-point bonus on a four-credit course. The calculation therefore handles each row separately before dividing. With no bonuses, the same arithmetic reduces to an ordinary credit-weighted GPA based on the points you entered."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Compare weighted and unweighted results",
+        "paragraphs": [
+          "Consider two courses worth three credits each. The first earns 4.00 base points with a 1.00 eligible bonus; the second earns 3.00 base points with a 0.50 bonus. Their boosted values are 5.00 and 3.50. Multiplying by three gives 15 and 10.5 weighted quality points, totaling 25.5.",
+          "Divide 25.5 by six credits to obtain a weighted GPA of 4.25. Without bonuses, the base quality points would be twelve plus nine, totaling 21; dividing by six gives 3.50. The difference, 0.75, is the credit-weighted average bonus in this example. A weighted result above four is possible because the adjusted course values can exceed the base scale; it is not a percentage or a sign that the calculation failed."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Notice the effect of unequal course credits",
+        "paragraphs": [
+          "Now keep the same grade points and bonuses but make the first course one credit and the second three credits. Weighted quality points become 5.00 × 1 + 3.50 × 3 = 15.5. Divide by four credits to get 3.875, displayed as 3.88. The lower adjusted course grade now carries more weight.",
+          "This illustrates why simply averaging the two boosted values can be misleading. Course count and credit total answer different questions. If all courses have equal credits, a simple average of their adjusted values happens to agree with the credit-weighted result. Once credit values differ, use those actual values. Compare records only when their scales, course eligibility and credit conventions are compatible; a larger number from another school's system need not represent stronger performance.",
+          "You can also isolate the effect of a bonus by changing just that field to zero and leaving every other input unchanged. The difference between the two results then reflects that specific adjustment, rather than a simultaneous change in course selection or credits."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Avoid assigning bonuses the school does not allow",
+        "paragraphs": [
+          "A course label alone does not establish the correct bonus. Schools may distinguish course levels, award no adjustment below a specified grade, cap the adjustment or exclude certain subjects. Supply the permitted bonus for the actual course and actual grade. If the relevant policy is unclear, calculate a zero-bonus scenario and seek clarification rather than presenting an assumed bonus as official.",
+          "The tool adds the bonus exactly as entered, including on a low base grade. It does not automatically remove bonuses for failed courses or cap the final course value at a school-specific maximum. Its input limits define the mathematical model, not an endorsement of every combination. Review suspiciously high results by checking that credits, base points and bonuses have not been put into the wrong columns."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Keep the result useful and traceable",
+        "paragraphs": [
+          "Save a small source list alongside your calculation: course name, reported grade, base-point conversion, credits and the policy supporting any bonus. The calculator does not need course names to do the arithmetic, but that list helps you explain and verify the inputs later. Recheck the rows against the transcript before using the result in a personal plan.",
+          "When comparing possible courses, try several realistic grade outcomes rather than assuming that an available bonus guarantees a higher GPA. A lower achieved base grade may offset the adjustment. Course workload, prerequisites and subject interest matter too. If an application requests your school's reported weighted GPA, use that official figure; if it asks you to recalculate using its own instructions, follow those instructions rather than substituting this custom model."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: credits turn course values into an average",
+      "caption": "Two equal-credit courses with explicitly supplied eligible bonuses.",
+      "steps": [
+        {
+          "label": "Course one",
+          "value": "(4.0 + 1.0) × 3 = 15",
+          "detail": "Add the permitted bonus before multiplying."
+        },
+        {
+          "label": "Course two",
+          "value": "(3.0 + 0.5) × 3 = 10.5",
+          "detail": "Use the second course’s own bonus."
+        },
+        {
+          "label": "Combine",
+          "value": "25.5 ÷ 6 = 4.25",
+          "detail": "Divide total adjusted quality points by all six credits."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Is this an AP or honors GPA calculator?",
+        "It can model those courses when your school supplies compatible base points and bonuses. It does not decide eligibility or apply a default AP or honors rule. Read the policy for your school and enter the approved adjustment for each course."
+      ],
+      [
+        "Can I enter percentages directly?",
+        "No. A percentage such as 85 is not a grade point on the supported base scale. First obtain the official conversion for the course. The calculator deliberately avoids a universal percentage-to-GPA table because grading systems differ."
+      ],
+      [
+        "Why did my result exceed 4.00?",
+        "The adjusted course values include bonuses, so their average can exceed the base four-point scale. Describe the number as a custom weighted GPA and state the method. Do not compare it directly with an unweighted four-point GPA."
+      ],
+      [
+        "What happens if every bonus is zero?",
+        "The result becomes an ordinary credit-weighted average of your base grade points. This provides a useful comparison scenario, provided the same courses and credits are included. Changing which courses count would make it a different comparison."
+      ]
+    ]
+  },
+  "study-time": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Turn a topic list into a daily time budget",
+        "paragraphs": [
+          "A revision plan becomes easier to judge when it has a realistic daily time requirement. This planner converts a topic count, an estimated first-pass time and an additional review allowance into minutes per study day. It helps answer a practical question: does the workload fit the days you can actually use?",
+          "The calculation distributes time evenly. It does not know which topics you find difficult, how well you already understand them or how much energy you have after other commitments. Treat the result as a starting budget that you can compare with your calendar. A smaller daily number is useful only when it still allows enough practice and understanding for your task."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Define topics and count available study days",
+        "paragraphs": [
+          "Enter the number of topics as a whole number. Make topics reasonably comparable: a short vocabulary set and an entire textbook chapter should not silently count as equivalent units. Estimate the minutes needed for a first pass through one typical topic, using a recent session if possible. This field can accept a decimal estimate.",
+          "Count only study days you expect to use. Five calendar days with one unavailable day means four study days for this plan. Add a review allowance as a percentage of the first-pass work; for example, 25 means extra review equal to one quarter of that work. The allowance can be zero, but omitting review from the budget does not establish that your material needs no review."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Understand where the daily number comes from",
+        "paragraphs": [
+          "First-pass minutes equal Topics × Minutes per topic. Review minutes equal that first-pass total multiplied by Review allowance ÷ 100. Add the two amounts, then divide by available study days. The combined formula is: Daily minutes = Topics × Minutes per topic × (1 + Review allowance ÷ 100) ÷ Study days.",
+          "The percentage applies to the first-pass total, not to the final combined total. A 25% allowance on 360 first-pass minutes adds 90 minutes, giving 450 minutes overall. It does not mean that one quarter of 450 is review. Keeping that distinction clear helps when you decide how much of each session should be new work and how much should revisit material already covered."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Build a five-day revision plan",
+        "paragraphs": [
+          "Suppose you have twelve topics, expect thirty minutes for each first pass and can study on five days. Twelve multiplied by thirty gives 360 first-pass minutes, or six hours. With an additional 25% review allowance, add 90 minutes. The total budget becomes 450 minutes, which is seven and a half hours.",
+          "Divide 450 by five days to obtain ninety minutes per study day. An even split could budget 72 minutes for new topic work and eighteen minutes for review each day, though you can arrange those components differently. The calculator does not schedule particular topics or start times. If ninety focused minutes do not fit your day, change a genuine constraint rather than simply entering an optimistic time estimate."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Compare schedule changes without hiding the work",
+        "paragraphs": [
+          "Using the same 450-minute workload across six study days produces 75 minutes per day. Across three days it produces 150 minutes per day. Adding days changes the daily demand but leaves the total work unchanged. Reducing the topic count or time estimate changes the workload itself, so those adjustments need an academic reason.",
+          "A review allowance of 50% on the original 360 minutes would produce 540 minutes in total, or 108 minutes daily across five days. These comparisons show which assumption drives your plan. If one topic takes far longer than expected, that is useful information: revise the estimate rather than trying to force the remaining topics into a budget that no longer matches your actual pace."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Separate focused study from elapsed clock time",
+        "paragraphs": [
+          "Minutes of focused work and minutes available on the clock are not always the same. If the calculated budget is ninety study minutes, a session with breaks or interruptions may occupy longer. Decide whether your per-topic estimate includes note preparation, worked questions and checking answers. Apply that definition consistently across the plan.",
+          "The review allowance is simply additional budget. It does not automatically implement spaced repetition, create practice questions or decide when you are ready for an exam. Avoid counting the same review in both your per-topic estimate and the allowance unless that is intentional. When topics differ sharply in size, group similar ones into separate calculations. Add those daily requirements together rather than relying on a misleading single average."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Make the budget a plan you can revise",
+        "paragraphs": [
+          "Put the daily amount next to real appointments, work shifts and travel time. Then choose which topics belong in each available session. Leave room to check understanding, because completing a timed block does not demonstrate mastery. A short self-test or explanation from memory can reveal that a topic needs another pass even when the planned minutes have been used.",
+          "After a session, record the actual focused time and what remains. If you miss a study day, subtract work already completed and rerun the plan for the remaining topics and available days. Do not redistribute the original full workload as if nothing had been finished. Where deadlines are inflexible, prioritize required material and ask your instructor about the scope instead of assuming that extending a session indefinitely will solve the problem.",
+          "Consider dividing a ninety-minute budget into several focused sessions if that fits your day better. The calculator does not require one uninterrupted block. Write down what each session should accomplish, and allow separate transition time if switching locations or materials regularly disrupts your start."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: twelve topics over five study days",
+      "caption": "Illustrative time budget; it does not predict learning or exam performance.",
+      "steps": [
+        {
+          "label": "First pass",
+          "value": "12 × 30 = 360 minutes",
+          "detail": "Twelve comparable topics at thirty minutes each."
+        },
+        {
+          "label": "Add review",
+          "value": "360 + 90 = 450 minutes",
+          "detail": "A 25% allowance adds ninety review minutes."
+        },
+        {
+          "label": "Daily budget",
+          "value": "450 ÷ 5 = 90 minutes",
+          "detail": "Spread the combined work over five available study days."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Does the review percentage include breaks?",
+        "Only if you intentionally define it that way. For clearer planning, use the allowance for extra learning work and add breaks separately to your calendar. The calculator does not distinguish a rest break from revision minutes that you enter."
+      ],
+      [
+        "What if my topics take different amounts of time?",
+        "Create separate calculations for groups of similar difficulty, such as short review topics and longer problem-solving topics. Use the same available study days when combining their daily budgets. This preserves the different workloads instead of disguising them behind a convenient topic count."
+      ],
+      [
+        "Can I use this to guarantee an exam score?",
+        "No. The output is a time estimate based on your assumptions, not a prediction of comprehension, recall or marks. Use practice performance and the actual assessment requirements to judge readiness, then adjust your study activities as needed."
+      ],
+      [
+        "How should I update a plan after falling behind?",
+        "Count the work still unfinished and the study days still available. Revise the time estimate if recent sessions show a different pace. Recalculating those remaining requirements gives a more useful budget than repeatedly carrying forward the original daily target."
+      ]
+    ]
+  },
+  "reading-time": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Estimate how long a reading assignment may take",
+        "paragraphs": [
+          "A page count alone does not tell you how much reading fits into an evening. Pages vary in density, and your pace depends on the material and the purpose of reading. This calculator combines the number of pages, an estimated word count per page and your reading speed to produce an approximate duration.",
+          "Use the estimate to reserve time for a first pass through a text, compare possible reading loads or divide an assignment into manageable sessions. It is not a deadline you must beat. Understanding a difficult argument, examining a diagram or solving an embedded problem may require time that a word-based reading estimate cannot capture. Plan those activities separately where they matter."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Use measurements from the actual material",
+        "paragraphs": [
+          "Enter the pages you intend to read, including a decimal when only part of a page remains. Estimate words per page from a few representative pages of the assignment. Pages full of footnotes, equations or figures can differ sharply from ordinary prose, so avoid relying on a sample that clearly does not represent the rest.",
+          "For speed, enter words per minute measured while reading similar material for a similar purpose. A pace from a familiar story may not describe your pace through a technical chapter. If you do not have a measurement yet, time a passage with a known word count using the reading speed calculator. The example values in this tool are editable demonstration inputs, not a recommended speed or a measured average for students.",
+          "When page numbers include introductions or appendices outside the assigned reading, count the pages you actually need rather than subtracting the first page number from the last without checking. For consecutive full pages, remember that both the starting page and ending page are included."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Follow the words-to-minutes calculation",
+        "paragraphs": [
+          "Estimated word count equals Pages × Words per page. Divide that count by Words per minute to obtain reading minutes. The formula is: Reading minutes = Pages × Words per page ÷ Reading speed. To express the result in hours, divide the reading minutes by sixty. Positive values are required because an empty denominator cannot describe a reading pace.",
+          "The units explain why the formula works. Pages multiplied by words per page leaves words; dividing words by words per minute leaves minutes. This estimate assumes a steady pace across the selected material. If different sections require different reading speeds, calculate them separately and add their durations. That is more informative than treating a dense methods section and a brief introductory passage as interchangeable pages."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Calculate a twenty-page first pass",
+        "paragraphs": [
+          "Imagine an assignment with twenty pages averaging about three hundred words each. Its estimated length is 20 × 300 = 6,000 words. At a measured pace of two hundred words per minute, the duration is 6,000 ÷ 200 = thirty minutes. That is half an hour of reading at the stated pace.",
+          "Suppose your sample instead shows four hundred words per page. The estimated word count becomes 8,000 and the same reading pace gives forty minutes. Nothing about the page count changed, but the denser layout increased the amount of text by one third. This is why checking page density can improve the estimate more than refining a speed input to several decimal places."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Turn one estimate into a practical range",
+        "paragraphs": [
+          "If your pace varies, compare a slower and a faster scenario based on your own sessions. For the 6,000-word example, 150 words per minute gives forty minutes, while 250 gives twenty-four minutes. That twenty-four-to-forty-minute range reflects the stated assumptions; it is not a statistical confidence interval or a prediction for every reader.",
+          "Choose a scheduling allowance that fits the reading task. If the assignment also requires a summary, add time for writing that summary rather than assuming it is included in the reading result. A displayed decimal is a mathematical output, not evidence that the completion time can be known to the second. Approximate page density and variable pace are usually more important sources of uncertainty than display rounding."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Distinguish text volume from academic workload",
+        "paragraphs": [
+          "A page with a complex figure may contain few words but take substantial time to understand. Conversely, a page of familiar examples may read quickly. The calculator counts estimated words; it does not measure conceptual difficulty. For mathematics, programming or case-based material, pauses to work through examples may dominate the session and should be budgeted explicitly.",
+          "Do not mix a speed measured during uninterrupted reading with an assignment duration that includes frequent messages, conversations or other interruptions. Decide whether you want focused reading time or the elapsed duration of your full study process. Either can be useful when measured consistently. If you include note-taking in the measured pace, avoid adding the same note-taking time again afterward unless you want an additional allowance."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Improve the estimate as you read",
+        "paragraphs": [
+          "Start with one representative section and compare your actual duration with the estimate. If the text is harder than your sample, update your pace for the remaining pages. Count only the remaining assignment rather than recalculating the whole book and treating that as additional work. A small measurement early in the task can make the rest of the plan more realistic.",
+          "For a multi-day assignment, divide the remaining duration by the study sessions you can use, then leave space for review and any required questions. Keep a record of which material the speed measurement came from so that you can reuse it sensibly. The aim is to make time visible, not to turn every reading session into a race or to reward speed at the expense of understanding."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: convert pages into reading minutes",
+      "caption": "A first-pass estimate using twenty pages and an explicitly chosen pace.",
+      "steps": [
+        {
+          "label": "Text amount",
+          "value": "20 × 300 = 6,000 words",
+          "detail": "Estimate words per page from representative material."
+        },
+        {
+          "label": "Reading pace",
+          "value": "200 words per minute",
+          "detail": "Use your own measurement on similar text."
+        },
+        {
+          "label": "Estimated duration",
+          "value": "6,000 ÷ 200 = 30 minutes",
+          "detail": "Add separate time for activities outside the measured pace."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "How do I estimate words per page?",
+        "Count words on several representative text pages and divide their combined count by the number of pages sampled. Avoid choosing only unusually sparse or dense pages. If the assignment changes format halfway through, estimate the sections separately."
+      ],
+      [
+        "Does this include taking notes?",
+        "Only when your entered reading speed was measured while taking notes in the same way. Otherwise, the result represents reading at the stated pace. Add a separate note-taking allowance so the total session budget matches the actual task."
+      ],
+      [
+        "Can I enter a partial page?",
+        "Yes. Decimal page counts are supported, so half a page can be entered as 0.5. The estimate still depends on your words-per-page assumption; a fraction of a figure-heavy page may not contain the expected fraction of ordinary prose."
+      ],
+      [
+        "Why is my actual reading time longer?",
+        "The material may be denser or more demanding than the sample, or the session may include pauses and rereading. Compare a short representative section with your assumptions. Adjust the pace or add the missing activities rather than treating the result as an imposed limit."
+      ]
+    ]
+  },
+  "reading-speed": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Measure the pace of a completed passage",
+        "paragraphs": [
+          "Reading speed describes how many words you finish per minute under a particular set of conditions. This calculator converts a known word count and an elapsed time into that rate. It is useful for building reading-time estimates, comparing your own study sessions or noticing how your pace changes with different kinds of material.",
+          "A reading-speed result is not a grade and does not measure comprehension. Skimming a familiar page and carefully studying an unfamiliar argument are different tasks, even when both produce a words-per-minute figure. Decide what you want to measure before starting the timer. Keeping the task consistent makes the number more useful than chasing a faster result without checking what you understood."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Set up a measurement you can repeat",
+        "paragraphs": [
+          "Choose a passage with a known word count or count the words in the portion you actually finish. Start timing when you begin reading and stop when that portion is complete. Enter the completed word count as a whole number. Do not enter the length of the entire article if you stopped partway through it.",
+          "Split elapsed time into whole minutes and additional seconds. Two minutes and thirty seconds belongs in the fields as 2 and 30. Seconds must be below sixty; ninety seconds should be entered as one minute and thirty seconds. The combined elapsed time must be greater than zero. You do not need a long passage, but extremely short measurements can be heavily affected by the moment you start and stop the timer."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Convert seconds before calculating the rate",
+        "paragraphs": [
+          "Convert the additional seconds to minutes by dividing them by sixty. Add that fraction to the whole minutes, then divide completed words by the resulting time. The formula is: Words per minute = Words read ÷ (Whole minutes + Additional seconds ÷ 60). This puts both time inputs into the same unit before division.",
+          "A common mistake is reading a stopwatch value of 2:30 as 2.30 minutes. Thirty seconds is half a minute, so the correct decimal time is 2.5 minutes. Similarly, fifteen seconds is 0.25 minutes and forty-five seconds is 0.75 minutes. The calculator handles that conversion, but the values you enter must describe the actual elapsed time rather than a guessed decimal representation."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Work through a timed six-hundred-word passage",
+        "paragraphs": [
+          "Suppose you finish a six-hundred-word passage in two minutes and thirty seconds. Divide thirty by sixty to get 0.5 minutes. Add two to obtain 2.5 minutes total. Your pace is 600 ÷ 2.5 = 240 words per minute. That is the measured rate for this particular passage and reading method.",
+          "If the same word count takes three minutes, the rate is two hundred words per minute. If you finish only 450 of the six hundred words in two minutes and thirty seconds, enter 450; the measured rate is 180 words per minute. Using the full passage count would overstate your pace because it would include words that were not actually read during the timed interval."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Compare sessions on a fair basis",
+        "paragraphs": [
+          "Label each result with the material, purpose and timing method. Silent reading, reading aloud, proofreading and studying with notes may produce different rates. A slower session is not automatically worse: unfamiliar vocabulary or a more demanding task can reasonably require more time. Compare similar sessions before concluding that your pace has changed.",
+          "When combining several sessions, divide the total completed words by the total elapsed minutes rather than automatically averaging their rates. A five-minute passage should contribute more to a combined rate than a one-minute passage. For example, six hundred words in two minutes gives 300 words per minute, while six hundred in four minutes gives 150. Together, 1,200 words in six minutes gives two hundred, not the simple average of 225."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Keep understanding and timing separate",
+        "paragraphs": [
+          "After reading, briefly summarize the main point or answer a question about the passage. That is a separate check of understanding, not a correction the calculator can apply to the rate. An impressive number based on skipping difficult material may be unsuitable for planning a study assignment that requires careful comprehension.",
+          "Choose whether the timer includes note-taking, dictionary lookups and pauses, and use that decision consistently. Excluding those activities measures a narrower reading pace; including them measures the pace of a broader study process. Neither label should be misleading. If interruptions dominate a session, repeat the measurement under conditions that resemble the assignment you want to estimate instead of treating one disrupted attempt as a fixed personal trait."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use the measured pace for realistic scheduling",
+        "paragraphs": [
+          "To estimate a future assignment, divide its approximate word count by a pace measured on similar material. At 240 words per minute, 4,800 words would take twenty minutes of reading under comparable conditions. Add separate time for any activities excluded from the original measurement, such as answering questions or preparing a detailed summary.",
+          "Repeat the measurement with a few comparable passages and keep the individual results. Differences between them help you choose a cautious planning pace instead of relying on your fastest attempt. Review the estimate when the subject or reading purpose changes. The goal is an informed schedule that supports understanding, not a universal speed target or a promise that every future text will take the same number of minutes.",
+          "For repeated measurements, keep the text visible in the same format where possible. A small phone screen, a printed page and a large monitor may lead to different navigation or scrolling demands. Record those conditions so you can tell what changed between sessions."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: six hundred words in two minutes thirty seconds",
+      "caption": "Illustrative pace measurement; comprehension must be checked separately.",
+      "steps": [
+        {
+          "label": "Convert time",
+          "value": "2 + 30 ÷ 60 = 2.5 minutes",
+          "detail": "Seconds are a fraction of a minute."
+        },
+        {
+          "label": "Completed words",
+          "value": "600 words",
+          "detail": "Count only the passage actually finished."
+        },
+        {
+          "label": "Measured pace",
+          "value": "600 ÷ 2.5 = 240 WPM",
+          "detail": "This rate describes the stated passage and timing method."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Should I type 2.30 in the minutes box?",
+        "No. Enter two whole minutes and thirty additional seconds in their separate fields. The calculator converts the seconds to 0.5 minutes. Treating a stopwatch display as a decimal number would use the wrong duration and change the measured speed."
+      ],
+      [
+        "Is a higher words-per-minute result always better?",
+        "No. The rate does not establish what you understood, retained or could apply afterward. A careful read of difficult material may appropriately be slower than skimming. Judge the pace alongside the actual purpose of the reading task."
+      ],
+      [
+        "How do I measure a passage I did not finish?",
+        "Count only the words reached before stopping the timer. If counting that portion accurately is difficult, use a shorter passage with a known length and repeat the measurement. Entering unread words makes the reported rate artificially high."
+      ],
+      [
+        "Can this measure reading aloud?",
+        "Yes, if the entered words and time describe a completed aloud reading. Label the result accordingly and compare it with similar aloud sessions. Do not assume an aloud rate should match a silent-reading rate, because the tasks impose different constraints."
+      ]
+    ]
+  },
+  "exam-time": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Give each question a starting time budget",
+        "paragraphs": [
+          "An exam can feel more manageable when you know roughly how much time a question's marks justify. This calculator reserves a chosen amount of checking time, then divides the remaining working time in proportion to marks. It gives a planning allowance for one question rather than predicting how quickly you will solve it.",
+          "Use the result before a practice paper or while preparing a pacing sheet. A question worth more marks receives more time under this model, but mark value is not a perfect measure of difficulty. Essay planning, unfamiliar calculations and reading long instructions can create different demands. The allowance is a reference point you can adapt using the paper's instructions and your practice experience."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Match the inputs to the paper you must answer",
+        "paragraphs": [
+          "Enter the full exam duration in minutes, converting hours where necessary. A two-hour paper is 120 minutes. Enter the checking time you want to protect at the end, then the total marks for the required set of answers. Finally enter the marks assigned to the question you are budgeting.",
+          "The checking reserve must be smaller than the exam duration, leaving positive working time. Question marks must be positive and cannot exceed the entered total. If the paper offers optional questions, do not count every printed option as compulsory workload. Use the marks associated with the combination you are required to answer. Follow any separately timed sections rather than treating restricted section time as freely available across the entire exam."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Subtract the reserve before dividing by marks",
+        "paragraphs": [
+          "Working minutes equal Exam minutes minus Checking minutes. Divide working minutes by total marks to find minutes per mark, then multiply that rate by the question's marks. The formula is: Question minutes = (Exam minutes − Checking minutes) ÷ Total marks × Question marks. The reserve is removed once from the whole paper, not once for every question.",
+          "This method allocates all working time across the required marks when every question is included exactly once. If you calculate individual allowances and round them separately, their displayed sum may differ slightly from the original total. Keep the overall end time visible and allow for rounding when preparing a pacing sheet. The calculation does not automatically create a timetable or assign clock-based start and finish times."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Budget a twelve-mark question in a two-hour paper",
+        "paragraphs": [
+          "Suppose an exam lasts 120 minutes and you reserve fifteen minutes for checking. That leaves 105 working minutes. The required questions total one hundred marks, so the proportional rate is 105 ÷ 100 = 1.05 minutes per mark. A twelve-mark question receives 1.05 × 12 = 12.6 minutes.",
+          "The decimal part is a fraction of a minute: 0.6 × 60 = 36 seconds. Therefore, 12.6 minutes means twelve minutes and thirty-six seconds, not twelve minutes and six seconds. In a practical plan, you might use a nearby whole-minute checkpoint while keeping the full-paper total intact. A twenty-mark question in the same paper receives twenty-one minutes because its mark value is proportionally larger."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Notice the trade-off created by a larger reserve",
+        "paragraphs": [
+          "Keeping the same 120-minute, one-hundred-mark paper but reserving twenty minutes leaves one hundred working minutes. The rate becomes one minute per mark, and the twelve-mark question receives twelve minutes. Reserving only ten minutes leaves 110 working minutes, giving that question 13.2 minutes. More checking time means less first-pass time, not more time overall.",
+          "Choose a reserve you can defend from practice rather than treating the example as a recommendation for every exam. Some students need extra checking for arithmetic, answer transfer or question-number matching; some papers require more initial reading. If you want to reserve time for both reading and final checking, include their combined protected amount in the reserve and document that choice in your own plan."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Watch for optional sections and uneven question demands",
+        "paragraphs": [
+          "If a paper asks you to answer two of three twenty-mark essays, the required essay total is forty marks, not sixty. Counting unused options enlarges the denominator and shortens every allowance incorrectly. Check the required combination carefully, especially when some compulsory sections and some optional sections appear together.",
+          "A one-mark item and a twenty-mark response may involve different setup costs, so strict proportional timing may need adjustment. Use the calculated budget to spot large overruns, then adapt it to the specific paper. Do not assume that reaching an allowance means you must abandon an answer immediately; consider instructions, remaining marks and your progress. Equally, do not spend the entire exam pursuing one difficult question while leaving required work untouched."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Turn allowances into useful checkpoints",
+        "paragraphs": [
+          "During a practice paper, note when you start and finish each section. Compare the actual time with the proportional budget and identify whether the difference came from reading, planning, calculation or checking. Adjust your strategy based on repeated experience, while keeping the total exam duration fixed. More detailed evidence is useful than simply deciding you are slow at a subject.",
+          "Before the real paper, prepare a simple set of section checkpoints if permitted, then follow all examination rules about notes and timing devices. During the exam, keep track of remaining time and unanswered marks. Protect the final review allowance where practical, and use it for specific checks rather than starting an unnecessary rewrite. The calculator supports pacing decisions; it cannot guarantee completed answers, correct work or any particular score.",
+          "If a question has several parts, compare their individual marks before dividing its total allowance equally. A two-mark definition and a ten-mark explanation need not receive the same share. Your within-question plan can follow the same proportional reasoning while allowing for reading the shared prompt."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: protect checking time, then allocate working minutes",
+      "caption": "A proportional plan for a 120-minute paper with one hundred required marks.",
+      "steps": [
+        {
+          "label": "Working time",
+          "value": "120 − 15 = 105 minutes",
+          "detail": "Reserve fifteen minutes for checking."
+        },
+        {
+          "label": "Time per mark",
+          "value": "105 ÷ 100 = 1.05 minutes",
+          "detail": "Divide by marks for the required answers."
+        },
+        {
+          "label": "Twelve-mark question",
+          "value": "1.05 × 12 = 12.6 minutes",
+          "detail": "That is twelve minutes and thirty-six seconds."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Do I include optional questions I will not answer?",
+        "No. Use the total marks for the required combination of answers. If you must choose two of three equal-mark essays, count two essays in that total. Otherwise the calculator would allocate time to work you are not required to complete."
+      ],
+      [
+        "Does 12.6 minutes mean twelve minutes six seconds?",
+        "No. Multiply the decimal part by sixty: 0.6 minutes is thirty-six seconds. The full allowance is twelve minutes thirty-six seconds. Decimal minutes and a minutes-and-seconds clock display represent time differently, so convert before setting a checkpoint."
+      ],
+      [
+        "How much checking time should I reserve?",
+        "The calculator does not prescribe a reserve. Choose it using the paper’s format, instructions and your practice experience. Make sure it leaves enough working time, then compare different reserves to see how they change the per-question allowances."
+      ],
+      [
+        "Can I use this for separately timed sections?",
+        "Calculate each timed section separately with its own duration, reserve and required marks. A full-paper average can be misleading when you cannot transfer unused minutes between sections. The official timing rules take priority over any proportional plan."
+      ]
+    ]
+  }
+}

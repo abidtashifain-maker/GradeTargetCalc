@@ -1,0 +1,661 @@
+{
+  "average": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "When a simple grade average is the right answer",
+        "paragraphs": [
+          "A grade average answers a narrow but useful question: what is the mean of several percentage scores that count equally? It is useful for a set of equal-weight quizzes, a personal practice log, or assignments that your syllabus explicitly treats as equivalent. The calculator adds every score and divides by how many you entered.",
+          "Equal importance is the deciding condition. Similar-looking assignments do not necessarily carry the same weight, and a short quiz does not automatically count as much as an examination. Before using the result as a course estimate, check whether your teacher averages percentages, pools raw points, or applies category weights."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Prepare a clean list of percentage grades",
+        "paragraphs": [
+          "Enter numbers from zero to one hundred, separated by commas, spaces, or new lines. Use 80 rather than 0.80 for eighty percent. Decimal grades such as 82.5 are accepted. Do not include percent signs, assignment names, letter grades, or fractions such as 18/20 in the input list.",
+          "Convert raw marks to percentages first when necessary. Eighteen out of twenty becomes 90%. Keep a recorded zero in the list if it is an awarded grade. An empty assignment awaiting assessment is different from a zero; ask how your gradebook handles it instead of guessing. Count your entries after pasting to catch accidental duplicates."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "The arithmetic behind the result",
+        "paragraphs": [
+          "Simple average = Sum of percentage grades ÷ Number of grades.",
+          "For scores of 80%, 90%, and 85%, the sum is 255 percentage-score units. Dividing 255 by three gives 85%. Every score contributes one third of that mean. Reordering the list changes nothing because addition gives the same total in any order.",
+          "The result is displayed to two decimal places. A displayed average of 83.33% may represent a longer decimal rather than an exact value. If an institution makes a decision at a boundary, its actual calculation and rounding policy matter more than the rounded planning display. This tool does not select a letter grade.",
+          "A quick reasonableness check is that the mean must lie between your lowest and highest inputs. If you expect an answer above every entered score, you are probably asking a target question rather than calculating an existing average. Adding another score equal to the current mean leaves the average unchanged, while adding a higher score raises it."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Compare equal percentages with pooled points",
+        "paragraphs": [
+          "Imagine two assignments: one earns 10 out of 10, and another earns 50 out of 100. Their percentages are 100% and 50%. If the instructor gives each assignment equal importance, this calculator returns (100 + 50) ÷ 2 = 75%.",
+          "A points-based course produces a different answer. Pooling the earned and possible marks gives 60 ÷ 110 × 100 = 54.55%. The second assignment matters much more because it offers ten times as many points. Neither calculation is inherently unfair or incorrect; each represents a different grading rule. Choose the rule stated for your course before interpreting a number as your standing."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Read the average alongside the range",
+        "paragraphs": [
+          "The result also reports the lowest and highest entered grades. These help you see whether the mean describes a fairly consistent set or hides a large spread. Scores of 80%, 80%, and 80% have the same 80% average as 60%, 80%, and 100%, but they suggest different preparation needs.",
+          "The lowest grade is not automatically the assignment you should redo. Its topic, feedback, eligibility for resubmission, and contribution to the course all matter. Likewise, a high practice average is evidence about those practice tasks, not a promise about an upcoming exam. Review the underlying work rather than making decisions from the mean alone."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Estimate the effect of one additional score",
+        "paragraphs": [
+          "Suppose four equally weighted quizzes average 75%. Their combined score total is 300. If the next quiz earns 95%, the new average is (300 + 95) ÷ 5 = 79%. A strong new performance moves the average by four points, not twenty, because it joins the previous four results.",
+          "You can model this by adding a possible score to the list, calculating, and then trying another. Keep proposed scores separate from confirmed grades in your notes. For planning several future assignments at once, the assignment average target calculator solves the reverse question: what future mean would reach a chosen overall target?"
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Avoid mistakes that change what the mean represents",
+        "paragraphs": [
+          "Do not average letter grades by inventing percentage equivalents. An A or B can cover a range of marks, and the exact mapping varies. For GPA work, use institution-defined grade points and credits in the GPA calculator instead.",
+          "Do not average category percentages equally unless the categories have equal final weights. A homework category worth 10% and an exam category worth 60% cannot be treated as one vote each. Also avoid copying both individual assignment grades and their category average into the same list: that counts the same work twice. If the syllabus drops scores, first determine which grades remain eligible for inclusion."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Use the result to ask a better question",
+        "paragraphs": [
+          "A useful next step is to connect the number to specific feedback. Group mistakes by topic, notice whether recent scores are changing, and identify a practice task you can complete before the next assessment. The mean becomes more useful when it guides a concrete action.",
+          "If your result differs from the official gradebook, compare the input records before assuming either calculation has failed. Check missing work, different weights, grade exclusions, and rounding. Save the scores and the calculation date so you can reproduce your estimate later. For unequal assessment weights, move to the weighted grade calculator; for a final-exam target, use the final grade calculator."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: three equal contributions",
+      "caption": "These are illustrative scores, not a live reading of your inputs. Each assessment has identical importance.",
+      "steps": [
+        {
+          "label": "Add the marks",
+          "value": "80 + 90 + 85 = 255",
+          "detail": "Include all three percentage scores once."
+        },
+        {
+          "label": "Count the grades",
+          "value": "3 equal-weight grades",
+          "detail": "Each grade receives one equal share."
+        },
+        {
+          "label": "Divide the total",
+          "value": "255 ÷ 3 = 85%",
+          "detail": "The mean lies between the lowest and highest score."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can I calculate an average from just one grade?",
+        "Yes. With one valid percentage, the average is that same percentage, and both the lowest and highest values match it. The calculation is valid, although one assessment offers limited information about consistent performance."
+      ],
+      [
+        "Should I round every score before entering it?",
+        "Use the precision you actually received. Rounding each score early can shift the final mean, especially near a threshold. The display rounds the calculated result; your instructor may use more precise underlying marks."
+      ],
+      [
+        "Does a zero count as an entry?",
+        "Yes. A recorded zero contributes zero to the sum and one to the count. Leaving it out increases the mean and answers a different question. Ungraded or excused work must follow the course policy."
+      ],
+      [
+        "Can this calculate an official degree average?",
+        "Only an equally weighted percentage mean is calculated. Degree results may depend on module credits, study years, reassessment caps, exclusions, or classification rules. Use the appropriate records and confirm the method with your institution."
+      ]
+    ]
+  },
+  "remaining": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Plan all remaining coursework together",
+        "paragraphs": [
+          "The remaining grade calculator finds the combined average required across the unfinished portion of a weighted course. Use it when several assessments remain, such as a project and an exam, and you want one target for that remaining block. It starts from the contribution already earned toward the full course.",
+          "This is different from entering a current gradebook percentage into a final-exam calculator. A normalized current average describes your performance only on completed work. An earned contribution describes how many percentage points that completed work has supplied toward the eventual course total. Understanding that distinction is the most important preparation step here."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Find the three values you need",
+        "paragraphs": [
+          "The first input is course percentage points already earned. Multiply each completed assessment percentage by its full-course weight expressed as a decimal, then add those contributions. A mark of 80% on work worth 25% of the course contributes 20 percentage points.",
+          "The second input is the percentage weight of all that completed work. It must be greater than zero and below 100%, because some work must remain. The third input is your desired final course percentage, from zero to one hundred. Obtain weights from the syllabus, not from assumptions about assignment length. Contributions cannot exceed completed weight under this calculator's ordinary zero-to-one-hundred score model."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Separate earned points from the unfinished share",
+        "paragraphs": [
+          "Required remaining average = (Target − Earned course contribution) ÷ (1 − Completed weight / 100).",
+          "Subtracting the earned contribution finds the percentage points still needed in the full course. Dividing by the remaining course fraction converts that contribution into an average score on unfinished work. When completed weight is 60%, the denominator is 0.40, not forty.",
+          "For example, a current average of 75% over work worth 60% produces 75 × 0.60 = 45 earned course points. Enter 45 as the contribution and 60 as the completed weight. Entering 75 in the first field would confuse a normalized percentage with its smaller full-course contribution.",
+          "You can check the example by reversing it: a remaining average of 87.5% contributes 87.5 × 0.40 = 35 course points. Adding the confirmed 45 gives the target of 80. This reverse check is helpful when you are uncertain whether a gradebook figure is a contribution or a normalized average."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A project and final exam can share the target",
+        "paragraphs": [
+          "Suppose your completed work has contributed 45 course points and covers 60% of the course. You want an 80% final grade. The unfinished 40% must provide 80 − 45 = 35 points, so the required remaining average is 35 ÷ 0.40 = 87.50%.",
+          "Assume the remaining work consists of a project worth 15% and an exam worth 25%. Scoring 90% on the project contributes 13.5 points. The exam then needs 21.5 points, requiring 21.5 ÷ 0.25 = 86%. Those different scores still produce the needed 87.5% combined average across the remaining block. The answer does not require every unfinished task to receive the same mark."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Understand secured and unreachable targets",
+        "paragraphs": [
+          "A required average between zero and one hundred is mathematically possible within the stated scoring range. It is a target to plan around, not a prediction of what you will earn. Separate component pass requirements can still make a seemingly achievable overall plan insufficient.",
+          "If the calculation is zero or negative, the display shows zero: the contribution already earned meets the chosen target even if unfinished work scores zero. That does not grant permission to skip compulsory assessments. If the required average exceeds 100%, the display says Not reachable. Recheck the contribution and weights before deciding whether to lower the target or ask about an authorized alternative."
+        ]
+      },
+      {
+        "id": "scenarios",
+        "heading": "Compare goals without changing your confirmed marks",
+        "paragraphs": [
+          "With 45 points already earned and 40% remaining, a 75% course target requires 75% on the unfinished block. An 80% target requires 87.5%, while an 85% target requires exactly 100%. A 90% target would require 112.5% and is outside this model's scoring limit.",
+          "These comparisons show why a small change in the course target can produce a larger change in the remaining average. Each additional course percentage point needs 2.5 extra points on the unfinished block when only 40% remains. Write down a realistic target range and the assessment schedule, then decide which topics and deadlines deserve attention first."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Resolve gradebook differences before planning",
+        "paragraphs": [
+          "Some gradebooks normalize completed assessments, while others include future assessments as zeroes. Neither display should be copied into the earned-contribution field without checking its meaning. Reconstruct contributions from individual marks and full-course weights when the display is unclear.",
+          "Do not include a category twice. If you calculate its contribution from the category average, do not also add its individual assignments separately. A category with future assignments can be especially tricky: the completed assignments may not yet represent the category's full course weight. Dropped marks, changing category averages, extra credit, and reassessment caps can require a more detailed calculation than this fixed completed-versus-remaining model."
+        ]
+      },
+      {
+        "id": "next",
+        "heading": "Turn the remaining average into an assessment plan",
+        "paragraphs": [
+          "List the unfinished assessments and their full-course weights. Use the weighted grade calculator to test combinations that produce the required remaining average. Keep enough room for a lower result on one task rather than treating a perfect balance as a reliable outcome.",
+          "After a new mark arrives, move that assessment into the completed block: add its course contribution and increase completed weight by its actual weight. Recalculate using the smaller unfinished block. If only a standalone final remains, the final grade calculator offers a simpler interface. For a course that pools raw marks rather than category weights, use the points needed calculator instead."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: earning an 80% course result",
+      "caption": "A fixed 60/40 course split illustrates how the remaining average supplies the missing contribution.",
+      "steps": [
+        {
+          "label": "Already earned",
+          "value": "45 course points",
+          "detail": "Completed work covers 60% of the course."
+        },
+        {
+          "label": "Still required",
+          "value": "80 − 45 = 35 points",
+          "detail": "The target is 80% overall."
+        },
+        {
+          "label": "Remaining fraction",
+          "value": "40% = 0.40",
+          "detail": "Divide the missing contribution by this fraction."
+        },
+        {
+          "label": "Required average",
+          "value": "35 ÷ 0.40 = 87.50%",
+          "detail": "Combined across all unfinished assessments."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Is earned contribution the same as my current average?",
+        "Usually no. A 75% average across completed work worth 60% contributes 45 points to the full course. The calculator requires that 45-point contribution, together with the completed weight of 60%."
+      ],
+      [
+        "Can I use this when no work has been graded?",
+        "The interface requires a positive completed weight and some weight still remaining. Before any work is completed, your target course percentage is simply the average needed across the whole course under a fixed weighted-average model."
+      ],
+      [
+        "Why is the minimum rounded upward?",
+        "Rounding a required minimum downward could show a score just below the exact mathematical target. This calculator rounds upward to two decimal places. Your assessment's available mark increments and course rounding rules may require a higher attainable score."
+      ],
+      [
+        "What if different components have separate passing rules?",
+        "The output combines unfinished work into one average and does not enforce separate pass thresholds. Check those requirements individually. A sufficient combined average can still contain a component score that fails a mandatory condition."
+      ]
+    ]
+  },
+  "points-target": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Set a target in a course that pools points",
+        "paragraphs": [
+          "The points needed calculator answers how many additional marks you need to reach a chosen final percentage. It works when the course percentage is total earned points divided by total possible points. Homework, quizzes, and exams may have different point totals, but every raw point enters the same final pool.",
+          "Use this method only after confirming the grading system. Some courses display points for individual work but weight categories separately. In that case, a point earned in one category may not have the same final effect as a point elsewhere. The weighted grade or remaining grade calculator is the better match for that arrangement."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Collect earned, possible, remaining, and target values",
+        "paragraphs": [
+          "Enter points earned so far and the maximum points possible on that completed work. Earned points must be between zero and the completed maximum. Include a recorded zero in the completed maximum if the assignment still counts. Do not silently remove its possible points.",
+          "Next enter all points still available in the course and your target final percentage. Remaining points must be positive. A syllabus or assessment schedule can help you total what is left. Decimal values are accepted when partial marks are awarded. If assignments have been cancelled, added, or excluded, update the possible totals before calculating so the denominator represents the actual grading plan.",
+          "If an assessment has already been completed but not marked, decide consistently which block it belongs to. Keeping its possible points in the remaining block is appropriate for planning an unknown result. Do not simultaneously include those same possible points in the completed total, and do not guess earned marks as though they were confirmed."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Calculate the final point requirement first",
+        "paragraphs": [
+          "Required additional points = Target / 100 × (Completed possible points + Remaining possible points) − Points earned so far.",
+          "The bracket gives the final course maximum. Multiplying that maximum by your target fraction gives the total earned points needed at the end. Subtracting marks already earned leaves the amount you must still obtain.",
+          "For a 75% target in a course with 200 total possible points, you need 150 earned points overall. If 120 are already recorded, the remaining requirement is 30. The calculator also expresses those required marks as a percentage of the remaining pool, which helps you judge how demanding the target is."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Work through a 200-point course",
+        "paragraphs": [
+          "Suppose completed assessments offered 160 points and you earned 120. Another 40 points remain. Your current completed-work percentage is 120 ÷ 160 × 100 = 75%. To finish the whole course at 75%, you need 0.75 × 200 = 150 total points, leaving 30 more to earn.",
+          "If the remaining work is a 10-point quiz and a 30-point project, earning eight on the quiz and twenty-two on the project supplies those thirty marks. Their individual percentages differ: 80% and about 73.33%. The pooled result is still exactly 150 out of 200. Averaging the two remaining percentages equally would give them the wrong importance."
+        ]
+      },
+      {
+        "id": "scenarios",
+        "heading": "See how the final target changes the task",
+        "paragraphs": [
+          "Using the same 120 earned points and 200-point final maximum, an 80% target requires 160 total points, so you need all forty remaining marks. An 85% target requires 170 total points, leaving fifty needed from a pool of forty. That target is not reachable without a grading change outside this model.",
+          "A 60% target requires only 120 total points, which have already been earned. The displayed minimum is zero. This is a mathematical statement about the points percentage, not a decision about attendance, required submissions, professional competency checks, or other course conditions. Check those separately before changing your study or submission plans."
+        ]
+      },
+      {
+        "id": "rounding",
+        "heading": "Use an attainable mark above the displayed minimum",
+        "paragraphs": [
+          "Required minimums are rounded upward to two decimal places. If the exact answer is 17.331 marks, the display shows 17.34 rather than 17.33. That protects the mathematical threshold at the displayed precision, but the assessment may not award hundredths of a point.",
+          "For example, suppose you have 101 of 130 possible points, with seventy remaining, and want 79.3% overall. The final maximum is 200; the target needs 158.6 points, so another 57.6 are required. If the remaining work awards only whole marks, aim for at least 58. If it awards half marks, the smallest sufficient attainable total is also 58, not 57.5."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Watch for denominator changes and hidden weighting",
+        "paragraphs": [
+          "A dropped assignment can remove both its earned and possible points. Extra credit can add marks without the usual denominator change, while a replacement task may change which record counts. This calculator does not choose or apply those policies for you. Adjust records only after confirming the actual rule.",
+          "Do not enter the final course maximum in the completed-possible field and then enter remaining points again. That would count unfinished opportunities twice. Do not mix percentages with raw marks: seventy-five belongs in the target field when you mean 75%, but the other fields require actual points. Keep all point totals in the same grading system and time period."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Make a practical remaining-points budget",
+        "paragraphs": [
+          "Break the remaining pool into assessments and note their deadlines. Allocate a target number of marks to each, making sure the sum reaches the required amount. This is a planning exercise, not an instruction to ignore lower-value tasks or assume an assessment is easy because it carries fewer marks.",
+          "After receiving a result, add its earned marks to the earned total, transfer its maximum into completed possible points, and subtract that maximum from remaining points. Recalculate to see the updated task. If your teacher instead assigns category percentages, stop using a pooled-points estimate and rebuild the calculation using the published category weights. Accurate inputs matter more than repeated scenario changes."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: thirty marks left to earn",
+      "caption": "The course pools raw points. This illustration does not apply separate category weights.",
+      "steps": [
+        {
+          "label": "Final maximum",
+          "value": "160 + 40 = 200 points",
+          "detail": "Combine completed and unfinished possible points."
+        },
+        {
+          "label": "Target total",
+          "value": "75% × 200 = 150 points",
+          "detail": "Find the final earned total needed."
+        },
+        {
+          "label": "Remaining task",
+          "value": "150 − 120 = 30 points",
+          "detail": "Thirty out of forty remaining marks is 75%."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can earned points exceed possible points?",
+        "This interface does not accept earned points above the completed maximum. If extra credit creates that situation, confirm how it changes the official numerator and denominator before using another method. Do not change totals simply to bypass validation."
+      ],
+      [
+        "Why does my current percentage not determine the answer alone?",
+        "The amount of completed and remaining work matters. A 75% record across ten points has a different influence from 75% across two hundred points. The calculator therefore needs actual earned and possible totals."
+      ],
+      [
+        "Can I leave the completed totals at zero?",
+        "Yes, if no points have yet been offered or earned and remaining points are positive. With no completed work, the calculation simply applies your target percentage to the entire available pool."
+      ],
+      [
+        "What should I do when the target is not reachable?",
+        "First check the remaining maximum and target for mistakes. Then compare a lower target or ask your instructor about published reassessment options. The result cannot assume bonus marks, exceptions, or replacement opportunities that have not been authorized."
+      ]
+    ]
+  },
+  "assignment-target": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Find the average needed on future assignments",
+        "paragraphs": [
+          "The assignment average target calculator works backward from a desired final average. You provide the current mean, the number of completed assignments, and how many equal-weight assignments remain. It calculates the combined average required on that future work.",
+          "The key condition is equal final importance for every assignment in the calculation. This can describe a quiz category where each quiz counts once, or a course made entirely of equally weighted tasks. It does not describe a category in which larger point totals automatically count more. Confirm the rule before using the answer to decide what scores you need next."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Check both the average and the assignment counts",
+        "paragraphs": [
+          "Enter your current assignment percentage average from zero to one hundred. Then enter whole-number counts for completed and remaining assignments. Both counts must be at least one. A count of three means three separate equal contributions, not three credits or three assessment categories with different weights.",
+          "Your current mean must represent exactly the completed count you enter. If four quiz scores include a recorded zero, both that zero and its quiz belong in the current average. Do not use an average calculated from three scores while entering four completed assignments. Excluded, excused, and ungraded items must be handled according to the instructor's rule rather than counted automatically."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Recover the existing score total, then solve the gap",
+        "paragraphs": [
+          "Required future average = [Target × (Completed count + Remaining count) − Current average × Completed count] ÷ Remaining count.",
+          "Multiplying the current mean by the completed count reconstructs the total of the completed percentage scores. Multiplying the target by the final assignment count gives the combined score total needed. Their difference is the total percentage-score units required across the future assignments.",
+          "These units are a convenient arithmetic total, not course percentage points or raw earned marks. Dividing by the number of unfinished assignments converts the total back into an average percentage. The formula assumes no score is dropped and no assignment changes its weighting when another mark arrives."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Three completed assignments and two remaining",
+        "paragraphs": [
+          "Suppose three assignments average 70%, and two remain. An 80% final average across five assignments requires a score total of 80 × 5 = 400. The completed scores contribute 70 × 3 = 210, leaving 190 for the last two. Dividing 190 by two gives a required future average of 95%.",
+          "That does not demand identical scores. A 90% and a 100% produce the needed 95% future mean. A 94% and a 96% do too. However, an 85% first future score would require 105% on the last assignment, which exceeds this model's score range. Recalculate as actual marks arrive rather than assuming the original target remains equally flexible.",
+          "Check the example in the forward direction: 70 + 70 + 70 + 90 + 100 totals 400. Dividing by five gives 80%. The three seventies represent the existing average, not necessarily the actual individual marks, but their total is equivalent."
+        ]
+      },
+      {
+        "id": "scenarios",
+        "heading": "Compare the influence of different remaining counts",
+        "paragraphs": [
+          "If three completed assignments average 70% and only one remains, reaching 80% overall would require 110% on that last task. With two remaining, the requirement is 95%. With three remaining, it is 90%. More equal-weight work creates more opportunity to change the final mean.",
+          "The completed record also becomes harder to move as it grows. Ten assignments averaging 80%, followed by one score of 100%, produce 81.82% overall. The new perfect score raises the mean by about 1.82 points. This is why a large improvement on one task need not create an equally large movement in the displayed average."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Read the required minimum carefully",
+        "paragraphs": [
+          "The calculator rounds the required average upward to two decimal places. A result above 100% is shown as Not reachable under the ordinary percentage limit. A result at or below zero displays zero because the current score total already supports the chosen target even with zeroes on the remaining tasks.",
+          "An average is a condition across the remaining group, not a minimum score for every task. The answer also does not enforce separate submission requirements or a minimum mark on a particular assignment. If the instructor requires every task to be completed, satisfying the arithmetic with some zeroes does not remove that requirement. Treat the output as one part of the course plan."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Avoid using this with unequal assessment weights",
+        "paragraphs": [
+          "Equal maximum marks are not the only way to create equal weighting. An instructor might convert a ten-point quiz and a twenty-point quiz into percentages and then average those percentages equally. Conversely, two assessments with the same maximum can receive different final weights. The published averaging method settles which model applies.",
+          "If assignments have different course weights, use the weighted grade calculator. If several remaining tasks together form a fixed unfinished course share, use the remaining grade calculator. Do not combine a homework-category mean and an exam percentage here as though each were one assignment unless their final weights are genuinely equal. Dropping the lowest result also requires a different calculation."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Build a flexible assignment-by-assignment plan",
+        "paragraphs": [
+          "Write down the remaining tasks and possible score combinations that meet the required mean. Include room for uncertainty rather than relying on a single ambitious mark. Review rubrics and feedback to identify where additional preparation could plausibly help, while giving each deadline enough attention.",
+          "Once another assignment is graded, update the current average and increase the completed count by one. Reduce the remaining count by one, then calculate again if at least one assignment remains. When all work is complete, use the ordinary grade average calculator to check the final mean. Keep a record of which marks were confirmed and which were only scenarios so estimates do not become confused with official results."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: building an 80% final mean",
+      "caption": "All five assignments count equally. The two unfinished scores need a combined average, not necessarily matching marks.",
+      "steps": [
+        {
+          "label": "Completed total",
+          "value": "70 × 3 = 210",
+          "detail": "Three scores currently average 70%."
+        },
+        {
+          "label": "Target total",
+          "value": "80 × 5 = 400",
+          "detail": "Five equal assignments will form the final mean."
+        },
+        {
+          "label": "Future mean",
+          "value": "(400 − 210) ÷ 2 = 95%",
+          "detail": "For example, 90% and 100% would supply the needed total."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can the remaining assignments have different raw maxima?",
+        "Yes, but only if the instructor converts each to a percentage and gives each identical final weight. If raw points are pooled, an assignment with more available marks has more influence and this model is unsuitable."
+      ],
+      [
+        "Can I enter zero remaining assignments?",
+        "No. The calculation divides by the remaining count, so at least one unfinished assignment is needed. With no remaining work, there is no future average to solve; calculate the completed mean instead."
+      ],
+      [
+        "What if my current average was rounded by the gradebook?",
+        "The calculator reconstructs completed score totals from that rounded average, which can introduce a small error. Use the most precise available mean or calculate it from the underlying scores before planning a close target."
+      ],
+      [
+        "Does a required 95% mean I should aim for exactly 95%?",
+        "It is the mathematical minimum average under the entered assumptions. Your scores may be awarded in discrete increments, and course rounding can differ. Aiming above the boundary provides room for variation, but no score outcome is guaranteed."
+      ]
+    ]
+  },
+  "improvement": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Estimate the effect of replacing one assessment mark",
+        "paragraphs": [
+          "The grade improvement calculator models a specific change: one existing assessment score is removed and replaced by a new score at the same course weight. It shows the revised weighted course percentage and the change from the current percentage.",
+          "This is useful for exploring an authorized reassessment, a corrected marking error, or a hypothetical improvement before discussing available options. It does not grant a resubmission, request a regrade, or decide which result your institution will count. Before treating a scenario as a likely outcome, confirm whether replacement is allowed and whether the replacement mark is capped, averaged with the original, or subject to another rule."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Make sure the current grade already includes the old score",
+        "paragraphs": [
+          "Enter a current course percentage that already contains the existing assessment at its stated full-course weight. Then enter the old assessment percentage, the proposed replacement percentage, and the assessment's weight as a percentage of the full course.",
+          "The model needs a consistent weighted total, not a normalized average covering an unrelated completed subset. If a gradebook shows an average only across completed work, the assessment's effective weight within that display may differ from its full-course weight. Reconstruct a consistent total first. All score inputs must lie between zero and one hundred, and the assessment weight must be positive and no greater than one hundred."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Only the changed contribution needs to be adjusted",
+        "paragraphs": [
+          "Revised course grade = Current grade + (Replacement score − Existing score) × Weight / 100.",
+          "The difference between new and old scores tells you the assessment-level change. Multiplying by the course-weight fraction converts that change into course percentage points. Adding it to the current course grade preserves the contribution of all other work.",
+          "This shortcut works because the assessment weight stays fixed and the old score was already included once. It does not add an extra assessment or increase the total course weight. A lower replacement produces a negative change. Whether a lower mark would actually replace a higher one is a policy question for your instructor, not a calculation setting here."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "A thirty-point assessment improvement adds six course points",
+        "paragraphs": [
+          "Suppose your current course grade is 75%. It includes an assessment worth 20% of the course that originally scored 60%. Replacing that assessment mark with 90% improves the assessment by thirty points. The course gain is 30 × 0.20 = 6 percentage points, producing a revised grade of 81%.",
+          "You can also verify by separating contributions. The old assessment supplied 60 × 0.20 = 12 course points. All other work therefore supplied 75 − 12 = 63. The replacement supplies 90 × 0.20 = 18. Add 63 and 18 to recover 81. Both methods describe the same replacement without counting the assessment twice.",
+          "The six-point gain is an absolute course percentage-point change. It is not a six-percent relative increase: moving from 75 to 81 is an eight-percent increase relative to the original seventy-five. Keep that distinction clear when comparing results."
+        ]
+      },
+      {
+        "id": "scenarios",
+        "heading": "Weight determines how much an improvement matters",
+        "paragraphs": [
+          "A ten-point rise on an assessment worth 10% raises the course grade by one percentage point. The same assessment-level improvement at 40% weight raises it by four course points. The percentage printed on the assessment and its influence on the course are separate quantities.",
+          "With a current course grade of 75%, an old score of 60%, and a 20% assessment weight, replacing the score with 80% gives 79% overall. A replacement of 90% gives 81%, and 100% gives 83%. The maximum gain from this assessment is therefore eight course points under these inputs. Improvements elsewhere or changes to other rules are outside this single-replacement scenario."
+        ]
+      },
+      {
+        "id": "validation",
+        "heading": "Why some combinations are inconsistent",
+        "paragraphs": [
+          "The calculator checks the contribution implied for other coursework. In the previous example, the other 80% supplies 63 course points, equivalent to a 78.75% average across that block. That is feasible within a zero-to-one-hundred scoring range.",
+          "Consider instead a current grade of 10%, an old assessment score of 100%, and an assessment weight of 50%. The assessment alone would already contribute fifty course points. Other work would need a negative contribution to reach ten, so those inputs cannot describe the assumed course. An error usually means the current total has a different basis, the old score was excluded, or the assessment weight was entered incorrectly."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Distinguish replacement from adding another attempt",
+        "paragraphs": [
+          "Some retake policies count both attempts, some average the attempts, and some keep only the higher score. This tool performs a full replacement regardless of which new percentage is entered. Do not use it to represent a different rule without first calculating the score that the policy actually records.",
+          "A reassessment cap can change the replacement input. If a raw retake score is 85% but the officially counted replacement is capped at another value, enter the counted percentage once you have confirmed it. Category-level changes can also be more complex: replacing one quiz within a quiz category requires determining its actual effective course weight, not assigning the whole category weight to that single quiz."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use a scenario to prepare a focused conversation",
+        "paragraphs": [
+          "Compare a few plausible replacement scores and note the corresponding course changes. This helps you understand what one authorized correction could accomplish. Pair the estimate with assessment feedback, the relevant deadline, and the exact replacement rule when asking an instructor about next steps.",
+          "For several eligible replacements, calculate one at a time using each revised total as the next starting point, only if all weights stay fixed and every old score remains included in that total. Keep a clear record of the sequence. If the issue concerns GPA and repeated courses rather than a percentage inside one course, the retake GPA calculator addresses that different question."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: replacing 60% with 90%",
+      "caption": "The old mark is already included in a 75% course total. The assessment keeps its 20% course weight.",
+      "steps": [
+        {
+          "label": "Assessment change",
+          "value": "90 − 60 = 30 points",
+          "detail": "Compare the replacement with the old assessment percentage."
+        },
+        {
+          "label": "Course impact",
+          "value": "30 × 0.20 = 6 points",
+          "detail": "Only one fifth of the assessment change affects the full course."
+        },
+        {
+          "label": "Revised result",
+          "value": "75 + 6 = 81%",
+          "detail": "All other assessment contributions remain fixed in this example."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can I enter a lower replacement score?",
+        "Yes. The formula can show a decrease as well as an improvement. Whether a lower attempt would actually be recorded depends on your course policy. The calculator does not automatically retain the better score."
+      ],
+      [
+        "Does changing one mark guarantee the displayed course result?",
+        "No. The estimate assumes a consistent current total, a full replacement, and unchanged weights. Official results may apply caps, rounding, excluded work, or separate pass requirements that are not represented in those four inputs."
+      ],
+      [
+        "What weight should I use for one quiz inside a category?",
+        "Use the quiz’s effective weight in the full course, after accounting for its share of the category. For example, one of four equally weighted quizzes in a 20% category has a 5% full-course weight."
+      ],
+      [
+        "Can I use this for a new assignment not previously graded?",
+        "No. This calculator removes an old contribution and substitutes a new one. A genuinely new assessment changes the completed record in another way. Use a weighted-grade calculation or a remaining-work target appropriate to the grading system."
+      ]
+    ]
+  },
+  "drop-lowest": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "See the average after removing eligible low scores",
+        "paragraphs": [
+          "The drop lowest grade calculator removes a chosen number of the smallest percentage scores, then averages the scores that remain. It is designed for a set in which every eligible score counts equally, such as a quiz category with a published rule allowing one quiz to be dropped.",
+          "A drop is a change to the set of records used in an average, not a bonus added to a mark. The excluded score disappears from both the sum and the count. This tool helps you check that arithmetic. It does not decide whether an assessment qualifies for a drop or whether a course actually offers the option."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Enter eligible percentages and a whole-number drop count",
+        "paragraphs": [
+          "Enter percentage scores between zero and one hundred, separated by commas, spaces, or new lines. Decimal percentages are accepted. Include each eligible assessment once. The list can contain up to one thousand values, but it must contain at least one score.",
+          "Enter how many of the lowest scores should be removed. This must be a whole number and must leave at least one score in the list. Entering zero drops nothing and provides the ordinary equal-weight mean. Before using a nonzero count, check whether the policy excludes certain assessments from being dropped, requires attendance, or treats a missed submission differently from a completed low-scoring attempt."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Sort, remove, and average the retained grades",
+        "paragraphs": [
+          "Adjusted average = Sum of retained percentage grades ÷ Number of retained grades.",
+          "The calculator orders the values from lowest to highest, removes the requested number from the low end, and applies the ordinary mean to the rest. It also reports the original average so you can compare the change.",
+          "For an equally weighted list, removing the smallest values cannot lower the average of the retained set. If every score is identical, dropping some of them leaves the mean unchanged. This property depends on equal weighting. Removing an assignment from a pooled-points category can behave differently because its point total changes both the earned and possible totals."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "One dropped score changes the denominator too",
+        "paragraphs": [
+          "Consider scores of 60%, 80%, 90%, and 100%. Their sum is 330, so the original average is 330 ÷ 4 = 82.5%. Dropping the lowest score removes sixty from the sum and one from the count. The retained mean is 270 ÷ 3 = 90%.",
+          "It would be incorrect to subtract sixty and continue dividing by four; that would leave an extra zero-like contribution in the denominator. If the policy allows two drops, the retained scores would be 90% and 100%, averaging 95%. If only one drop is permitted, the two-drop result is merely a hypothetical comparison and must not be presented as the official category average.",
+          "You can verify the one-drop change without changing any retained score: eighty plus ninety plus one hundred remains 270. The higher average comes entirely from excluding the lower value and recalculating the count, rather than improving those three marks."
+        ]
+      },
+      {
+        "id": "ties",
+        "heading": "Repeated grades and recorded zeroes",
+        "paragraphs": [
+          "Suppose the list is 50%, 50%, 80%, and 100%, and one score is dropped. Either fifty can be removed because both have the same value. The remaining sum is 230 over three scores, producing about 76.67%. The calculator need not choose which assessment name belongs to the removed value.",
+          "A recorded zero is a valid percentage and will be among the lowest values. If zero, seventy, eighty, and ninety are eligible and one score is dropped, the retained average is 80%. That does not mean every zero can legally be excluded. A policy may require that an assessment was attempted or prohibit dropping a particular compulsory task."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Translate category changes into course changes carefully",
+        "paragraphs": [
+          "The displayed result is the average of the retained list, not necessarily the full course grade. If the list represents a quiz category worth 20% of the course, moving its average from 82.5% to 90% increases its course contribution from 16.5 to eighteen percentage points.",
+          "That is a 1.5-point course increase, although the category average increased by 7.5 points. Keep the category weight separate from its internal drop rule. After finding the adjusted category mean, enter that mean and the category's proper course weight in the weighted grade calculator alongside the other categories. Do not also enter the individual quizzes there and count the same work twice."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Know when lowest percentage is not the right selection",
+        "paragraphs": [
+          "In a pooled-points category, dropping the lowest percentage does not necessarily produce the best final ratio. For example, an assessment worth ten marks and an exam worth one hundred marks have different influence. This interface intentionally does not search for the most beneficial point-based exclusion.",
+          "Do not mix protected assessments with droppable ones and assume the smallest numerical value is eligible. Keep the policy's allowed set clear. If protected scores must remain in the same final average, perform a separate calculation that retains them and excludes only eligible records. Likewise, do not include future ungraded assignments as zeroes just to preview a drop; that can identify the wrong score for removal."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use the comparison without depending on a future drop",
+        "paragraphs": [
+          "Compare the original and adjusted means to understand the value of the published rule. Then focus on the topics behind lower results. A higher retained mean may make a grade look stronger while leaving the same knowledge gaps for a later cumulative examination.",
+          "As new assessments arrive, replace scenarios with actual marks and recalculate the whole eligible set. A newly earned low score can change which earlier result is removed. Keep the permitted drop count fixed unless the instructor changes the rule. If no scores remain after an attempted drop, there is no meaningful average; reduce the count or obtain clarification rather than treating an empty category as one hundred percent."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: drop one of four equal-weight scores",
+      "caption": "The lowest eligible score is removed before the remaining scores are averaged. This example assumes the syllabus permits one drop.",
+      "steps": [
+        {
+          "label": "Original record",
+          "value": "60, 80, 90, 100",
+          "detail": "The four-score mean is 82.50%."
+        },
+        {
+          "label": "Remove one lowest",
+          "value": "Keep 80, 90, 100",
+          "detail": "The retained score total is 270."
+        },
+        {
+          "label": "Recalculate",
+          "value": "270 ÷ 3 = 90%",
+          "detail": "Both the sum and the count exclude the dropped score."
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "What happens if I choose zero drops?",
+        "Every entered grade remains in the set. The adjusted result equals the ordinary arithmetic mean, which can be a useful baseline before comparing the effect of the drop count your course actually permits."
+      ],
+      [
+        "Can every grade be dropped?",
+        "No. At least one retained value is necessary to define an average. The calculator rejects a drop count equal to or greater than the number of scores, rather than inventing a result for an empty set."
+      ],
+      [
+        "Does the tool choose an assessment when low values tie?",
+        "It removes the necessary number of equal values. For this equal-weight numerical model, choosing one tied assessment over another does not change the mean. Administrative eligibility still depends on the actual assignment records."
+      ],
+      [
+        "Is this a reason to skip the next quiz?",
+        "No. The arithmetic cannot determine attendance obligations, drop eligibility, missed-work consequences, or how later scores will change the retained set. Use the result to understand a policy, and confirm those rules before making submission decisions."
+      ]
+    ]
+  }
+}

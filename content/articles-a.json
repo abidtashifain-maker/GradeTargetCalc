@@ -1,0 +1,685 @@
+{
+  "final": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Find a realistic final exam target",
+        "paragraphs": [
+          "A final exam target turns a broad hope into a specific score to plan around. This calculator works backward from your desired course percentage, using your current performance and the exam's share of the course. It is most useful when all non-final work has been graded and the final is one separate assessment category.",
+          "The result describes a mathematical requirement, not a prediction of your exam performance. You can also switch to the overall-grade mode to explore what a particular exam score would produce. Keeping those two questions separate helps: one asks what you need, while the other asks what happens if you earn a chosen score."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Choose the right current grade",
+        "paragraphs": [
+          "Use the percentage representing all work other than the final, normalized to a full percentage scale. If that work is currently averaging 80%, enter 80 even if it represents only 60% of the course. The calculator applies the remaining weight itself. Entering the contribution of 48 instead would count the weighting twice.",
+          "Check whether your online gradebook treats an ungraded final as zero. A displayed course percentage that already includes that zero is not the required current-grade input. Also confirm that the target is a course percentage and that the final weight comes from the syllabus. Inputs such as 30 mean 30%, not 0.30%."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Understand the weighted equation",
+        "paragraphs": [
+          "Overall course grade = Current grade × (1 − Final weight ÷ 100) + Final score × (Final weight ÷ 100).",
+          "To solve backward, subtract the contribution of your existing work from the target, then divide the remaining gap by the final's decimal weight. Required final score = [Target − Current grade × (1 − Final weight ÷ 100)] ÷ (Final weight ÷ 100). The exam weight must be positive because division by zero cannot produce a meaningful exam target.",
+          "A final worth 40% converts every exam percentage point into 0.40 course percentage points. The other 60% comes from non-final work. These contributions explain why improving an exam by ten points does not necessarily improve the course by ten points."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Work through an attainable example",
+        "paragraphs": [
+          "Suppose your non-final grade is 80%, the final counts for 40%, and you want 85% overall. Existing work contributes 80 × 0.60 = 48 percentage points. Your target needs another 85 − 48 = 37 points. Dividing by 0.40 gives a required final score of 92.5%.",
+          "Check the answer forward: 80 × 0.60 + 92.5 × 0.40 = 48 + 37 = 85%. If the exam score were 90% instead, the course would finish at 84%. An exam score of 100% would produce 88%. These comparisons show both the minimum and the highest course result still available under the assumptions."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Read difficult or surprising results",
+        "paragraphs": [
+          "A required score above 100% means the target cannot be reached with a standard exam capped at 100%. For example, a current 85%, a 90% course target and a 30% final require 101.666…%. The displayed minimum rounds upward to 101.67%, but rounding does not make an impossible target attainable.",
+          "A result below zero means even a zero would satisfy the weighted-average target. The display uses zero as the minimum practical exam score. It does not grant permission to skip the final: attendance, minimum exam marks or mandatory assessment rules may still apply. A result exactly at 100% is mathematically possible but leaves no room below a perfect exam mark."
+        ]
+      },
+      {
+        "id": "rounding",
+        "heading": "Leave space above a mathematical minimum",
+        "paragraphs": [
+          "Minimum required scores are rounded upward to two decimal places, rather than to the nearest hundredth. That small distinction prevents a displayed minimum from being lower than the calculated threshold. Overall-grade comparisons use ordinary rounding, so read the result label before deciding what the number means.",
+          "Your school may use whole marks, question counts, truncation or a different rounding stage. If 92.5% is needed on an equally weighted 40-question exam without partial credit, the requirement is 37 correct answers. A threshold that corresponds to 36.2 correct answers would require 37, not 36. For mixed question values, use actual awarded marks instead of a question count."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Know when this simple model does not fit",
+        "paragraphs": [
+          "Do not use a standalone final weight if the final is added inside an existing test category. That situation changes the category average before the course weighting applies. Use the Final Counts as a Test Calculator with the relevant category information instead. Similarly, a final with two separately weighted parts needs the Two-Part Final Calculator if one part is already known.",
+          "Remaining assignments, dropped quizzes, extra credit, retakes and assessment caps can also change the current record. Resolve those rules before calculating. A general percentage equation does not determine a letter grade, a degree classification, progression eligibility or whether a particular institution will award a pass."
+        ]
+      },
+      {
+        "id": "checking",
+        "heading": "Check your target with a second route",
+        "paragraphs": [
+          "Verify a required score using the overall-grade mode. Keep the current grade and exam weight fixed, switch modes, and enter the required exam score. The resulting course percentage should meet the intended target, allowing for upward rounding. If it does not, check whether a value changed between calculations.",
+          "Also calculate the highest reachable result. With a current 80% and a 40% final, scoring 100% produces 88% overall. Any course target above 88% therefore needs more than a perfect final in this ordinary model. This quick upper-bound check makes an unexpectedly demanding result easier to interpret."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Turn your result into a revision decision",
+        "paragraphs": [
+          "Compare a few sensible targets rather than chasing a single number. Start with your course's actual passing threshold, then examine a preferred target and a stretch target. Write down the exam score each one requires, alongside the assumptions used. This makes it easier to spot an unrealistic input or an unusually demanding target.",
+          "Use practice work to identify topics where preparation could improve your performance, while allowing time for review and rest. Recalculate only when a real grade, target or weight changes. If the result seems inconsistent with your syllabus, ask your instructor about the grading structure and bring the numbers used in the calculation so the question is specific."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: a 92.5% final reaches an 85% course grade",
+      "caption": "Illustrative values only. Your own result depends on your entered grade and syllabus weight.",
+      "steps": [
+        {
+          "label": "Completed work",
+          "value": "48 points",
+          "detail": "80% current grade × 60% course weight"
+        },
+        {
+          "label": "Final contribution",
+          "value": "37 points",
+          "detail": "92.5% exam score × 40% course weight"
+        },
+        {
+          "label": "Course outcome",
+          "value": "85%",
+          "detail": "48 + 37 = 85 course percentage points"
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Should I enter my target letter grade?",
+        "Enter the percentage threshold associated with that grade in your course. There is no universal percentage for a letter grade, and this calculator does not choose a conversion table."
+      ],
+      [
+        "Can this calculate the grade after my final?",
+        "Yes. Select the overall-grade mode, enter your actual or hypothetical exam percentage in the exam-score field, and keep the current grade and weight unchanged."
+      ],
+      [
+        "What if the final is the entire course?",
+        "A 100% final weight makes the exam score equal the course percentage in this model. Other institutional requirements can still apply, even though the non-final contribution is zero."
+      ],
+      [
+        "Why is my gradebook showing a different target?",
+        "The gradebook may include ungraded zeros, category averages, hidden assessments or different rounding. Compare its inputs and rules before assuming either calculation represents your official result."
+      ]
+    ]
+  },
+  "weighted": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Use the weighting your course actually applies",
+        "paragraphs": [
+          "A weighted grade calculator combines scores that do not have equal importance. A short quiz might count for 10% of a course while a final project counts for 40%. Their percentages describe performance on each task; their weights describe how much those performances contribute to the overall result. You need both pieces of information.",
+          "This tool supports percentage assessment weights and relative weights such as module credits. Choose the mode before entering rows, because the interpretation of the total changes. It calculates a weighted average of the included work, and in percentage mode also separates the course contribution from the current average when some work is still ungraded."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Prepare one consistent row per assessment",
+        "paragraphs": [
+          "For each row, enter a percentage score from zero to 100 and a positive weight. Use an awarded zero when work really received zero marks. Leave unfinished assessments out rather than entering an invented zero, unless the course policy has already awarded one. Add or remove rows until the set reflects the record you want to analyze.",
+          "In percentage mode, included weights must not exceed 100%. A full course normally totals 100%, while completed work can total less. In credit mode, enter credits or another consistent relative unit. Do not put 20 credits in one row and 40% in another: those numbers are not interchangeable measures of academic weight."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Follow the multiply, add and divide method",
+        "paragraphs": [
+          "Weighted average = Sum of (Score × Weight) ÷ Sum of weights.",
+          "Multiplying first gives larger assessments a larger influence. Adding the products combines their contributions, and dividing by the total weight returns the result to the percentage scale. When all weights are equal, this becomes the simple average. When weights differ, averaging the score percentages alone usually answers a different question.",
+          "Multiplying every relative weight by the same positive number leaves the result unchanged. A 2-to-3 weighting produces the same average as 20-to-30 or 40%-to-60%. That property is useful when checking credit-based calculations, but it does not authorize changing a syllabus's actual distribution between assessments."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "See a complete course calculation",
+        "paragraphs": [
+          "Imagine coursework scored at 80% and worth 40% of the course, followed by an exam scored at 70% and worth 60%. Their weighted products are 3,200 and 4,200. Add them to get 7,400, then divide by the total weight of 100. The overall weighted average is 74%.",
+          "The coursework supplies 32 course percentage points and the exam supplies 42. A simple average of 80 and 70 would give 75%, which overstates the result because it gives the stronger coursework the same influence as the heavier exam. If the exam improved to 80%, both scores would be 80% and the weighted result would also be 80%."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Distinguish current average from earned contribution",
+        "paragraphs": [
+          "Suppose only the 80% coursework from that example has been graded. Its 40% weight means it has earned 32 course percentage points. However, the average of the completed work is still 80%. The tool displays that normalized current average alongside the completed weight and ungraded share, rather than silently treating the exam as zero.",
+          "Those figures answer separate questions. The current average describes performance on what is included; the contribution describes how much of the eventual full-course percentage has been supplied. Neither is a forecast for the remaining 60%. Use a final or remaining-grade target calculator to explore the score needed on unfinished work instead of assuming the current average will continue."
+        ]
+      },
+      {
+        "id": "credits",
+        "heading": "Apply credits without awarding a degree class",
+        "paragraphs": [
+          "For module marks of 65% over 20 credits and 75% over 40 credits, the calculation is (65 × 20 + 75 × 40) ÷ 60 = 71.666…%, displayed as 71.67%. The second module has twice the influence because it has twice the credits. There is no need to make those credit values add to 100.",
+          "A credit-weighted percentage is not automatically an official degree classification. Institutions may weight years differently, exclude some modules, cap reassessment marks or apply borderline rules. If the university combines year averages with separate year weights, calculate each required stage according to its regulations rather than placing every raw module into one undifferentiated list."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Avoid mixing categories and points totals",
+        "paragraphs": [
+          "A category with several assignments may require its own calculation first. If quizzes count for 20% overall, do not give every individual quiz a 20% course weight. Calculate the quiz-category percentage using the instructor's rules, then use one row for the whole category with weight 20. Do the same for the other categories.",
+          "Points-based courses are different. Earning 18/20 and 70/100 gives 88/120 = 73.33% when marks are pooled. Averaging 90% and 70% gives 80%, while assigning category weights can produce another result. Determine which system the syllabus uses before choosing the inputs. Extra credit and dropped scores should be resolved inside the appropriate category before its percentage is entered here."
+        ]
+      },
+      {
+        "id": "checking",
+        "heading": "Keep category weights from being counted twice",
+        "paragraphs": [
+          "Suppose quizzes count for 20% and the exam for 80%. Two equally weighted quizzes at 60% and 100% have an 80% category average. With a 75% exam, the result is 80 × 0.20 + 75 × 0.80 = 76%. Use one quiz-category row at 20%, or two quiz rows at 10% each if the category rules permit that equivalent arrangement. Giving each quiz the full 20% would duplicate its influence."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Compare changes where they matter most",
+        "paragraphs": [
+          "To test a possible improvement, change just one score while keeping its legitimate weight fixed. A ten-point improvement in an assessment weighted at 15% adds 1.5 course percentage points; the same improvement in a 50% assessment adds five. This comparison can help you understand influence, although it does not measure how much study time a particular improvement will require.",
+          "Keep a note of the included assessments and the date of their grades. When new marks arrive, add them and check the remaining weight again. If the total is unexpectedly above 100 or far below the course's completed share, look for duplicated categories or omitted work before using the result to plan your next step."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: 40% coursework and 60% exam",
+      "caption": "A complete course example with weights totaling 100%. This is an illustration, not your entered result.",
+      "steps": [
+        {
+          "label": "Coursework",
+          "value": "32 points",
+          "detail": "80 × 0.40 = 32"
+        },
+        {
+          "label": "Exam",
+          "value": "42 points",
+          "detail": "70 × 0.60 = 42"
+        },
+        {
+          "label": "Weighted outcome",
+          "value": "74%",
+          "detail": "32 + 42 = 74"
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can a weight be a decimal?",
+        "Yes. Positive fractional weights work when they reflect the grading policy. The relative relationship matters; use the same unit for every row and check the total in percentage mode."
+      ],
+      [
+        "Why does removing unfinished work increase my displayed grade?",
+        "Removing an ungraded zero changes the included record. The normalized current average then describes completed work only. It does not award the missing marks or guarantee the eventual course grade."
+      ],
+      [
+        "Can I enter GPA points here?",
+        "This tool expects percentage scores. Use the GPA calculator for institution-defined grade points and GPA-bearing credits; a percentage-weighted mark and GPA are different measures."
+      ],
+      [
+        "Does the calculator round each assessment contribution?",
+        "The calculation retains the underlying values and displays a rounded result. A school that rounds intermediate contributions or applies a special boundary rule may report a different official number."
+      ]
+    ]
+  },
+  "gpa": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Calculate a semester from courses and credits",
+        "paragraphs": [
+          "A semester GPA summarizes grade points across the courses that count toward your institution's GPA. It is a credit-weighted average: a four-credit course normally has more influence than a one-credit course when both are included under the same rules. This calculator shows the resulting GPA together with total quality points and GPA-bearing credits.",
+          "The same arithmetic works for a term or another non-overlapping group of courses. That is why general course GPA and semester GPA share this tool. It does not retrieve your transcript or determine which courses are eligible. Start with your institution's grade-point table and academic record, then enter only the values that belong in the calculation."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Use numeric grade points, not raw percentages",
+        "paragraphs": [
+          "Choose the maximum scale used by your record, then enter each course's numeric grade points and positive credit value. The selected scale checks the upper limit of your inputs; it does not convert between scales. Selecting 4.0 will not transform an 85% mark into the grade points your school assigns to it.",
+          "For example, if your institution awards a particular letter grade 3.3 points, enter 3.3 rather than the letter itself. Use its published table for every course, including plus and minus grades where relevant. Do not combine a point value from one university's table with a letter-grade conversion taken from another website. The arithmetic cannot repair an inconsistent conversion."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Quality points explain the calculation",
+        "paragraphs": [
+          "Course quality points = Course grade points × Course credits. Semester GPA = Total quality points ÷ Total GPA-bearing credits.",
+          "Calculate the quality points for each included course, add those products, then divide by the total included credits. Credits are the denominator that makes the result a weighted average. An awarded grade of zero still contributes its included credits to that denominator, so omitting it can substantially overstate the GPA.",
+          "A useful check is that the weighted result must fall between the lowest and highest included grade-point values. If every course has the same grade points, the GPA equals that value regardless of credit differences. If a reported result violates either check, review the entered points, credits and inclusion rules."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Build a nine-credit semester step by step",
+        "paragraphs": [
+          "Consider a three-credit course at 4.0 points, a four-credit course at 3.0 points and a two-credit course at 2.0 points. Their quality points are 12, 12 and 4. The semester therefore contains 28 quality points across nine credits. Dividing 28 by nine gives 3.111…, displayed as a 3.11 GPA.",
+          "Simply averaging 4.0, 3.0 and 2.0 would give 3.00. That treats the two-credit and four-credit courses equally, which is not the stated credit system. The weighted answer is higher because the lower 2.0 grade carries fewer credits than the middle 3.0 grade. The visual example keeps the credits and quality points visible so you can verify each stage."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Read GPA as an estimate with a defined scope",
+        "paragraphs": [
+          "The displayed GPA rounds to two decimal places. Your registrar might retain more decimal places, truncate instead of round, or use a different reporting rule. A small difference near a boundary does not automatically mean the underlying weighted-average method is wrong. Compare full records and the institution's reporting convention before drawing a conclusion.",
+          "Semester GPA is also different from cumulative GPA. A strong term can improve the cumulative record, but its influence depends on the credits already completed. To combine this semester with previous study, use the Cumulative GPA Calculator with separate, non-overlapping periods. Entering the term GPA alone cannot tell you the combined result without the previous GPA and its associated credit total."
+        ]
+      },
+      {
+        "id": "eligibility",
+        "heading": "Check which courses belong in the denominator",
+        "paragraphs": [
+          "Pass/fail courses, withdrawals, transfer credit, audited classes and repeated courses may be treated differently by different institutions. Some can carry credit toward a qualification without contributing grade points to GPA. Do not include them merely because they appear somewhere on a transcript. Find the specific GPA-bearing credit total or ask the registrar about an unclear notation.",
+          "Retakes need particular care. A replacement policy may remove the old attempt from GPA, while another policy counts both attempts. This semester tool does not automatically recognize either situation or apply grade forgiveness. Use the Retake GPA Calculator to explore its stated policy models, then compare those models with the actual rule rather than assuming a repeat always erases the earlier grade."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "Keep grading systems and credit units consistent",
+        "paragraphs": [
+          "US and Canadian institutions do not all use the same GPA scale or percentage conversion. UK percentage module marks do not become an official GPA simply by dividing by 25. A receiving university, scholarship body or evaluator may use its own conversion method, so an application requirement should be checked with that organization.",
+          "Credit units also matter. Do not mix semester hours and quarter hours without an authorized conversion, or treat a course's contact hours as its credit value. If the task is to combine percentage module marks using credits, the Weighted Grade Calculator is the appropriate percentage tool. If the task is to combine numeric grade points, keep the point scale consistent throughout this calculator."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use course influence to plan carefully",
+        "paragraphs": [
+          "Try changing one hypothetical course grade to see its possible effect. In the nine-credit example, raising the four-credit course from 3.0 to 4.0 adds four quality points. The new GPA is 32 ÷ 9 = 3.56 when rounded. Raising the two-credit course by the same one-point amount adds only two quality points, producing 30 ÷ 9 = 3.33.",
+          "These comparisons show mathematical influence, not how easy either change would be. Consider assessment deadlines, remaining opportunities and academic support before allocating study time. Save the original grades separately when experimenting so hypothetical values are not confused with awarded results. After official marks arrive, rebuild the included course list and check total GPA credits against your record."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example semester: 28 quality points over 9 credits",
+      "caption": "Illustration on a compatible 4.0 scale. Institution-defined course points are assumed.",
+      "steps": [
+        {
+          "label": "Course A",
+          "value": "12 points",
+          "detail": "4.0 grade points × 3 credits"
+        },
+        {
+          "label": "Course B",
+          "value": "12 points",
+          "detail": "3.0 grade points × 4 credits"
+        },
+        {
+          "label": "Course C",
+          "value": "4 points",
+          "detail": "2.0 grade points × 2 credits"
+        },
+        {
+          "label": "Semester GPA",
+          "value": "3.11",
+          "detail": "28 quality points ÷ 9 credits"
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can I calculate GPA without credits?",
+        "Only if you know that every included course has equal credit weight. In that situation, entering the same positive weight for each course preserves the average. Do not assume equality for an official record."
+      ],
+      [
+        "What should I enter for a failed course?",
+        "Use the institution-defined grade points and GPA-bearing credits for that attempt. A zero-point course can still affect GPA through its credits; exclusions and retakes require the relevant academic rule."
+      ],
+      [
+        "Does choosing a 4.33 scale convert my 4.0 GPA?",
+        "No. The selector validates course grade-point inputs against a maximum. It does not provide an equivalence between grading systems or recalculate an existing GPA using another institution’s table."
+      ],
+      [
+        "Can this predict an admission decision?",
+        "No. It calculates a numerical estimate from the courses entered. Admissions can use different course selections, conversions and criteria, and only the receiving institution can explain its evaluation."
+      ]
+    ]
+  },
+  "cumulative": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Combine separate periods of academic study",
+        "paragraphs": [
+          "Cumulative GPA combines the grade-point performance of more than one period, with each period weighted by its GPA-bearing credits. This calculator joins a previous record to one new semester. It helps answer a practical question: after the new term is added, what is the approximate GPA across the combined record?",
+          "The old record and new term must be separate. If your previous GPA already contains the semester you are adding, the result will count those courses twice. Before entering anything, identify the endpoint of the old transcript total and the courses covered by the new GPA. That simple record check matters more than the number of decimal places displayed."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Match each GPA with the credits it covers",
+        "paragraphs": [
+          "Select the common maximum GPA scale, enter the previous cumulative GPA and its GPA-bearing credits, then enter the new semester GPA and its GPA-bearing credits. Both credit totals must be positive. The credit figure belongs to that GPA calculation, not necessarily every credit earned toward graduation.",
+          "For instance, transfer or pass/fail credits might count toward a qualification without entering GPA at your institution. Do not automatically use a degree-progress total as the GPA denominator. If your transcript shows total quality points and GPA hours, those labels can help identify the relevant record. This tool accepts summary GPAs, so use the most precise values available rather than rounding them further before entry."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Reconstruct and combine quality points",
+        "paragraphs": [
+          "Combined GPA = (Previous GPA × Previous credits + New GPA × New credits) ÷ (Previous credits + New credits).",
+          "Each multiplication estimates the quality points represented by that GPA. Adding those estimates combines the two records, while adding credits produces the new denominator. The final division gives the credit-weighted average. This approach is different from taking the simple midpoint of two GPA numbers.",
+          "As a check, the combined result should lie between the two input GPAs. It will sit closer to the GPA carrying more credits. If both periods have the same GPA, adding the new credits leaves the combined GPA unchanged. These checks can reveal a mistyped credit total, although they cannot detect a record that accidentally contains overlapping courses."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Follow a 45-credit record into a new term",
+        "paragraphs": [
+          "Suppose the previous record is a 3.20 GPA over 45 GPA credits. Multiplying gives 144 quality points. A new 15-credit semester at 3.80 contributes 57 quality points. Together, the records contain an estimated 201 quality points and 60 credits. The combined GPA is 201 ÷ 60 = 3.35.",
+          "A simple average of 3.20 and 3.80 would be 3.50, but that gives the smaller semester equal influence. The old record actually carries three times as many credits as the new term. The 3.35 result reflects that three-to-one relationship. It rises above the previous GPA while remaining much closer to 3.20 than to 3.80."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Understand why later changes can be smaller",
+        "paragraphs": [
+          "The more credits already in the record, the less a fixed-size new semester usually moves the cumulative GPA. Compare a 3.20 GPA over 15 credits with the same 15-credit semester at 3.80: the combined result is 3.50 because the periods carry equal weight. With 45 old credits, the result is 3.35 instead.",
+          "That difference does not mean the stronger semester has been ignored. It contributes the same 57 quality points in both examples, but it joins a different-sized existing record. When planning, focus on the combination of future performance and future credits. A desired cumulative increase may require several terms, and some targets may be unreachable within the credits remaining on a particular scale."
+        ]
+      },
+      {
+        "id": "precision",
+        "heading": "Keep reporting precision in perspective",
+        "paragraphs": [
+          "A displayed old GPA may already be rounded. Multiplying that rounded number by credits reconstructs approximate rather than exact quality points. For example, 3.20 shown on a transcript could summarize an underlying value slightly above or below 3.20, depending on the reporting rule. The combined estimate can therefore differ from the registrar's calculation even when the formula is correct.",
+          "This calculator rounds its output to two decimals. It does not reproduce every institution's truncation, intermediate rounding or boundary procedures. For an official audit, use the institution's full quality-point record and its regulations. Avoid presenting this estimate as a certified transcript GPA, especially when a small difference could affect an application or academic threshold."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Do not merge incompatible academic records",
+        "paragraphs": [
+          "Both input GPAs must use the same grade-point meaning and compatible credit units. A 3.7 on one scale and a 7.5 on another cannot be combined merely by selecting a larger maximum. The scale selector validates inputs; it does not convert grading systems. Semester and quarter credits likewise need an authorized conversion before they can share a denominator.",
+          "Repeated courses, exclusions and grade forgiveness can change the existing record rather than simply adding a new term. This calculator does not automatically remove old quality points or credits. Use the Retake GPA Calculator for its stated replacement or both-attempts models, and confirm the actual institutional policy. A transfer evaluation may also use its own course selection instead of the original institution's cumulative GPA."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use the right next calculation",
+        "paragraphs": [
+          "If you do not yet know the new semester GPA, calculate it from course grade points and credits in the GPA & Semester Calculator first. Keep the unrounded result if your own records provide it. If you want to work backward from a desired cumulative outcome, use the Target GPA Calculator rather than repeatedly guessing term GPAs without checking the credit assumptions.",
+          "For several future terms, combine the first new term with the previous record, then use the expanded credit total for the next step. Repeated rounding can accumulate small differences, so a course-level quality-point record is better for precise long-range tracking. Label hypothetical semesters clearly and replace them with official figures when grades are awarded."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: a stronger term raises 3.20 to 3.35",
+      "caption": "Two non-overlapping records on one compatible GPA scale; quality points are reconstructed from the entered GPAs.",
+      "steps": [
+        {
+          "label": "Previous record",
+          "value": "144 points",
+          "detail": "3.20 GPA × 45 credits"
+        },
+        {
+          "label": "New semester",
+          "value": "57 points",
+          "detail": "3.80 GPA × 15 credits"
+        },
+        {
+          "label": "Combined record",
+          "value": "201 points",
+          "detail": "144 + 57 over 60 total credits"
+        },
+        {
+          "label": "Cumulative estimate",
+          "value": "3.35",
+          "detail": "201 ÷ 60 = 3.35"
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can I add a semester that is already on my transcript?",
+        "Only if the previous GPA and credits stop before that semester. If the transcript total already includes it, use an earlier non-overlapping total or do not add it again."
+      ],
+      [
+        "Why is the result not the average of my two GPAs?",
+        "The periods have different credit weights. A simple average works only when the GPA-bearing credit totals are equal; otherwise, reconstruct and combine quality points."
+      ],
+      [
+        "What if my new term has no GPA-bearing courses?",
+        "There is no positive GPA-credit total to add in this model. Such courses may affect degree progress without changing GPA. Keep the institution’s GPA record separate from its graduation-credit record."
+      ],
+      [
+        "Will this apply academic forgiveness automatically?",
+        "No. The calculation adds two summary records. Any authorized removal or replacement must already be reflected in the inputs or handled using an appropriate policy-specific calculation."
+      ]
+    ]
+  },
+  "percentage": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Turn earned marks into a readable percentage",
+        "paragraphs": [
+          "A grade percentage expresses how much of the available credit you earned on an assessment. It lets you compare the proportion earned on tasks with different mark totals without pretending that every task carries the same course weight. This calculator needs only points earned and points possible, and it supports decimal marks for partial credit.",
+          "Use the result to understand a raw assessment score, check a marking total or prepare inputs for a weighted course calculation. It does not select a letter grade or apply a grading curve. Those steps depend on the instructor's published rules. A percentage is a useful description of the marks, but its academic meaning still comes from the assessment policy."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Check the numerator and denominator first",
+        "paragraphs": [
+          "Enter awarded marks in Points earned and the assessment maximum in Points possible. The maximum must be greater than zero, and earned marks must lie between zero and that maximum. For example, 17.5 earned out of 20 possible is valid. A blank maximum or zero maximum cannot describe a meaningful proportion.",
+          "Use the final awarded mark after any permitted partial credit has been applied. If your paper has several sections, add their earned marks and maximum marks separately before entering the totals. Check that all figures describe the same assessment. Mixing marks from one section with the maximum of the whole exam produces a valid-looking percentage that answers the wrong question."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Read the fraction before multiplying by 100",
+        "paragraphs": [
+          "Grade percentage = Points earned ÷ Points possible × 100.",
+          "The division measures the fraction of available marks earned. Multiplying by 100 expresses that fraction in percentage units. Earning all possible marks gives 100%, while earning zero gives 0%. Half of the marks gives 50% regardless of whether the assessment is out of 10, 40 or 200.",
+          "A useful manual check is to estimate the fraction before looking at decimals. If you earned just over three quarters of the marks, a result close to 75% makes sense. A result near 7.5% or 750% suggests an input or decimal mistake. This calculator rejects earned values above the maximum rather than assuming that an unusually large result represents extra credit."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Work through marks and partial credit",
+        "paragraphs": [
+          "For 42 points earned out of 50, divide 42 by 50 to get 0.84, then multiply by 100. The assessment percentage is 84%. Each point on that assessment represents two percentage points, because 100 ÷ 50 = 2. An additional half point would therefore raise the percentage by one point.",
+          "For a shorter task scored at 17.5 out of 20, the calculation is 17.5 ÷ 20 × 100 = 87.5%. Enter the decimal mark directly instead of rounding 17.5 to 18 first. That early rounding would give 90%, changing the outcome by 2.5 percentage points without any additional awarded credit."
+        ]
+      },
+      {
+        "id": "comparison",
+        "heading": "Pooling points differs from averaging percentages",
+        "paragraphs": [
+          "Suppose you earn 42/50 on one assignment and 18/20 on another. The individual percentages are 84% and 90%. Pooling the marks gives 60 earned out of 70 possible, or 85.714…%, displayed as 85.71%. The larger 50-point task contributes more to that pooled result than the 20-point task.",
+          "The simple average of 84% and 90% is 87%. That answer is appropriate only if the two percentages count equally under the course rules. If the syllabus assigns category weights, a third calculation may be needed. Do not choose whichever method gives the highest result; use the method actually specified. The Weighted Grade Calculator handles percentage scores with separate weights."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Distinguish percentage points from relative change",
+        "paragraphs": [
+          "If a mark rises from 70% to 80%, it rises by ten percentage points. That is not the same statement as a ten percent relative increase: the relative change is 10 ÷ 70 × 100, approximately 14.29%. When discussing grades, naming percentage points usually makes the difference between two percentages clearer.",
+          "Also distinguish a task percentage from its course contribution. An 84% result on an assignment worth 10% of the course contributes 8.4 course percentage points, not 84 points. The assessment percentage is an input to the course calculation, not automatically the final course grade. You need the remaining assessments and their actual weights to describe the broader outcome."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Respect scoring rules beyond a raw fraction",
+        "paragraphs": [
+          "This tool does not accept earned marks above the stated maximum. If your course awards extra credit, check whether the bonus changes earned points, the denominator or a separate category before selecting another calculation. Do not alter the maximum just to force the calculator to accept a bonus; that could change the rule being modeled.",
+          "Negative marking, scaled tests, moderated marks and curved grades also require additional rules. A raw percentage cannot be translated directly into an official standardized-test score. When questions have different values or partial credit, use the awarded points rather than a simple count of correct answers. If you only know correct and incorrect counts for equal-value questions, the Test Score Calculator is a quicker fit."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use the result to check and communicate marks",
+        "paragraphs": [
+          "Keep the original fraction alongside the percentage when asking about a score. Saying that a paper shows 42 out of 50 and calculates to 84% is more informative than reporting only 84. If a discrepancy appears, check additions, missing sections and the assessment maximum before assuming the percentage formula is the problem.",
+          "The display rounds to two decimal places. A school may report a whole number or follow a different rounding rule, especially at grade boundaries. Treat the displayed number as a planning calculation and consult the course policy for an official classification. Once the raw score is confirmed, you can enter it with the appropriate weight into a course-grade tool or compare it with a target for future work."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: 42 marks out of 50 becomes 84%",
+      "caption": "A raw points calculation. This example does not assign a letter grade or course weight.",
+      "steps": [
+        {
+          "label": "Awarded marks",
+          "value": "42",
+          "detail": "Credit earned on the assessment"
+        },
+        {
+          "label": "Available marks",
+          "value": "50",
+          "detail": "Maximum credit for the same assessment"
+        },
+        {
+          "label": "Fraction earned",
+          "value": "0.84",
+          "detail": "42 ÷ 50"
+        },
+        {
+          "label": "Grade percentage",
+          "value": "84%",
+          "detail": "0.84 × 100"
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Can I enter a decimal maximum?",
+        "Yes. A positive decimal maximum is valid when it reflects the actual marking scheme. Both inputs should use the same point unit, and earned marks must not exceed the stated possible marks."
+      ],
+      [
+        "Does 80% always mean the same letter grade?",
+        "No. Letter boundaries vary across institutions, courses and grading systems. Compare the percentage with the table that governs the assessment instead of relying on a universal conversion."
+      ],
+      [
+        "How do I combine sections of the same points-based exam?",
+        "Add their earned marks, add their possible marks, and calculate the percentage from those totals. This preserves the different section sizes when the exam uses pooled points."
+      ],
+      [
+        "Can this tell me how many marks I still need?",
+        "This tool describes marks already earned. Use the Points Needed Calculator for a points-based course target, or Minimum Correct Answers for a target on equal-value whole questions."
+      ]
+    ]
+  },
+  "test": {
+    "sections": [
+      {
+        "id": "purpose",
+        "heading": "Find a raw score from questions missed",
+        "paragraphs": [
+          "The Test Score Calculator answers a straightforward question: if every question has equal value and wrong answers receive no credit, what percentage did you earn? Enter the total question count and the number incorrect. The result reports both the number correct and the raw percentage, making it easier to check a practice test or quiz.",
+          "This approach is deliberately limited to a simple scoring model. It does not account for partial credit, unequal question weights or penalties for incorrect answers. Those conditions change the relationship between question count and marks. Confirm the scoring instructions first, especially before using a practice result to estimate performance on a formal examination."
+        ]
+      },
+      {
+        "id": "inputs",
+        "heading": "Count the full test consistently",
+        "paragraphs": [
+          "Total questions must be a positive whole number. Incorrect answers must also be a whole number, from zero up to the total. Count unanswered questions as incorrect when they earn zero credit in this model. If a test has 40 questions, six wrong and two blank, enter eight incorrect rather than six.",
+          "Check whether all questions belong in the scored total. If an instructor removes a question or awards special credit, use the adjusted scoring instructions rather than inventing an adjustment here. Do not enter percentage values in the count fields. A test with 80% correct does not have 80 correct answers unless the scored total actually contains 100 equally valued questions."
+        ]
+      },
+      {
+        "id": "formula",
+        "heading": "Subtract first, then calculate the proportion",
+        "paragraphs": [
+          "Correct answers = Total questions − Incorrect answers. Test percentage = Correct answers ÷ Total questions × 100.",
+          "The subtraction finds how many questions earned full credit. Dividing by the total expresses the correct share of the test, and multiplying by 100 returns a percentage. With all answers correct, the result is 100%. With every answer incorrect or blank, it is zero. These endpoints provide quick checks of the scoring model.",
+          "Each question changes the percentage by 100 ÷ Total questions. A ten-question quiz moves in ten-point percentage steps, while a 40-question test moves in 2.5-point steps. That difference explains why one additional error has a much larger percentage effect on a short quiz than on a long test."
+        ]
+      },
+      {
+        "id": "example",
+        "heading": "Check a 40-question practice test",
+        "paragraphs": [
+          "Suppose a test contains 40 equally weighted questions and you miss six. There are 40 − 6 = 34 correct answers. Dividing 34 by 40 gives 0.85, which becomes an 85% score after multiplying by 100. You can confirm the total by adding 34 correct and six incorrect to recover 40 questions.",
+          "If you corrected one of those six errors, 35 out of 40 would give 87.5%. Correcting two would give 36 out of 40, or 90%. These are scenario comparisons, not promised improvements. They show the numerical value of additional correct answers on that particular test. On a different question count, the same number of corrected errors would produce a different percentage change."
+        ]
+      },
+      {
+        "id": "targets",
+        "heading": "Translate a target into whole answers carefully",
+        "paragraphs": [
+          "A target percentage can fall between the scores available from whole questions. On a 33-question test, an 80% target corresponds to 26.4 correct answers. Because this model does not award partial answers, you need at least 27 correct, which gives approximately 81.82%. Twenty-six correct would give about 78.79%, below the target.",
+          "Use the Minimum Correct Answers Calculator to solve that direction directly. This test tool instead calculates the outcome from a known incorrect count. Keeping the direction clear prevents rounding a target downward and accidentally choosing too few correct answers. If partial credit is available, work with marks rather than imposing a whole-question threshold on a different scoring system."
+        ]
+      },
+      {
+        "id": "interpretation",
+        "heading": "Understand what the percentage does and does not mean",
+        "paragraphs": [
+          "A raw 85% score means that 85% of the equally valued questions earned credit under the stated model. It does not automatically indicate a letter grade, a passing decision or a standardized scaled score. Your course's pass threshold and any separate requirements must come from its published rules.",
+          "A test percentage is also not necessarily the overall course grade. If the test is worth 20% of a course, an 85% test result contributes 17 course percentage points. Other assessments supply the remainder. Use the Weighted Grade Calculator to combine completed percentages with their actual weights, or a final-grade target tool if you are planning an exam that has not yet been taken."
+        ]
+      },
+      {
+        "id": "pitfalls",
+        "heading": "Switch methods when questions have unequal credit",
+        "paragraphs": [
+          "Imagine a paper containing ten one-mark questions and one ten-mark question. Counting each question equally would give the large question only one eleventh of the influence, even though it carries half the available marks. Use total earned and possible marks in the Grade Percentage Calculator so the calculation respects those values.",
+          "Similarly, negative marking requires knowing the penalty as well as the correct count. The Negative Marking Calculator supports a configurable penalty model. Scaled examinations need the provider's own scoring method, which cannot be reconstructed from this percentage alone. Avoid treating a practice paper's raw accuracy as an official SAT, AP or other externally reported score."
+        ]
+      },
+      {
+        "id": "planning",
+        "heading": "Use errors as a study record, not just a number",
+        "paragraphs": [
+          "After checking the percentage, review why the missed questions were wrong. Separate content gaps from misreading, time pressure and incomplete answers. The calculator cannot diagnose those causes, but recording them beside the raw score makes a revision plan more specific than repeatedly calculating the same percentage.",
+          "Compare practice results only when you understand differences in difficulty, coverage and scoring. A higher percentage on an easier or shorter set does not by itself demonstrate equivalent performance on a full exam. Keep the question totals and dates with your scores, and use consistently marked practice sets when possible. If an awarded score differs from your count-based result, check the official marking adjustments before requesting a correction."
+        ]
+      }
+    ],
+    "visual": {
+      "title": "Example: six missed questions produces 85%",
+      "caption": "Illustrative 40-question test with equal question values, no partial credit and no guessing penalty.",
+      "steps": [
+        {
+          "label": "Scored total",
+          "value": "40 questions",
+          "detail": "Every question has the same value"
+        },
+        {
+          "label": "Incorrect or blank",
+          "value": "6 questions",
+          "detail": "Zero credit for these answers"
+        },
+        {
+          "label": "Correct answers",
+          "value": "34 questions",
+          "detail": "40 − 6 = 34"
+        },
+        {
+          "label": "Raw score",
+          "value": "85%",
+          "detail": "34 ÷ 40 × 100"
+        }
+      ]
+    },
+    "faqs": [
+      [
+        "Where do I enter unanswered questions?",
+        "Include them in the incorrect count when they receive zero marks. If blanks and incorrect answers have different penalties, use a scoring method that explicitly models those rules."
+      ],
+      [
+        "Can the calculator accept half a question?",
+        "No. These inputs are whole question counts. For half marks or partial credit, enter awarded and possible points in the Grade Percentage Calculator instead."
+      ],
+      [
+        "Why does one mistake sometimes change my percentage so much?",
+        "Each equally valued question is worth 100 divided by the total count in percentage points. Shorter tests therefore have larger score steps per question than longer tests."
+      ],
+      [
+        "Can I use this for a test with a grading curve?",
+        "You can calculate the uncurved raw percentage if its question scoring fits this model. Applying a curve or converting to a reported grade requires the instructor’s separate procedure."
+      ]
+    ]
+  }
+}
