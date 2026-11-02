@@ -196,3 +196,9 @@ print(f'Built {len(urls)} pages plus 404; public release={PUBLIC}; contact confi
 (ROOT/"docs/article-word-counts.json").write_text(json.dumps(article_counts,indent=2)+"\n")
 
 MODIFIED_FILE.write_text(json.dumps({u:MODIFIED.get(u,RELEASE_DATE) for u in urls},indent=2)+'\n')
+
+# IndexNow ownership proof is separate from SSL and is not a content URL.
+indexnow_key=CONFIG.get('indexnow_key','')
+if indexnow_key:
+    assert re.fullmatch('[a-f0-9]{32}',indexnow_key), 'Invalid IndexNow key'
+    (OUT/(indexnow_key+'.txt')).write_text(indexnow_key,encoding='utf-8')

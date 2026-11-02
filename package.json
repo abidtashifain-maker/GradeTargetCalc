@@ -4,6 +4,6 @@
   "type": "module",
   "scripts": {
     "build": "python3 scripts/build.py",
-    "test": "node --test tests/*.test.mjs && python3 tests/audit.py && python3 tests/editorial_audit.py && python3 tests/guides_audit.py"
+    "test": "node --test tests/*.test.mjs && python3 tests/audit.py && python3 tests/editorial_audit.py && python3 tests/guides_audit.py && python3 tests/indexnow_test.py"
   }
 }
