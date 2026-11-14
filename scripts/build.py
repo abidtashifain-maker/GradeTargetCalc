@@ -37,6 +37,30 @@ SEO_UPDATED = {
     'test-score-calculator', 'grade-average-calculator',
 }
 SEO_UPDATE_DATE = '2026-11-14'
+FEATURED_TOOLS = (
+    ('exam-time-allocation-calculator', 'Exam Time Calculator'),
+    ('test-score-calculator', 'Test Score Calculator'),
+    ('minimum-correct-answers-calculator', 'How many questions can I miss?'),
+    ('assignment-average-target-calculator', 'Assignment Average Target'),
+    ('drop-lowest-grade-calculator', 'Drop Lowest Grade'),
+    ('grade-statistics-calculator', 'Grade Statistics'),
+    ('class-percentile-rank-calculator', 'Class Percentile Rank'),
+    ('retake-gpa-calculator', 'Retake GPA'),
+)
+PRACTICAL_EXAMPLES = {
+    'exam-time': (
+        'Minutes per mark in an exam',
+        'In a 120-minute exam worth 70 marks, reserve 15 minutes for review. '
+        'That leaves 105 minutes, or 1.5 minutes per mark. Allow 12 minutes for an 8-mark question.',
+        'guides/exam-pacing-optional-questions', 'Plan pacing for optional questions',
+    ),
+    'test': (
+        'How many questions can I miss and still get 80%?',
+        'On a 40-question test with equal marks, you need 32 correct, so you can miss 8. '
+        'If a target requires a fraction of a correct answer, round up before subtracting from the total.',
+        'minimum-correct-answers-calculator', 'Find the maximum you can miss for your target',
+    ),
+}
 def link(slug,label):return f'<a href="/{slug}/">{label}</a>'
 def cards(items):return ''.join(f'<a class="card" data-tool-card data-category="{categories[k]}" href="/{s}/"><span class="card-icon" aria-hidden="true">{i}</span><h3>{t}</h3><p>{d}</p><span class="arrow">Open calculator <span aria-hidden="true">↗</span></span></a>' for s,t,d,i,k in items)
 def shell(slug,title,desc,body,schema=None):
@@ -51,7 +75,7 @@ def shell(slug,title,desc,body,schema=None):
     draft='' if PUBLIC else '<div class="status">Preview edition · Public launch is pending approval and hosting setup.</div>'
     doc=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><meta name="robots" content="{'index,follow' if PUBLIC and slug != '404' else 'noindex,follow'}"><link rel="canonical" href="{url}"><meta name="theme-color" content="#2457d6"><meta property="og:type" content="{'article' if schema.get('@type')=='Article' else 'website'}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:site_name" content="GradeTargetCalc"><meta name="twitter:card" content="summary"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/styles.css"><script type="module" src="/assets/app.js"></script><script type="application/ld+json">{json.dumps(schemas).replace('<','&lt;')}</script></head><body{" class=home-page" if not slug else ""}><a class="skip" href="#main">Skip to content</a><header class="header"><div class="wrap"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/" aria-label="GradeTargetCalc home"><span class="logo" aria-hidden="true">∑</span><span>GradeTarget<span>Calc</span></span></a><div class="navlinks"><a href="/#calculators">Calculators</a>{link('guides','Study guides')}<button class="theme" type="button" aria-label="Switch to dark mode" aria-pressed="false">◐</button></div></nav></div></header>{draft}<main id="main">{body}</main><footer class="footer"><div class="wrap"><div class="footer-top"><div><a class="brand" href="/">GradeTarget<span>Calc</span></a><p>A clearer picture of your grades. Free tools for planning your next academic step.</p></div><nav class="footer-links" aria-label="Footer navigation">{footerlinks}</nav></div><div class="footer-bottom"><span>© 2026 GradeTargetCalc.com</span><span>For planning. Your institution determines your official results.</span></div></div></footer></body></html>'''
     target=OUT/slug/'index.html' if slug else OUT/'index.html';target.parent.mkdir(parents=True,exist_ok=True)
-    if slug in SEO_UPDATED:
+    if slug in SEO_UPDATED or slug == 'exam-time-allocation-calculator':
         MODIFIED[url] = max(MODIFIED.get(url, RELEASE_DATE), SEO_UPDATE_DATE)
     elif not target.exists() or target.read_text() != doc:
         MODIFIED.setdefault(url, RELEASE_DATE)
@@ -165,6 +189,9 @@ quick_cards = ''.join(
 quick_section = f'<section class="quick-section" aria-labelledby="quick-title"><h2 id="quick-title">Find the right calculator</h2><div class="quick-grid">{quick_cards}</div></section>'
 
 home=f'''<div class="wrap"><section class="hero"><div class="hero-copy"><div class="math-pattern" aria-hidden="true"><span>∑</span><span>%</span><span>√</span><span>÷</span></div><span class="pill">Final exam planning</span><h1>Final grade calculator<em>What score do you need?</em></h1><p class="lead">Find the final exam score you need, calculate a weighted grade or GPA, and see how each result is worked out.</p><div class="hero-actions"><a class="btn" href="#final-calculator">Set my target <span aria-hidden="true">↗</span></a><a href="#calculators">Explore all tools</a></div><div class="checks"><span>Always free</span><span>No account needed</span><span>Clear formulas</span></div></div>{calculator('final',True)}</section>{quick_section}<section class="section" id="calculators"><div class="section-title"><div><h2>Browse all 30 calculators</h2></div><p>Choose the tool that fits your question.</p></div><div class="tool-filters"><label class="field">Search 30 free tools<input type="search" id="tool-search" placeholder="Try GPA, attendance or final exam"></label><label class="field">Category<select id="tool-category"><option value="all">All tools</option><option value="grades">Grades &amp; targets</option><option value="scores">Tests &amp; scores</option><option value="gpa">GPA planning</option><option value="study">Study planning</option></select></label></div><p id="tool-count" role="status">30 tools available</p><div class="grid" id="tool-directory">{cards(tools)}</div></section></div><section class="band"><div class="wrap band-grid"><div><h3>Understand the answer</h3><p>Formulas and worked examples make every result easier to check.</p></div><div><h3>Your grades stay with you</h3><p>Calculations run in your browser. No accounts or uploaded transcripts.</p></div><div><h3>Built for real course rules</h3><p>Clear assumptions help you choose the right method for your syllabus.</p></div></div></section><div class="wrap"><section class="section"><div class="section-title"><div><span class="eyebrow">Beyond the number</span><h2>Make sense of your grades.</h2></div>{link('guides','All study guides →')}</div><div class="grid">{''.join(f'<a class="card" href="/{s}/"><span class="eyebrow">Grade guide</span><h3>{t}</h3><p>{d}</p><span class="arrow">Read the guide →</span></a>' for s,t,d in [('guides/weighted-vs-points-grades','Weighted grades vs. total points','Why two sensible calculations can produce different answers.'),('guides/what-grade-do-i-need-to-pass','What grade do I need to pass?','Turn your actual passing threshold into a practical exam target.'),('guides/gpa-scales-us-uk-canada','Grading across the US, UK & Canada','Why a universal percentage-to-GPA conversion can mislead.')])}</div></section></div>'''
+featured_links = ''.join(f'<li>{link(slug, label)}</li>' for slug, label in FEATURED_TOOLS)
+featured = f'<section class="section" aria-labelledby="featured-tools"><h2 id="featured-tools">Exam prep and grade planning tools</h2><ul>{featured_links}</ul><p>{link("guides/combine-assignment-scores-different-point-totals", "Combine assignments with different point totals")} · {link("guides/percentage-vs-percentile-rank", "Compare a percentage with a percentile rank")}</p></section>'
+home = home.replace(quick_section, quick_section + featured, 1)
 shell('','Final Grade Calculator & GPA Tools | GradeTargetCalc','Find the final exam score you need, calculate weighted grades or estimate your semester GPA. Explore 30 free student calculators and worked examples.',home,{'@context':'https://schema.org','@type':'WebSite','name':'GradeTargetCalc','url':BASE+'/'})
 articles=load_articles()
 assert set(articles)==set(lookup), 'Every calculator requires one complete article'
@@ -177,8 +204,16 @@ for slug,title,desc,icon,kind in tools:
         reading_links=''.join(link('guides/'+g['slug'],esc(g['title'])) for g in supporting)
         learning=learning.replace('</aside></div>',f'<div class="supporting-guides"><h3>Related study guides</h3>{reading_links}</div></aside></div>')
     article_counts[slug]=count
-    body=f'''<div class="wrap"><header class="page-hero"><div class="crumb"><a href="/">Home</a> / Calculators</div><h1>{title}</h1><p class="lead">{c['intro']}</p></header><div class="calculator-layout">{calculator(kind)}<aside class="panel aside"><span class="eyebrow">Quick start</span><h2>How to use this tool</h2><ol>{''.join(f'<li>{s}</li>' for s in c['steps'])}</ol><p class="mode-note">Planning estimate · Check your syllabus for official grading rules.</p><a href="#formula">See the formula ↓</a><br><a href="#visual-title">Follow a visual example ↓</a></aside></div>{learning}</div>'''
-    shell(slug,f'{title} | GradeTargetCalc',desc,body,{'@context':'https://schema.org','@type':'WebApplication','name':title,'url':BASE+'/'+slug+'/','description':desc,'applicationCategory':'EducationalApplication','operatingSystem':'Any','browserRequirements':'Requires JavaScript','isAccessibleForFree':True})
+    practical = ''
+    if kind in PRACTICAL_EXAMPLES:
+        heading, example, destination, label = PRACTICAL_EXAMPLES[kind]
+        practical = f'<section class="example"><h2>{heading}</h2><p>{example}</p><p>{link(destination, label)}</p></section>'
+    search_title = title
+    if kind == 'exam-time':
+        search_title = 'Exam Time Calculator: Minutes per Mark'
+        desc = 'Divide exam time by marks, set aside review minutes and calculate how long to spend on each question or section.'
+    body=f'''<div class="wrap"><header class="page-hero"><div class="crumb"><a href="/">Home</a> / Calculators</div><h1>{title}</h1><p class="lead">{c['intro']}</p></header><div class="calculator-layout">{calculator(kind)}<aside class="panel aside"><span class="eyebrow">Quick start</span><h2>How to use this tool</h2><ol>{''.join(f'<li>{s}</li>' for s in c['steps'])}</ol><p class="mode-note">Planning estimate · Check your syllabus for official grading rules.</p><a href="#formula">See the formula ↓</a><br><a href="#visual-title">Follow a visual example ↓</a></aside></div>{practical}{learning}</div>'''
+    shell(slug,f'{search_title} | GradeTargetCalc',desc,body,{'@context':'https://schema.org','@type':'WebApplication','name':title,'url':BASE+'/'+slug+'/','description':desc,'applicationCategory':'EducationalApplication','operatingSystem':'Any','browserRequirements':'Requires JavaScript','isAccessibleForFree':True})
 def article(slug,title,desc,content):
     if slug.startswith('guides/'):
         chunks=re.split(r'(?=<h2)',content)
