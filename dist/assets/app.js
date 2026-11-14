@@ -35,8 +35,29 @@ for(const form of document.querySelectorAll('[data-calculator]')){
  function table(headers,rows){const t=document.createElement('table');t.className='scenarios';const caption=document.createElement('caption');caption.textContent='What-if final exam outcomes';t.append(caption);const head=document.createElement('thead'),tr=document.createElement('tr');headers.forEach(x=>{const th=document.createElement('th');th.scope='col';th.textContent=x;tr.append(th);});head.append(tr);t.append(head);const body=document.createElement('tbody');rows.forEach(row=>{const tr=document.createElement('tr');row.forEach(x=>{const td=document.createElement('td');td.textContent=x;tr.append(td);});body.append(tr);});t.append(body);result.append(t);}
  form.addEventListener('submit',e=>{e.preventDefault();const v=Object.fromEntries(new FormData(form));try{
   if(kind==='final'){
-   if(v.mode==='overall'){const n=math.finalOverall(v.current,v.target,v.weight);show('OVERALL COURSE GRADE',fmt(n)+'%',`Your non-final work contributes ${fmt(Number(v.current)*(1-Number(v.weight)/100))} points; your exam contributes ${fmt(Number(v.target)*Number(v.weight)/100)} points.`);}
+   const breakdown=(examScore)=>{
+    if(!form.closest('#final-calculator')) return;
+    const fraction=Number(v.weight)/100;
+    const coursework=Number(v.current)*(1-fraction);
+    const exam=examScore*fraction;
+    const chart=document.createElement('div');
+    chart.className='grade-breakdown';
+    const bar=document.createElement('div');
+    bar.setAttribute('aria-hidden','true');
+    const completed=document.createElement('span');
+    completed.style.width=(coursework+exam>0?100*coursework/(coursework+exam):0)+'%';
+    bar.append(completed);
+    if(coursework+exam===0) bar.hidden=true;
+    const courseworkLabel=document.createElement('span');
+    courseworkLabel.textContent=fmt(coursework)+' pts · Coursework';
+    const examLabel=document.createElement('span');
+    examLabel.textContent=fmt(exam)+' pts · Final exam';
+    chart.append(bar,courseworkLabel,examLabel);
+    result.append(chart);
+   };
+   if(v.mode==='overall'){const n=math.finalOverall(v.current,v.target,v.weight);show('OVERALL COURSE GRADE',fmt(n)+'%',`Your non-final work contributes ${fmt(Number(v.current)*(1-Number(v.weight)/100))} points; your exam contributes ${fmt(Number(v.target)*Number(v.weight)/100)} points.`);breakdown(Number(v.target));}
    else {const n=math.finalNeeded(v.current,v.target,v.weight);show('MINIMUM SCORE NEEDED',fmt(Math.max(0,math.minimumDisplayed(n)))+'%',n>100?'This target is not reachable with an exam capped at 100%. Recheck inputs or try a lower target.':n<=0?'Even a zero would meet this weighted-average target. Separate exam-pass or attendance requirements can still apply.':'Aim at or above this score. The minimum is rounded upward to two decimals; check course rounding and pass rules.');
+   if(n<=100) breakdown(Math.max(0,n));
    table(['Exam score','Course grade'],[50,60,70,80,90,100].map(x=>[x+'%',fmt(math.finalOverall(v.current,x,v.weight))+'%']));}
   }else if(kind==='weighted'||kind==='gpa'){
    const rows=[...form.querySelectorAll('.data-row')].map(r=>[...r.querySelectorAll('input')].map(i=>i.value));
