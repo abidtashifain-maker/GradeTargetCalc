@@ -244,6 +244,7 @@ article('terms','Terms and conditions','Please use the tools as planning estimat
 shell('404','Page not found | GradeTargetCalc','Find a student grade calculator.', '<div class="wrap"><section class="page-hero"><span class="eyebrow">404</span><h1>Let’s get you back on track.</h1><p class="lead">This page could not be found.</p><a class="btn" href="/">Explore the calculators</a></section></div>')
 (OUT/'404.html').write_text((OUT/'404/index.html').read_text());(OUT/'404/index.html').unlink();(OUT/'404').rmdir()
 (OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{u}</loc><lastmod>{MODIFIED.get(u,RELEASE_DATE)}</lastmod></url>' for u in urls)+'</urlset>')
+(OUT/'ads.txt').write_text('google.com, pub-6770586408267314, DIRECT, f08c47fec0942fa0\n', encoding='utf-8')
 (OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'/sitemap.xml\n')
 (OUT/'CNAME').write_text('gradetargetcalc.com\n');(OUT/'.nojekyll').touch()
 (OUT/'assets/favicon.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="15" fill="#2457d6"/><path d="M45 15H18l16 17-16 17h27" fill="none" stroke="white" stroke-width="5" stroke-linejoin="round"/></svg>')
