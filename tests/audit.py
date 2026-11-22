@@ -1,5 +1,6 @@
 from pathlib import Path
 from html.parser import HTMLParser
+from urllib.parse import urlsplit
 import json,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]/'dist'
 class Parser(HTMLParser):
@@ -24,7 +25,7 @@ for page in pages:
  assert p.desc[0] not in descs,(page,'duplicate description');descs.add(p.desc[0]);assert p.canonical[0] not in seen;seen.add(p.canonical[0])
  for href in p.links+p.scripts:
   if href.startswith('/'):
-   path=href.split('#')[0];dest=ROOT/path.lstrip('/');dest=dest/'index.html' if dest.is_dir() else dest
+   path=urlsplit(href).path;dest=ROOT/path.lstrip('/');dest=dest/'index.html' if dest.is_dir() else dest
    assert dest.is_file(),(page,href,'broken local target')
    if '#' in href:
     anchor=href.split('#')[1];assert f'id="{anchor}"' in dest.read_text(),(page,href,'missing anchor')
