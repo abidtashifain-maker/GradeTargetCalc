@@ -36,6 +36,12 @@ SEO_UPDATED = {
     'cumulative-gpa-calculator', 'grade-percentage-calculator',
     'test-score-calculator', 'grade-average-calculator',
 }
+CTR_UPDATED = {
+    'exam-time-allocation-calculator', 'reading-speed-calculator',
+    'must-pass-final-calculator', 'test-score-calculator',
+    'points-needed-calculator', 'attendance-percentage-calculator',
+    'guides/calculate-grades-within-weighted-categories',
+}
 SEO_UPDATE_DATE = '2026-11-14'
 FEATURED_TOOLS = (
     ('exam-time-allocation-calculator', 'Exam Time Calculator'),
@@ -57,7 +63,21 @@ SEARCH_TITLES = {
     'final': 'Final Grade Calculator: What Do I Need on My Final?',
     'weighted': 'Weighted Grade Calculator: Calculate Your Course Grade',
     'gpa': 'Semester GPA Calculator: Calculate GPA by Credits',
-    'exam-time': 'Exam Time Calculator: Minutes per Mark',
+    'exam-time': 'Exam Time Calculator: Time per Question by Marks',
+    'reading-speed': 'Reading Speed Calculator: Words per Minute (WPM)',
+    'must-pass': 'Must-Pass Final Exam Calculator: What Score Do I Need?',
+    'test': 'Test Score Calculator: Get Your Grade from Questions Missed',
+    'points-target': 'Points Needed Calculator: How Many Points Do I Need?',
+    'attendance': 'Attendance Percentage Calculator: Classes Attended',
+}
+
+SEARCH_DESCRIPTIONS = {
+    'exam-time': 'Enter your exam length, total marks and review time. See minutes per mark and how much time to spend on each question.',
+    'reading-speed': 'Calculate your reading speed in words per minute. Enter the number of words you read and how many minutes and seconds it took.',
+    'must-pass': 'Find the final exam score that meets both your course pass mark and the minimum required on the final itself.',
+    'test': 'Enter total questions and how many you missed. See your percentage grade and number correct for an equally weighted test.',
+    'points-target': 'Find how many points you still need to reach your target grade in a points-based course, and see whether the target is reachable.',
+    'attendance': 'Enter classes attended and total classes held to calculate your attendance percentage. See the formula and a worked example.',
 }
 
 PRACTICAL_EXAMPLES = {
@@ -109,7 +129,9 @@ def shell(slug,title,desc,body,schema=None):
         body = body.replace('class="page-hero">', 'class="page-hero">' + math_pattern, 1)
     doc=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><meta name="robots" content="{'index,follow' if PUBLIC and slug != '404' else 'noindex,follow'}"><link rel="canonical" href="{url}"><meta name="theme-color" content="#153a30"><meta property="og:type" content="{'article' if schema.get('@type')=='Article' else 'website'}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:site_name" content="GradeTargetCalc"><meta name="twitter:card" content="summary"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/assets/styles.css?v=2"><script type="module" src="/assets/app.js"></script><script type="application/ld+json">{json.dumps(schemas).replace('<','&lt;')}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6770586408267314" crossorigin="anonymous"></script></head><body{" class=home-page" if not slug else ""}><a class="skip" href="#main">Skip to content</a><header class="header"><div class="wrap"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/" aria-label="GradeTargetCalc home"><span class="logo" aria-hidden="true">∑</span><span>GradeTarget<span>Calc</span></span></a><div class="navlinks"><a href="/#calculators">Calculators</a>{link('guides','Study guides')}<button class="theme" type="button" aria-label="Switch to dark mode" aria-pressed="false">◐</button></div></nav></div></header>{draft}<main id="main">{body}</main><footer class="footer"><div class="wrap"><div class="footer-top"><div><a class="brand" href="/">GradeTarget<span>Calc</span></a><p>A clearer picture of your grades. Free tools for planning your next academic step.</p></div><nav class="footer-links" aria-label="Footer navigation">{footerlinks}</nav></div><div class="footer-bottom"><span>© 2026 GradeTargetCalc.com</span><span>For planning. Your institution determines your official results.</span></div></div></footer></body></html>'''
     target=OUT/slug/'index.html' if slug else OUT/'index.html';target.parent.mkdir(parents=True,exist_ok=True)
-    if slug in SEO_UPDATED or slug == 'exam-time-allocation-calculator':
+    if slug in CTR_UPDATED:
+        MODIFIED[url] = max(MODIFIED.get(url, RELEASE_DATE), '2026-11-23')
+    elif slug in SEO_UPDATED:
         MODIFIED[url] = max(MODIFIED.get(url, RELEASE_DATE), SEO_UPDATE_DATE)
     elif not target.exists() or target.read_text() != doc:
         MODIFIED.setdefault(url, RELEASE_DATE)
@@ -249,8 +271,7 @@ for slug,title,desc,icon,kind in tools:
         heading, example, destination, label = PRACTICAL_EXAMPLES[kind]
         practical = f'<section class="example"><h2>{heading}</h2><p>{example}</p><p>{link(destination, label)}</p></section>'
     search_title = SEARCH_TITLES.get(kind, title)
-    if kind == 'exam-time':
-        desc = 'Divide exam time by marks, set aside review minutes and calculate how long to spend on each question or section.'
+    desc = SEARCH_DESCRIPTIONS.get(kind, desc)
     body=f'''<div class="wrap"><header class="page-hero"><div class="crumb"><a href="/">Home</a> / Calculators</div><h1>{title}</h1><p class="lead">{c['intro']}</p></header><div class="calculator-layout">{calculator(kind)}<aside class="panel aside"><span class="eyebrow">Quick start</span><h2>How to use this tool</h2><ol>{''.join(f'<li>{s}</li>' for s in c['steps'])}</ol><p class="mode-note">Planning estimate · Check your syllabus for official grading rules.</p><a href="#formula">See the formula ↓</a><br><a href="#visual-title">Follow a visual example ↓</a></aside></div>{practical}{learning}</div>'''
     shell(slug,f'{search_title} | GradeTargetCalc',desc,body,{'@context':'https://schema.org','@type':'WebApplication','name':title,'url':BASE+'/'+slug+'/','description':desc,'applicationCategory':'EducationalApplication','operatingSystem':'Any','browserRequirements':'Requires JavaScript','isAccessibleForFree':True})
 def article(slug,title,desc,content):
@@ -265,7 +286,12 @@ guide_counts={}
 for g in guides:
     guide_body,guide_schema,guide_words=render_guide(g,guides,tools,BASE)
     guide_counts[g['slug']]=guide_words
-    shell('guides/'+g['slug'],g['title']+' | GradeTargetCalc',g['description'],guide_body,guide_schema)
+    guide_title = g['title']
+    guide_desc = g['description']
+    if g['slug'] == 'calculate-grades-within-weighted-categories':
+        guide_title = 'How to Calculate Grades with Weighted Categories'
+        guide_desc = 'Work out each category average first, then apply the syllabus weights. Follow a worked example using homework, quizzes and exams.'
+    shell('guides/'+g['slug'],guide_title+' | GradeTargetCalc',guide_desc,guide_body,guide_schema)
 legacy=[{'slug':'weighted-vs-points-grades','title':'Weighted grades vs. total points','excerpt':'Understand why different grading methods give different results.','category':'Grade calculations'},{'slug':'what-grade-do-i-need-to-pass','title':'What grade do I need to pass?','excerpt':'Check the pass threshold and separate exam requirements.','category':'Grade calculations'},{'slug':'gpa-scales-us-uk-canada','title':'GPA scales in the US, UK & Canada','excerpt':'Why a generic percentage conversion can mislead.','category':'GPA & assessment'}]
 all_guides=legacy+guides
 categories_guides=['Grade calculations','GPA & assessment','Study planning']
