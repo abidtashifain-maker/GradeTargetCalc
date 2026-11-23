@@ -37,6 +37,7 @@ SEO_UPDATED = {
     'test-score-calculator', 'grade-average-calculator',
 }
 CTR_UPDATED = {
+    'grade-percentage-calculator',
     'exam-time-allocation-calculator', 'reading-speed-calculator',
     'must-pass-final-calculator', 'test-score-calculator',
     'points-needed-calculator', 'attendance-percentage-calculator',
@@ -276,6 +277,24 @@ for slug,title,desc,icon,kind in tools:
     if kind in PRACTICAL_EXAMPLES:
         heading, example, destination, label = PRACTICAL_EXAMPLES[kind]
         practical = f'<section class="example"><h2>{heading}</h2><p>{example}</p><p>{link(destination, label)}</p></section>'
+    if kind == 'percentage':
+        grid_row = '<tr>' + '<td style="width:1.2em;height:1.2em;border:1px solid currentColor"></td>' * 10 + '</tr>'
+        grid = '<table aria-label="Blank 10 by 10 grid" style="border-collapse:collapse"><tbody>' + grid_row * 10 + '</tbody></table>'
+        practical += f"""
+        <section class="example" id="42-out-of-50-worksheet">
+          <h2>Worksheet: Show 42 out of 50 in Three Ways</h2>
+          <p>A pupil scores 42 out of 50 on a practice quiz. Use the grid to explain what the score means.</p>
+          <ol>
+            <li>Write an equivalent fraction with a denominator of 100.</li>
+            <li>Shade the squares that represent the score.</li>
+            <li>Write the score as a decimal and a percentage. Explain how the grid shows both.</li>
+          </ol>
+          {grid}
+          <details><summary>Answer key</summary>
+            <p>42/50 = 84/100 = 0.84 = 84%. Shade 84 squares. Each square represents one hundredth of the grid, or 1%.</p>
+          </details>
+          <p>Use the calculator above with 42 points earned and 50 total points to check your answer.</p>
+        </section>"""
     search_title = SEARCH_TITLES.get(kind, title)
     desc = SEARCH_DESCRIPTIONS.get(kind, desc)
     body=f'''<div class="wrap"><header class="page-hero"><div class="crumb"><a href="/">Home</a> / Calculators</div><h1>{title}</h1><p class="lead">{c['intro']}</p></header><div class="calculator-layout">{calculator(kind)}<aside class="panel aside"><span class="eyebrow">Quick start</span><h2>How to use this tool</h2><ol>{''.join(f'<li>{s}</li>' for s in c['steps'])}</ol><p class="mode-note">Planning estimate · Check your syllabus for official grading rules.</p><a href="#formula">See the formula ↓</a><br><a href="#visual-title">Follow a visual example ↓</a></aside></div>{practical}{learning}</div>'''
