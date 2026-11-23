@@ -99,10 +99,16 @@ PRACTICAL_EXAMPLES = {
         'give 3.75 overall: (4.0 × 3 + 3.0 × 1) ÷ 4 = 3.75.',
         'cumulative-gpa-calculator', 'Combine this semester with your previous GPA',
     ),
+    'must-pass': (
+        'What score do I need to pass?',
+        'With 55% before a final worth 40%, you need 42.5% on the final for a 50% course grade. '
+        'If your syllabus also requires at least 50% on the final, you need 50% to meet both rules.',
+        'guides/what-grade-do-i-need-to-pass', 'See how course and exam pass requirements work',
+    ),
     'exam-time': (
-        'Minutes per mark in an exam',
-        'In a 120-minute exam worth 70 marks, reserve 15 minutes for review. '
-        'That leaves 105 minutes, or 1.5 minutes per mark. Allow 12 minutes for an 8-mark question.',
+        'Try it: How much time for an 8-mark question?',
+        'Enter 60 exam minutes, 10 minutes for checking, 40 total marks and 8 question marks. '
+        'The 50 working minutes give 1.25 minutes per mark, so the question gets 10 minutes.',
         'guides/exam-pacing-optional-questions', 'Plan pacing for optional questions',
     ),
     'test': (
@@ -291,6 +297,12 @@ for g in guides:
     if g['slug'] == 'calculate-grades-within-weighted-categories':
         guide_title = 'How to Calculate Grades with Weighted Categories'
         guide_desc = 'Work out each category average first, then apply the syllabus weights. Follow a worked example using homework, quizzes and exams.'
+        answer = ('<section class="example"><h2>How high does my homework average need to be?</h2>'
+                  '<p>If tests are 50% of the grade and your test average is 80%, they contribute 40 points. '
+                  'If quizzes are 25% and your average is 72%, they contribute 18 points. '
+                  'To finish with 75%, homework must contribute 17 points. Since homework is worth 25%, '
+                  'divide 17 by 0.25 to find the required homework average of 68%.</p></section>')
+        guide_body = guide_body.replace('</header>', '</header>' + answer, 1)
     shell('guides/'+g['slug'],guide_title+' | GradeTargetCalc',guide_desc,guide_body,guide_schema)
 legacy=[{'slug':'weighted-vs-points-grades','title':'Weighted grades vs. total points','excerpt':'Understand why different grading methods give different results.','category':'Grade calculations'},{'slug':'what-grade-do-i-need-to-pass','title':'What grade do I need to pass?','excerpt':'Check the pass threshold and separate exam requirements.','category':'Grade calculations'},{'slug':'gpa-scales-us-uk-canada','title':'GPA scales in the US, UK & Canada','excerpt':'Why a generic percentage conversion can mislead.','category':'GPA & assessment'}]
 all_guides=legacy+guides
