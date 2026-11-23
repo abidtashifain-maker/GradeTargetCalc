@@ -47,7 +47,38 @@ FEATURED_TOOLS = (
     ('class-percentile-rank-calculator', 'Class Percentile Rank'),
     ('retake-gpa-calculator', 'Retake GPA'),
 )
+PRIORITY_RELATED_TOOLS = {
+    'final': ('remaining-grade-calculator', 'must-pass-final-calculator', 'two-part-final-calculator'),
+    'weighted': ('grade-average-calculator', 'remaining-grade-calculator', 'grade-percentage-calculator'),
+    'gpa': ('cumulative-gpa-calculator', 'target-gpa-calculator', 'retake-gpa-calculator'),
+}
+
+SEARCH_TITLES = {
+    'final': 'Final Grade Calculator: What Do I Need on My Final?',
+    'weighted': 'Weighted Grade Calculator: Calculate Your Course Grade',
+    'gpa': 'Semester GPA Calculator: Calculate GPA by Credits',
+    'exam-time': 'Exam Time Calculator: Minutes per Mark',
+}
+
 PRACTICAL_EXAMPLES = {
+    'final': (
+        'What do I need on my final to finish with 85%?',
+        'If your current grade is 82% and the final is worth 25%, '
+        'you need 94% on the final: 82 × 0.75 + 94 × 0.25 = 85.',
+        'must-pass-final-calculator', 'Check a separate minimum exam requirement',
+    ),
+    'weighted': (
+        'How do I calculate a grade with different weights?',
+        'If coursework is 40% of the course and your exam is 60%, '
+        'a coursework score of 90% and an exam score of 75% give 81% overall.',
+        'guides/weighted-vs-points-grades', 'Compare weighted grades with total points',
+    ),
+    'gpa': (
+        'How do course credits affect semester GPA?',
+        'A 4.0 in a three-credit course and a 3.0 in a one-credit course '
+        'give 3.75 overall: (4.0 × 3 + 3.0 × 1) ÷ 4 = 3.75.',
+        'cumulative-gpa-calculator', 'Combine this semester with your previous GPA',
+    ),
     'exam-time': (
         'Minutes per mark in an exam',
         'In a 120-minute exam worth 70 marks, reserve 15 minutes for review. '
@@ -200,7 +231,13 @@ articles=load_articles()
 assert set(articles)==set(lookup), 'Every calculator requires one complete article'
 article_counts={}
 for slug,title,desc,icon,kind in tools:
-    c=content[kind];related=''.join(link(x[0],x[1]) for x in sorted([x for x in tools if x[4]!=kind],key=lambda item:categories[item[4]]!=categories[kind])[:6])
+    c=content[kind]
+    preferred = PRIORITY_RELATED_TOOLS.get(kind, ())
+    candidates = sorted(
+        (item for item in tools if item[4] != kind),
+        key=lambda item: (item[0] not in preferred, categories[item[4]] != categories[kind]),
+    )
+    related = ''.join(link(item[0], item[1]) for item in candidates[:6])
     learning,count=render_article(kind,title,articles[kind],related)
     supporting=[g for g in guides if slug in g['tool_slugs']]
     if supporting:
@@ -211,9 +248,8 @@ for slug,title,desc,icon,kind in tools:
     if kind in PRACTICAL_EXAMPLES:
         heading, example, destination, label = PRACTICAL_EXAMPLES[kind]
         practical = f'<section class="example"><h2>{heading}</h2><p>{example}</p><p>{link(destination, label)}</p></section>'
-    search_title = title
+    search_title = SEARCH_TITLES.get(kind, title)
     if kind == 'exam-time':
-        search_title = 'Exam Time Calculator: Minutes per Mark'
         desc = 'Divide exam time by marks, set aside review minutes and calculate how long to spend on each question or section.'
     body=f'''<div class="wrap"><header class="page-hero"><div class="crumb"><a href="/">Home</a> / Calculators</div><h1>{title}</h1><p class="lead">{c['intro']}</p></header><div class="calculator-layout">{calculator(kind)}<aside class="panel aside"><span class="eyebrow">Quick start</span><h2>How to use this tool</h2><ol>{''.join(f'<li>{s}</li>' for s in c['steps'])}</ol><p class="mode-note">Planning estimate · Check your syllabus for official grading rules.</p><a href="#formula">See the formula ↓</a><br><a href="#visual-title">Follow a visual example ↓</a></aside></div>{practical}{learning}</div>'''
     shell(slug,f'{search_title} | GradeTargetCalc',desc,body,{'@context':'https://schema.org','@type':'WebApplication','name':title,'url':BASE+'/'+slug+'/','description':desc,'applicationCategory':'EducationalApplication','operatingSystem':'Any','browserRequirements':'Requires JavaScript','isAccessibleForFree':True})
